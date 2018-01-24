@@ -1,0 +1,17 @@
+2018/01/25
+sample3//sample13.xml
+sample3//sample13.xsl
+sample3//sample14.xml
+sample3//sample14.xsl
+sample3//sample15.xml
+sample3//sample15.xsl
+sample3//sample16.xml
+sample3//sample16.xsl
+sample3//sample17.xml
+sample3//sample17.xsl
+sample3//sample18.xml
+sample3//sample18.xsl
+sample3//sample19.xml
+sample3//sample19.xsl
+sample3//sample20.xml
+sample3//sample20.xsl

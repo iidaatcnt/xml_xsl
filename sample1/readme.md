@@ -1,0 +1,13 @@
+2018/01/25
+sample1//sample01.xml
+sample1//sample01.xsl
+sample1//sample02.xml
+sample1//sample02.xsl
+sample1//sample03.xml
+sample1//sample03.xsl
+sample1//sample04.xml
+sample1//sample04.xsl
+sample1//sample05.xml
+sample1//sample05.xsl
+sample1//sample06.xml
+sample1//sample06.xsl
