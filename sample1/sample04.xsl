@@ -26,9 +26,6 @@
 			<p><xsl:apply-templates select="’i—Ž" /></p>
 		</xsl:for-each>
 	</xsl:template> -->
-	<!-- <xsl:template match="’i—Ž">
-		<xsl:apply-templates />
-	</xsl:template> -->
 	<xsl:template match="‹­’²">
 		<strong><xsl:apply-templates /></strong>
 	</xsl:template>
