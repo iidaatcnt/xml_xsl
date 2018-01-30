@@ -1,20 +1,10 @@
-2018/01/25
-sample8//dummy1.xml
-sample8//dummy2.xml
-sample8//dummy3.xml
-sample8//dummy4.xml
-sample8//dummy5.xml
-sample8//dummy6.xml
-sample8//dummy7.xml
-sample8//dummy8.xml
-sample8//dummy9.xml
-sample8//sample37.xml
-sample8//sample37.xsl
-sample8//sample38.xml
-sample8//sample38.xsl
-sample8//sample39.xml
-sample8//sample39.xsl
-sample8//sample40.xml
-sample8//sample40.xsl
-sample8//sample41.xml
-sample8//sample41.xsl
+sample37/sample37.xml sample37/sample37.xsl
+（デバッグ中）
+sample38/sample38.xml sample38/sample38.xsl
+（デバッグ中）
+sample39/sample39.xml sample39/sample39.xsl
+（デバッグ中）
+sample40/sample40.xml sample40/sample40.xsl
+（デバッグ中）
+sample41/sample41.xml sample41/sample41.xsl
+（デバッグ中）
