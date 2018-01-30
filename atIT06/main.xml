@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml-stylesheet href="tboutput.xsl" type="text/xsl" ?>
+<customers_list>
+  <title>新規登録顧客リスト（10月分）</title>
+  <tbl href="customers200110.xml"/>
+</customers_list>
