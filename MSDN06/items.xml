@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="ifyellow.xsl" ?>
+<items>
+   <item>Car</item>
+   <item>Pen</item>
+   <item>LP Record</item>
+   <item>Wisdom</item>
+   <item>Cell phone</item>
+   <item>Film projector</item>
+   <item>Hole</item>
+   <item>Canopy</item>
+   <item>Widget</item>
+   <item>Concept</item>
+   <item>Null character</item>
+</items>

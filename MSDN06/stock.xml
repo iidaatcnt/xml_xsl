@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="ifstock.xsl" ?>
+<stocks>
+   <stock international="yes">Microsoft</stock>
+   <stock>Wingtip Toys</stock>
+   <stock international="yes">Contoso Pharmaceuticals</stock>
+   <stock>Contoso, Ltd</stock>
+   <stock international="yes">Fabrikam, Inc.</stock>
+</stocks>
