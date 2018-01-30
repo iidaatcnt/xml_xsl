@@ -1,3 +1,3 @@
-
 sample46/sample46.xml sample46/sample46.xsl
 （デバッグ中）
+XML <- CSS + VC + XSL
