@@ -1,12 +1,8 @@
-XSLTスタイルシート書き方講座（2）：
+元ネタ：
+XSLTスタイルシート書き方講座（1）：
 
-XPathの書き方の基本
+XSLTスタイルシートの基礎の基礎
 
-http://www.atmarkit.co.jp/ait/articles/0109/05/news001.html
+http://www.atmarkit.co.jp/ait/articles/0108/24/news002.html
 
-
-XSLTスタイルシート書き方講座（4）：
-
-XSLTによるデータのソートと変数とパラメータ
-
-http://www.atmarkit.co.jp/ait/articles/0109/18/news002.html
+上のサンプルをもとに拡張した

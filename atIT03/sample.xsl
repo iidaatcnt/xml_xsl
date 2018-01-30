@@ -4,17 +4,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
   <xsl:template match="/">
      <html>
        <body>
-       <title>sort</title>
          <xsl:apply-templates/>
        </body>
      </html>
    </xsl:template>
    <xsl:template match="books">
-     <h3>‰¿Ši‡‚Ì‘Ð–¼ˆê——</h3>
+     <h3>ŒJ‚è•Ô‚µˆ—‚É‚æ‚éˆê——</h3>
      <ul>
        <xsl:for-each select="title">
-         <xsl:sort select="./@price" data-type="number" order="ascending"/>
-         <li><xsl:value-of select="."/>iÅ•Ê<xsl:value-of select="./@price"/>‰~j</li>
+         <li><xsl:value-of select="."/></li>
        </xsl:for-each>
      </ul>
    </xsl:template>
