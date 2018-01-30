@@ -1,13 +1,13 @@
-2018/01/25
-sample5//sample27.xml
-sample5//sample27.xsl
-sample5//sample28.xml
-sample5//sample28.xsl
-sample5//sample29.xml
-sample5//sample29.xsl
-sample5//sample30.xml
-sample5//sample30.xsl
-sample5//sample31.xml
-sample5//sample31.xsl
-sample5//sample32.xml
-sample5//sample32.xsl
+
+sample27/sample27.xml sample27/sample27.xsl
+アンカー
+sample28/sample28.xml sample28/sample28.xsl
+アンカー
+sample29/sample29.xml sample29/sample29.xsl
+（デバッグ中）
+sample30/sample30.xml sample30/sample30.xsl
+アンカー
+sample31/sample31.xml sample31/sample31.xsl
+アンカー
+sample32/sample32.xml sample32/sample32.xsl
+アンカー
