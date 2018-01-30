@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<customers>
+  <customer id="c001">
+    <name>秋本太郎</name>
+    <addr>港区麻布狸穴町A-A-A</addr>
+    <area>関東</area>
+  </customer>
+  <customer id="c002">
+    <name>加藤花子</name>
+    <addr>横浜市金沢区乙舳B-B-B</addr>
+    <area>関東</area>
+  </customer>
+  <customer id="c003">
+    <name>佐々木次郎</name>
+    <addr>大阪市鶴見区放出東C-C-C</addr>
+    <area>近畿</area>
+  </customer>
+  <customer id="c004">
+    <name>田中良子</name>
+    <addr>浦添市勢理客D-D-D</addr>
+    <area>沖縄</area>
+  </customer>
+</customers>
