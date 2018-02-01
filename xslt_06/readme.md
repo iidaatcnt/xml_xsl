@@ -1,3 +1,4 @@
-6.å‡ºåŠ›ç³»XSLTã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆ
+ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO
+6.o—ÍŒnXSLTƒGƒŒƒƒ“ƒg
 
 http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt06.html

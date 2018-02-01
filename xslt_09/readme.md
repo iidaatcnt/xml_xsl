@@ -1,4 +1,8 @@
-http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt09.html
+ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO 
+9.XSLTŠÖ”‚ÌŠT—v
 
-9.XSLTé–¢æ•°ã®æ¦‚è¦
+www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt09.html
 
+ŠÖ”‚ğ‚·‚É‚ÍA
+<xsl:value-of="ŠÖ”‚Ì•\Œ»"/>
+‚Æ‚¢‚Á‚½Œ`®‚Åg—p‚·‚é‚Æ‚¢‚¢‚Å‚µ‚å‚¤B
