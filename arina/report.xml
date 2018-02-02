@@ -4,28 +4,37 @@
 				<server>
 								<name>
 												<name>
+																admin
 												</name>
 												<df>
+																45
 												</df>
 												<vm>
+																2017.09
 												</vm>
 				</server>
 				<server>
 								<name>
 												<name>
+																lb
 												</name>
 												<df>
+																45
 												</df>
 												<vm>
+																2017.09
 												</vm>
 				</server>
 				<server>
 								<name>
 												<name>
+																failover
 												</name>
 												<df>
+																45
 												</df>
 												<vm>
+																2017.09
 												</vm>
 				</server>
 </servers>
