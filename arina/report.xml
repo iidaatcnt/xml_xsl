@@ -37,4 +37,16 @@
 																2017.09
 												</vm>
 				</server>
+				<server>
+								<name>
+												<name>
+																kddi
+												</name>
+												<df>
+																45
+												</df>
+												<vm>
+																2017.09
+												</vm>
+				</server>
 </servers>
