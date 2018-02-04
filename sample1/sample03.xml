@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sample03.xsl" ?>
 <customers>
+  <title>sample03</title>
    <customer>
       <name>Crosby, Mason</name>
       <pos>K</pos>

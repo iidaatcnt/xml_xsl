@@ -9,7 +9,7 @@ sample02.xml sample02.xsl
 03 テーブル表示＋ソート
 sample03.xml sample03.xsl
 
-04 修飾（デバッグ中）
+04 部分文字の修飾
 sample04.xml sample04.xsl
 
 05 条件分岐１

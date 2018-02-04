@@ -1,35 +1,30 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
 	<xsl:template match="/">
 		<html lang="ja">
-		<head>
-		<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
-		</head>
-		<body>
-		<!-- <xsl:apply-templates select="‘S‘Ì" /> -->
-        	<TABLE border="1">
-        	<xsl:for-each select="‘S‘Ì/–{•¶">
-        	  <TR>
-        	    <TD><xsl:value-of select="Œ©o‚µ" /></TD>
-        	    <TD><xsl:value-of select="’i—Ž" /></TD>
-        	  </TR>
-        	</xsl:for-each>
-        	</TABLE>
-		</body>
+		<head><title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title></head>
+		<body><xsl:apply-templates select="å…¨ä½“" /></body>
 		</html>
 	</xsl:template>
-	<!-- <xsl:template match="‘S‘Ì">
-		<xsl:for-each select="–{•¶">
-			<h2><xsl:value-of select="Œ©o‚µ" /></h2>
-			<p><xsl:apply-templates select="’i—Ž" /></p>
+	
+	<xsl:template match="å…¨ä½“">
+		<xsl:for-each select="æœ¬æ–‡">
+			<h2><xsl:value-of select="è¦‹å‡ºã—" /></h2>
+			<p><xsl:apply-templates select="æ®µè½" /></p>
 		</xsl:for-each>
-	</xsl:template> -->
-	<xsl:template match="‹­’²">
+	</xsl:template>
+
+	<xsl:template match="æ®µè½">
+			<xsl:apply-templates />
+	</xsl:template>
+
+	<xsl:template match="å¼·èª¿">
 		<strong><xsl:apply-templates /></strong>
 	</xsl:template>
+
 	<xsl:template match="text()">
-		<xsl:value-of />
+		<xsl:value-of select="."/>
 	</xsl:template>
+	
 </xsl:stylesheet>

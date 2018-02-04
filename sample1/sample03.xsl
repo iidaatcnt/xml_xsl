@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
   <xsl:template match="/">
     <HTML>
-      <HEAD><TITLE>sample03</TITLE></HEAD>
+      <HEAD><TITLE><xsl:value-of select="customers/title" /></TITLE></HEAD>
       <BODY>
         <TABLE border="1">
           <xsl:for-each select="customers/customer">
