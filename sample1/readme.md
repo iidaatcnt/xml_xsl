@@ -1,13 +1,20 @@
+å…ƒãƒã‚¿ã¯æ›¸ç±ã€ŒXML+XSLã‚µãƒ³ãƒ—ãƒ«é›†ã€ã§ã™ã€‚
 
-01 sample1/sample01.xml sample1/sample01.xsl
-ˆê’i—
-02 sample2/sample02.xml sample1/sample02.xsl
-ƒe[ƒuƒ‹•\¦
-03 sample3/sample03.xml sample1/sample03.xsl
-ƒe[ƒuƒ‹•\¦
-04 sample4/sample04.xml sample1/sample04.xsl
-iƒfƒoƒbƒO’†j
-05 sample5/sample05.xml sample1/sample05.xsl
-Cü
-06 sample6/sample06.xml sample1/sample06.xsl
-iƒfƒoƒbƒO’†j
+01 ä¸€ã¤ã®æ®µè½
+sample01.xml sample01.xsl
+
+02 ãƒ«ãƒ¼ãƒ—å‡¦ç†ã«ã‚ˆã‚‹è¤‡æ•°ã®æ®µè½
+sample02.xml sample02.xsl
+
+03 ãƒ†ãƒ¼ãƒ–ãƒ«è¡¨ç¤ºï¼‹ã‚½ãƒ¼ãƒˆ
+sample03.xml sample03.xsl
+
+04 ä¿®é£¾ï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample04.xml sample04.xsl
+
+05 æ¡ä»¶åˆ†å²ï¼‘
+sample05.xml sample05.xsl
+
+06 æ¡ä»¶åˆ†å²ï¼’ï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample06.xml sample06.xsl
+
