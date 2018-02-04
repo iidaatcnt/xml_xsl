@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 </head>
 <body>
-<xsl:apply-templates select="‘S‘Ì" />
+<xsl:apply-templates select="å…¨ä½“" />
 </body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì">
+<xsl:template match="å…¨ä½“">
 	<img>
 		<xsl:attribute name="src">
-			<xsl:value-of select="}/ƒCƒ‰ƒXƒg" />
+			<xsl:value-of select="å›³/ã‚¤ãƒ©ã‚¹ãƒˆ" />
 		</xsl:attribute>
 		<xsl:attribute name="alt">
-			ƒTƒ“ƒvƒ‹‰æ‘œ
+			ã‚µãƒ³ãƒ—ãƒ«ç”»åƒ
 		</xsl:attribute>
 	</img>
 </xsl:template>

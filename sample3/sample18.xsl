@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 </head>
-<body><xsl:apply-templates select="‘S‘Ì" /></body>
+<body><xsl:apply-templates select="å…¨ä½“" /></body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì">
-	<xsl:for-each select="}">	
+<xsl:template match="å…¨ä½“">
+	<xsl:for-each select="å›³">	
 	<xsl:choose>
-	<xsl:when test="}”Ô[.=1]">
-		<h3>No.<xsl:value-of select="}”Ô" />‚ÌƒCƒ‰ƒXƒg</h3>
+	<xsl:when test="å›³ç•ª[.=1]">
+		<h3>No.<xsl:value-of select="å›³ç•ª" />ã®ã‚¤ãƒ©ã‚¹ãƒˆ</h3>
 		<img>
 		<xsl:attribute name="src">
-			<xsl:value-of select="ƒCƒ‰ƒXƒg" />
+			<xsl:value-of select="ã‚¤ãƒ©ã‚¹ãƒˆ" />
 		</xsl:attribute>
 		</img>
 		<hr />
 	</xsl:when>	
 	<xsl:otherwise>
-		<h3>No.<xsl:value-of select="}”Ô" />‚ÌƒCƒ‰ƒXƒg‚Í€”õ’†‚Å‚·D</h3>
+		<h3>No.<xsl:value-of select="å›³ç•ª" />ã®ã‚¤ãƒ©ã‚¹ãƒˆã¯æº–å‚™ä¸­ã§ã™ï¼Ž</h3>
 		<hr />
 	</xsl:otherwise>
 	</xsl:choose>	

@@ -1,28 +1,32 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
-<xsl:template match="/">
-<html lang="ja">
-<head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
-</head>
-<body><xsl:apply-templates select="‘S‘Ì/–{•¶" /></body>
-</html>
-</xsl:template>
-<xsl:template match="‘S‘Ì/–{•¶">
-	<xsl:apply-templates />
-</xsl:template>
-<xsl:template match="ƒCƒ‰ƒXƒg">
-	<img>
-		<xsl:attribute name="src">
-			<xsl:value-of />
-		</xsl:attribute>
-		<xsl:attribute name="alt">
-			ƒTƒ“ƒvƒ‹‰æ‘œ
-		</xsl:attribute>
-	</img>
-</xsl:template>
-<xsl:template match="text()">
-	<div><xsl:value-of /></div>
-</xsl:template>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+
+	<xsl:template match="/">
+	<html lang="ja">
+		<head>
+		<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
+		</head>
+		<body><xsl:apply-templates select="å…¨ä½“/æœ¬æ–‡" /></body>
+	</html>
+	</xsl:template>
+
+	<xsl:template match="å…¨ä½“/æœ¬æ–‡">
+		<xsl:apply-templates />
+	</xsl:template>
+
+	<xsl:template match="ã‚¤ãƒ©ã‚¹ãƒˆ">
+		<img>
+			<xsl:attribute name="src">
+				<xsl:value-of select="."/>
+			</xsl:attribute>
+			<xsl:attribute name="alt">
+				ã‚µãƒ³ãƒ—ãƒ«ç”»åƒ
+			</xsl:attribute>
+		</img>
+	</xsl:template>
+
+	<xsl:template match="text()">
+		<div><xsl:value-of select="."/></div>
+	</xsl:template>
+
 </xsl:stylesheet>

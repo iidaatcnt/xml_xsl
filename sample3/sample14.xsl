@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 </head>
-<body><xsl:apply-templates select="‘S‘Ì/}" /></body>
+<body><xsl:apply-templates select="å…¨ä½“/å›³" /></body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì/}">
-	<xsl:for-each select="ƒCƒ‰ƒXƒg">
+<xsl:template match="å…¨ä½“/å›³">
+	<xsl:for-each select="ã‚¤ãƒ©ã‚¹ãƒˆ">
 	<img>
 		<xsl:attribute name="src">
-			<xsl:value-of />
+			<xsl:value-of select="."/>
 		</xsl:attribute>
 	</img>
 	</xsl:for-each>
