@@ -18,8 +18,8 @@ sample17.xml sample17.xsl
 06 条件分岐２
 sample18.xml sample18.xsl
 
-07 ＶＭＬ矩形と背景画像（デバッグ中）
+07 ＶＭＬ矩形と背景画像（削除）
 sample19.xml sample19.xsl
 
-08 ＶＭＬ楕円とグラデーション（デバッグ中）
+08 ＶＭＬ楕円とグラデーション（削除）
 sample20.xml sample20.xsl
