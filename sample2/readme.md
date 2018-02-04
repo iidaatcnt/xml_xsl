@@ -1,13 +1,19 @@
-sample07/sample07.xml sample07/sample07.xsl
-iƒfƒoƒbƒO’†j
-sample08/sample08.xml sample08/sample08.xsl
-iƒfƒoƒbƒO’†j
-sample09/sample09.xml sample09/sample09.xsl
-iƒfƒoƒbƒO’†j
-sample10/sample10.xml sample10/sample10.xsl
-iƒfƒoƒbƒO’†j
-sample11/sample11.xml sample11/sample11.xsl
-iƒfƒoƒbƒO’†j
-sample12/sample12.xml sample12/sample12.xsl
-iƒfƒoƒbƒO’†j
+å…ƒãƒã‚¿ã¯æ›¸ç±ã€ŒXML+XSLã‚µãƒ³ãƒ—ãƒ«é›†ã€ã§ã™ã€‚
 
+01 ç•ªå·ä»˜ããƒªã‚¹ãƒˆ
+sample07.xml sample07.xsl
+
+02  ãƒãƒ¼ã‚¯ä»˜ããƒªã‚¹ãƒˆ
+sample08.xml sample08.xsl
+
+03  è¤‡æ•°ãƒªã‚¹ãƒˆã®ç¹°ã‚Šè¿”ã—
+sample09.xml sample09.xsl
+
+04 æ–‡ç« ä¸­ã«ãƒªã‚¹ãƒˆã‚’è¡¨ç¤ºã™ã‚‹
+sample10.xml sample10.xsl
+
+05 æ¡ä»¶åˆ†å²ï¼‘(ãƒ‡ãƒãƒƒã‚°ä¸­) 
+sample11.xml sample11.xsl
+
+06 æ¡ä»¶åˆ†å²ï¼’(ãƒ‡ãƒãƒƒã‚°ä¸­) 
+sample12.xml sample12.xsl
