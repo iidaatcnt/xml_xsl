@@ -4,22 +4,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;}
 td{border:solid 1pt black;padding:10;}
 </style>
 </head>
-<body><xsl:apply-templates select="‘S‘Ì/¤•i" /></body>
+<body><xsl:apply-templates select="å…¨ä½“/å•†å“" /></body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì/¤•i">
+<xsl:template match="å…¨ä½“/å•†å“">
 <table>
-	<tr><th>”Ô†</th><th>•i–¼</th><th>‰¿Ši</th></tr>
+	<tr><th>ç•ªå·</th><th>å“å</th><th>ä¾¡æ ¼</th></tr>
 	<tr>
-		<td><xsl:value-of select="”Ô†" /></td>
-		<td><xsl:value-of select="•i–¼" /></td>
-		<td><xsl:value-of select="‰¿Ši" /></td>
+		<td><xsl:value-of select="ç•ªå·" /></td>
+		<td><xsl:value-of select="å“å" /></td>
+		<td><xsl:value-of select="ä¾¡æ ¼" /></td>
 	</tr>
 </table>
 </xsl:template>

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/TR/WD-xsl">
 <xsl:template match="/">
 <html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
 <object id="VMLRender" classid="CLSID:10072CEC-8CC1-11D1-986E-00A0C955B42E">
 </object>
-<title><xsl:value-of select="vml/題名" /></title>
+<title><xsl:value-of select="vml/鬘悟錐" /></title>
 <style>
 v\:* { behavior: url(#VMLRender); }
 </style>
@@ -15,7 +15,7 @@ v\:* { behavior: url(#VMLRender); }
 		<xsl:apply-templates select="vml/oval[index()='0']" />
 		<v:fill type="gradient" />
 		<v:textbox>
-			VMLで作った<br />ふきだしです！
+			VML縺ｧ菴懊▲縺�<br />縺ｵ縺阪□縺励〒縺呻ｼ�
 		</v:textbox>
 	</v:oval>
 	<v:oval>

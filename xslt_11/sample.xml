@@ -1,0 +1,10 @@
+<books>
+<book>The Innovator's Dilemma</book>
+<book>Adaptive Enterprise</book>
+<book>Race for the World</book>
+</books> 
+
+（XSLTプログラム）
+<xsl:template match="books">
+<xsl:value-of select="count('book')">
+</xsl:template>

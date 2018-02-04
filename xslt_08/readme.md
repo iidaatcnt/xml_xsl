@@ -1,4 +1,5 @@
-http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt08.html
+ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO 
+8.‚»‚Ì‘¼‚ÌXSLTƒGƒŒƒƒ“ƒg
 
-8.ãã®ä»–ã®XSLTã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆ
+http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt08.html
 

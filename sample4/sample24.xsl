@@ -1,42 +1,42 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;}
 th{background-color:silver;padding:5;}
 td{border:solid 1pt black;padding:10;}
 </style>
 </head>
-<body><xsl:apply-templates select="‘S‘Ì" /></body>
+<body><xsl:apply-templates select="å…¨ä½“" /></body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì">
+<xsl:template match="å…¨ä½“">
 <div>
-<p>‰¿Ši‚Ì‚‚¢‡‚Éƒ\[ƒg‚³‚ê‚Ä‚¢‚Ü‚·D</p>
+<p>ä¾¡æ ¼ã®é«˜ã„é †ã«ã‚½ãƒ¼ãƒˆã•ã‚Œã¦ã„ã¾ã™ï¼</p>
 <table>
-	<tr><th>”Ô†</th><th>•i–¼</th><th>‰¿Ši</th></tr>
-	<xsl:for-each select="¤•i" order-by="-number(‰¿Ši)">
+	<tr><th>ç•ªå·</th><th>å“å</th><th>ä¾¡æ ¼</th></tr>
+	<xsl:for-each select="å•†å“" order-by="-number(ä¾¡æ ¼)">
 		<tr>
-			<td><xsl:value-of select="”Ô†" /></td>
-			<td><xsl:value-of select="•i–¼" /></td>
-			<td style="text-align:right"><xsl:value-of select="‰¿Ši" /></td>
+			<td><xsl:value-of select="ç•ªå·" /></td>
+			<td><xsl:value-of select="å“å" /></td>
+			<td style="text-align:right"><xsl:value-of select="ä¾¡æ ¼" /></td>
 		</tr>
 	</xsl:for-each>
 </table>
 </div>
 <div>
-<p>‰¿Ši‚Ì’á‚¢‡‚Éƒ\[ƒg‚³‚ê‚Ä‚¢‚Ü‚·D</p>
+<p>ä¾¡æ ¼ã®ä½ã„é †ã«ã‚½ãƒ¼ãƒˆã•ã‚Œã¦ã„ã¾ã™ï¼</p>
 <table>
-	<tr><th>”Ô†</th><th>•i–¼</th><th>‰¿Ši</th></tr>
-	<xsl:for-each select="¤•i" order-by="number(‰¿Ši)">
+	<tr><th>ç•ªå·</th><th>å“å</th><th>ä¾¡æ ¼</th></tr>
+	<xsl:for-each select="å•†å“" order-by="number(ä¾¡æ ¼)">
 		<tr>
-		<td><xsl:value-of select="”Ô†" /></td>
-		<td><xsl:value-of select="•i–¼" /></td>
-		<td style="text-align:right"><xsl:value-of select="‰¿Ši" /></td>
+		<td><xsl:value-of select="ç•ªå·" /></td>
+		<td><xsl:value-of select="å“å" /></td>
+		<td style="text-align:right"><xsl:value-of select="ä¾¡æ ¼" /></td>
 		</tr>
 	</xsl:for-each>
 </table>

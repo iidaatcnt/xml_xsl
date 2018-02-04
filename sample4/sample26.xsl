@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/TR/WD-xsl" xml:lang="ja">
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;}
 th{background-color:silver;padding:5;}
@@ -11,36 +11,36 @@ td{border:solid 1pt black;padding:10;}
 </style>
 </head>
 <body>
-<p>‰¿Ši‚ª1000‰~‚©‚ç10–œ‰~–¢–ž‚ªŽÎ‘ÌC10–œ‰~‚æ‚è‘å‚«‚­20–œ‰~‚æ‚è¬‚³‚¢‰¿Ši‚Ü‚Å‚ª’Êí‚Ì‘‘ÌC
-‚»‚êˆÈŠO‚Í‘¾Žš‚Å•\Ž¦‚³‚ê‚Ä‚¢‚Ü‚·D</p>
-<xsl:apply-templates select="‘S‘Ì" />
+<p>ä¾¡æ ¼ãŒ1000å††ã‹ã‚‰10ä¸‡å††æœªæº€ãŒæ–œä½“ï¼Œ10ä¸‡å††ã‚ˆã‚Šå¤§ãã20ä¸‡å††ã‚ˆã‚Šå°ã•ã„ä¾¡æ ¼ã¾ã§ãŒé€šå¸¸ã®æ›¸ä½“ï¼Œ
+ãã‚Œä»¥å¤–ã¯å¤ªå­—ã§è¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã™ï¼Ž</p>
+<xsl:apply-templates select="å…¨ä½“" />
 </body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì">
+<xsl:template match="å…¨ä½“">
 <table>
-	<tr><th>”Ô†</th><th>•i–¼</th><th>‰¿Ši</th></tr>
-<xsl:for-each select="¤•i">
+	<tr><th>ç•ªå·</th><th>å“å</th><th>ä¾¡æ ¼</th></tr>
+<xsl:for-each select="å•†å“">
 	<xsl:choose>
-	<xsl:when test="‰¿Ši[.$gt$ 1000 and .$lt$ 99999]">
+	<xsl:when test="ä¾¡æ ¼[.$gt$ 1000 and .$lt$ 99999]">
 		<tr>
-		<td><xsl:value-of select="”Ô†" /></td>
-		<td><xsl:value-of select="•i–¼" /></td>
-		<td style="text-align:right;font-style:italic"><xsl:value-of select="‰¿Ši" /></td>
+		<td><xsl:value-of select="ç•ªå·" /></td>
+		<td><xsl:value-of select="å“å" /></td>
+		<td style="text-align:right;font-style:italic"><xsl:value-of select="ä¾¡æ ¼" /></td>
 		</tr>
 	</xsl:when>
-	<xsl:when test="‰¿Ši[.$gt$ 100000 and .$lt$ 200000]">
+	<xsl:when test="ä¾¡æ ¼[.$gt$ 100000 and .$lt$ 200000]">
 		<tr>
-		<td><xsl:value-of select="”Ô†" /></td>
-		<td><xsl:value-of select="•i–¼" /></td>
-		<td style="text-align:right"><xsl:value-of select="‰¿Ši" /></td>
+		<td><xsl:value-of select="ç•ªå·" /></td>
+		<td><xsl:value-of select="å“å" /></td>
+		<td style="text-align:right"><xsl:value-of select="ä¾¡æ ¼" /></td>
 		</tr>
 	</xsl:when>
 	<xsl:otherwise>
 		<tr>
-		<td><xsl:value-of select="”Ô†" /></td>
-		<td><xsl:value-of select="•i–¼" /></td>
-		<td style="text-align:right;font-weight:bold"><xsl:value-of select="‰¿Ši" /></td>
+		<td><xsl:value-of select="ç•ªå·" /></td>
+		<td><xsl:value-of select="å“å" /></td>
+		<td style="text-align:right;font-weight:bold"><xsl:value-of select="ä¾¡æ ¼" /></td>
 		</tr>
 	</xsl:otherwise>
 	</xsl:choose>

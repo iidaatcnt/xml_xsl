@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;}
 th{background-color:silver;padding:5;}
@@ -12,27 +12,27 @@ td{border:solid 1pt black;padding:10;}
 </style>
 </head>
 <body>
-<div>‰¿Ši‚ª15–œ–¢–‚É‚Â‚¢‚Ä‚ÍÎ‘Ì‚Å•\¦</div>
-<div><xsl:apply-templates select="‘S‘Ì" /></div>
+<div>ä¾¡æ ¼ãŒ15ä¸‡æœªæº€ã«ã¤ã„ã¦ã¯æ–œä½“ã§è¡¨ç¤º</div>
+<div><xsl:apply-templates select="å…¨ä½“" /></div>
 </body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì">
+<xsl:template match="å…¨ä½“">
 <table>
-	<tr><th>”Ô†</th><th>•i–¼</th><th>‰¿Ši</th></tr>
-<xsl:for-each select="¤•i">
-	<xsl:if test="‰¿Ši[.$gt$ 150000]">
+	<tr><th>ç•ªå·</th><th>å“å</th><th>ä¾¡æ ¼</th></tr>
+<xsl:for-each select="å•†å“">
+	<xsl:if test="ä¾¡æ ¼[.$gt$ 150000]">
 		<tr>
-		<td><xsl:value-of select="”Ô†" /></td>
-		<td><xsl:value-of select="•i–¼" /></td>
-		<td style="text-align:right"><xsl:value-of select="‰¿Ši" /></td>
+		<td><xsl:value-of select="ç•ªå·" /></td>
+		<td><xsl:value-of select="å“å" /></td>
+		<td style="text-align:right"><xsl:value-of select="ä¾¡æ ¼" /></td>
 		</tr>
 	</xsl:if>
-	<xsl:if test="‰¿Ši[.$lt$ 150000]">
+	<xsl:if test="ä¾¡æ ¼[.$lt$ 150000]">
 		<tr>
-		<td><xsl:value-of select="”Ô†" /></td>
-		<td><xsl:value-of select="•i–¼" /></td>
-		<td style="text-align:right;font-style:italic"><xsl:value-of select="‰¿Ši" /></td>
+		<td><xsl:value-of select="ç•ªå·" /></td>
+		<td><xsl:value-of select="å“å" /></td>
+		<td style="text-align:right;font-style:italic"><xsl:value-of select="ä¾¡æ ¼" /></td>
 		</tr>
 	</xsl:if>
 </xsl:for-each>

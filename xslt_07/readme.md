@@ -1,3 +1,10 @@
+ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO 
+7.ƒtƒ[ƒRƒ“ƒgƒ[ƒ‹ŒnXSLTƒGƒŒƒƒ“ƒg
+
 http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt07.html
 
-7.ãƒ•ãƒ­ãƒ¼ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ç³»XSLTã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆ
+prefectures1.xsl
+
+prefectures2.xsl
+
+prefectures3.xsl

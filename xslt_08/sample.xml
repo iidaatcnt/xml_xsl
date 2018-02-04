@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml-stylesheet type="text/xsl" href="prefectures9.xsl"?>
+<prefectures> 
+  <prefecture id="1">
+  <name>北海道</name>
+  <capital>札幌</capital>
+  <area unit="sqkm">78420</area>
+  <population>5691737</population>
+</prefecture>
+<prefecture id="2">
+  <name>青森県</name>
+  <capital>青森</capital>
+  <area unit="sqkm">9606</area>
+  <population>1504358</population>
+</prefecture>
+<prefecture id="46">
+  <name>鹿児島県</name>
+  <capital>鹿児島</capital>
+  <area unit="sqkm">9186</area>
+  <population>1790437</population>
+</prefecture>
+<prefecture id="47">
+  <name>沖縄県</name>
+  <capital>那覇</capital>
+  <area unit="sqkm">2266</area>
+  <population>1313804</population>
+</prefecture>
+</prefectures>

@@ -1,49 +1,84 @@
 <?xml version="1.0" encoding="Shift_JIS" ?>
 <?xml-stylesheet type="text/xsl" href="report.xsl"?>
-
 <servers>
 	<server>
-		<name>
+		<hostname>
 				admin
-			</name>
+			</hostname>
 		<disk>
 				45
 			</disk>
-		<vm>
-				2017.09
-			</vm>
+		<OS>
+				Amazon Linux AMI Version 2017.09
+		</OS>
+		<mem>
+				1.0GB
+		</mem>
+		<uptime>
+		</uptime>
+		<OOM>
+		</OOM>
+		<faillogin>
+		</faillogin>
 	</server>
 	<server>
-		<name>
+		<hostname>
 				lb
-			</name>
+			</hostname>
 		<disk>
 				45
 			</disk>
-		<vm>
-				2017.09
-			</vm>
+		<OS>
+				Amazon Linux AMI Version 2017.09
+			</OS>
+		<mem>
+				1.0GB
+		</mem>
+		<uptime>
+		</uptime>
+		<OOM>
+		</OOM>
+		<faillogin>
+		</faillogin>
 	</server>
 	<server>
-		<name>
+		<hostname>
 				failover
-			</name>
+			</hostname>
 		<disk>
 				45
 			</disk>
-		<vm>
-				2017.09
-			</vm>
+		<OS>
+				Amazon Linux AMI Version 2017.09
+			</OS>
+		<mem>
+				1.0GB
+		</mem>
+		<uptime>
+		</uptime>
+		<OOM>
+		</OOM>
+		<faillogin>
+		</faillogin>
 	</server>
 	<server>
-		<name>
-				kddi
-			</name>
+		<hostname>
+				KDDI
+			</hostname>
 		<disk>
 				45
 			</disk>
-		<vm>
-				2017.09
-			</vm>
+		<OS>
+				Amazon Linux AMI Version 2017.09
+			</OS>
+		<mem>
+				1.0GB
+		</mem>
+		<uptime>
+		</uptime>
+		<OOM>
+		</OOM>
+		<faillogin>
+		</faillogin>
 	</server>
 </servers>

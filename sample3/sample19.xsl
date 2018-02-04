@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
@@ -6,7 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <head>
 <object id="VMLRender" classid="CLSID:10072CEC-8CC1-11D1-986E-00A0C955B42E">
 </object>
-<title><xsl:value-of select="vml/題名" /></title>
+<title><xsl:value-of select="vml/鬘悟錐" /></title>
 <style>
 v\:* { behavior: url(#VMLRender); }
 </style>
