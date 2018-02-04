@@ -1,40 +1,17 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
-<?xml-stylesheet type="text/xsl" href="sample02.xsl" ?>
-<customers>
-   <customer>
-      <name>John Smith</name>
-      <address>123 Oak St.</address>
-      <state>WA</state>
-      <phone>(206) 123-4567</phone>
-   </customer>
-   <customer>
-      <name>Zack Zwyker</name>
-      <address>368 Elm St.</address>
-      <state>WA</state>
-      <phone>(206) 423-4537</phone>
-   </customer>
-   <customer>
-      <name>Albert Aikens</name>
-      <address>368 Elm St.</address>
-      <state>WA</state>
-      <phone>(206) 423-4537</phone>
-   </customer>
-   <customer>
-      <name>Albert Gandy</name>
-      <address>6984 4th St.</address>
-      <state>WA</state>
-      <phone>(206) 433-4547</phone>
-   </customer>
-   <customer>
-      <name>Peter Furst</name>
-      <address>456 Pine Av.</address>
-      <state>CA</state>
-      <phone>(209) 765-4321</phone>
-   </customer>
-   <customer>
-      <name>Dan Russell</name>
-      <address>9876 Main St.</address>
-      <state>PA</state>
-      <phone>(323) 321-7654</phone>
-   </customer>
-</customers>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample02.xsl"?>
+<全体>
+	<題名>Sample03</題名>
+	<本文>
+		<見出し>一番目の見出し</見出し>
+		<段落>一番目の本文中の段落の内容です．</段落>
+	</本文>
+	<本文>
+		<見出し>二番目の見出し</見出し>
+		<段落>二番目の本文中の段落の内容です．</段落>
+	</本文>
+	<本文>
+		<見出し>三番目の見出し</見出し>
+		<段落>三番目の本文中の段落の内容です．</段落>
+	</本文>
+</全体>

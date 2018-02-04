@@ -1,24 +1,25 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
-<xsl:template match="/">
-	<html lang="ja">
-	<head>
-	<title><xsl:value-of select="全体/題名" /></title>
-	</head>
-	<body>
-	<!-- <xsl:apply-templates select="全体" /> -->
+  <xsl:template match="/">
+    <HTML>
+      <HEAD><TITLE>sample03</TITLE></HEAD>
+      <BODY>
         <TABLE border="1">
-          <xsl:for-each select="全体/本文">
+          <xsl:for-each select="customers/customer">
+            <!-- <xsl:sort select="pos" order="descending"/>
+            <xsl:sort select="name"/> -->
             <TR>
-              <TD><xsl:value-of select="見出し" /></TD>
-              <TD><xsl:value-of select="段落" /></TD>
+              <TD><xsl:value-of select="name" /></TD>
+              <TD><xsl:value-of select="pos" /></TD>
+              <TD><xsl:value-of select="number" /></TD>
+              <TD><xsl:value-of select="college" /></TD>
             </TR>
           </xsl:for-each>
         </TABLE>
-	</body>
-	</html>
-</xsl:template>
+      </BODY>
+    </HTML>
+  </xsl:template>
 
 </xsl:stylesheet>

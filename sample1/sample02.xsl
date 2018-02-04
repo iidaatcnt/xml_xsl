@@ -1,23 +1,17 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
-
   <xsl:template match="/">
-    <HTML>
-      <BODY>
-        <TABLE border="1">
-          <xsl:for-each select="customers/customer">
-            <!-- <xsl:sort select="state" order="descending"/>
-            <xsl:sort select="name"/> -->
-            <TR>
-              <TD><xsl:value-of select="name" /></TD>
-              <TD><xsl:value-of select="address" /></TD>
-              <TD><xsl:value-of select="phone" /></TD>
-            </TR>
-          </xsl:for-each>
-        </TABLE>
-      </BODY>
-    </HTML>
+  	<html lang="ja">
+  	  <head>
+  	  <title><xsl:value-of select="全体/題名" /></title>
+  	  </head>
+  	  <body>
+        <xsl:for-each select="全体/本文">
+          <H1><xsl:value-of select="見出し" /></H1>
+          <P><xsl:value-of select="段落" /></P>
+        </xsl:for-each>
+  	  </body>
+  	</html>
   </xsl:template>
-
 </xsl:stylesheet>

@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
-
-<xsl:template match="/">
-	<html lang="ja">
-		<head>
-		<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
-		</head>
-		<body><xsl:apply-templates select="‘S‘Ì/–{•¶" /></body>
-	</html>
-</xsl:template>
-
-		<xsl:template match="‘S‘Ì/–{•¶">
-			<h1><xsl:value-of select="Œ©o‚µ" /></h1>
-			<p><xsl:value-of select="’i—Ž" /></p>
-		</xsl:template>
+	<xsl:template match="/">
+		<html lang="ja">
+			<head>
+			<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
+			</head>
+			<body><xsl:apply-templates select="å…¨ä½“/æœ¬æ–‡" /></body>
+		</html>
+	</xsl:template>
+	<xsl:template match="å…¨ä½“/æœ¬æ–‡">
+		<h1><xsl:value-of select="è¦‹å‡ºã—" /></h1>
+		<p><xsl:value-of select="æ®µè½" /></p>
+	</xsl:template>
 </xsl:stylesheet>

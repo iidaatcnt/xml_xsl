@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sample01.xsl"?>
-<‘S‘Ì>
-	<‘è–¼>Sample01</‘è–¼>
-	<–{•¶>
-		<Œ©o‚µ>ˆê’i—Ž‚ð•\Ž¦‚·‚é</Œ©o‚µ>
-		<’i—Ž>ˆê’i—Ž–Ú‚Ì“à—e‚Å‚·D</’i—Ž>
-	</–{•¶>
-</‘S‘Ì>
-
+<å…¨ä½“>
+	<é¡Œå>Sample01</é¡Œå>
+	<æœ¬æ–‡>
+		<è¦‹å‡ºã—>ä¸€æ®µè½ã‚’è¡¨ç¤ºã™ã‚‹</è¦‹å‡ºã—>
+		<æ®µè½>ä¸€æ®µè½ç›®ã®å†…å®¹ã§ã™ï¼Ž</æ®µè½>
+	</æœ¬æ–‡>
+</å…¨ä½“>
