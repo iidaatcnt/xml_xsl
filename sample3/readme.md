@@ -1,17 +1,25 @@
+å…ƒãƒã‚¿ã¯æ›¸ç±ã€ŒXML+XSLã‚µãƒ³ãƒ—ãƒ«é›†ã€ã§ã™ã€‚
 
-sample13/sample13.xml sample13/sample13.xsl
-‰æ‘œ‚ğ•\¦
-sample14/sample14.xml sample14/sample14.xsl
-iƒfƒoƒbƒO’†j
-sample15/sample15.xml sample15/sample15.xsl
-iƒfƒoƒbƒO’†j
-sample16/sample16.xml sample16/sample16.xsl
-‰æ‘œ‚ğ•¡”•\¦
-sample17/sample17.xml sample17/sample17.xsl
-‰æ‘œ‚ğ•\¦
-sample18/sample18.xml sample18/sample18.xsl
-‰æ‘œ‚ğ‚‚É•À‚×‚Ä•\¦
-sample19/sample19.xml sample19/sample19.xsl
-iƒfƒoƒbƒO’†j
-sample20/sample20.xml sample20/sample20.xsl
-iƒfƒoƒbƒO’†j
+01 ç”»åƒã‚’è¡¨ç¤º
+sample13.xml sample13.xsl
+
+02 è¤‡æ•°ã®ç”»åƒã‚’è¡¨ç¤º
+sample14.xml sample14.xsl
+
+03 æ–‡ç« ä¸­ã«ç”»åƒã‚’è¡¨ç¤º
+sample15.xml sample15.xsl
+
+04 æ³¨é‡ˆä»˜ãã§ç”»åƒã‚’è¡¨ç¤º
+sample16.xml sample16.xsl
+
+05 æ¡ä»¶åˆ†å²ï¼‘
+sample17.xml sample17.xsl
+
+06 æ¡ä»¶åˆ†å²ï¼’
+sample18.xml sample18.xsl
+
+07 ï¼¶ï¼­ï¼¬çŸ©å½¢ã¨èƒŒæ™¯ç”»åƒï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample19.xml sample19.xsl
+
+08 ï¼¶ï¼­ï¼¬æ¥•å††ã¨ã‚°ãƒ©ãƒ‡ãƒ¼ã‚·ãƒ§ãƒ³ï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample20.xml sample20.xsl
