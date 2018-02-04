@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 .midashi{width:200;background-color:silver;}
 </style>
 </head>
-<body><xsl:apply-templates select="‘S‘Ì" /></body>
+<body><xsl:apply-templates select="å…¨ä½“" /></body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì">
-	<xsl:for-each select="–{•¶">
-		<xsl:if test="Œ©o‚µ[.='']">
-			<h2 class="midashi">Œ©o‚µ–¢İ’è</h2>
+<xsl:template match="å…¨ä½“">
+	<xsl:for-each select="æœ¬æ–‡">
+		<xsl:if test="è¦‹å‡ºã—[.='']">
+			<h2 class="midashi">è¦‹å‡ºã—æœªè¨­å®š</h2>
 		</xsl:if>
-		<xsl:if test="Œ©o‚µ[not(.='')]">
-			<h2><xsl:value-of select="Œ©o‚µ" /></h2>
+		<xsl:if test="è¦‹å‡ºã—[not(.='')]">
+			<h2><xsl:value-of select="è¦‹å‡ºã—" /></h2>
 		</xsl:if>
-		<p><xsl:value-of select="’i—" /></p>
+		<p><xsl:value-of select="æ®µè½" /></p>
 	</xsl:for-each>
 </xsl:template>
 </xsl:stylesheet>
