@@ -1,13 +1,19 @@
+å…ƒãƒã‚¿ã¯æ›¸ç±ã€ŒXML+XSLã‚µãƒ³ãƒ—ãƒ«é›†ã€ã§ã™ã€‚
 
-sample21/sample21.xml sample21/sample21.xsl
+01 
+sample21.xml sample21.xsl
 
-sample22/sample22.xml sample22/sample22.xsl
+02 
+sample22.xml sample22.xsl
 
-sample23/sample23.xml sample23/sample23.xsl
-iƒfƒoƒbƒO’†j
-sample24/sample24.xml sample24/sample24.xsl
-iƒfƒoƒbƒO’†j
-sample25/sample25.xml sample25/sample25.xsl
-iƒfƒoƒbƒO’†j
-sample26/sample26.xml sample26/sample26.xsl
-iƒfƒoƒbƒO’†j
+03 ï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample23.xml sample23.xsl
+
+04 ï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample24.xml sample24.xsl
+
+05 ï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample25.xml sample25.xsl
+
+06 ï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample26.xml sample26.xsl

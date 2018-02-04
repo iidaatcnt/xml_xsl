@@ -1,2 +1,4 @@
-sample52/haiku.xml sample52/haiku.xsl
-�i�f�o�b�O���j
+元ネタは書籍「XML+XSLサンプル集」です。
+
+01 （デバッグ中）
+haiku.xml haiku.xsl

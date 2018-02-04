@@ -1,2 +1,4 @@
+元ネタは書籍「XML+XSLサンプル集」です。
 
-sample36/sample36.xml sample736/sample36.xsl
+01 
+sample36.xml sample36.xsl

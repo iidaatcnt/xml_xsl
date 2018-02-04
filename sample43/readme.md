@@ -1,4 +1,6 @@
+元ネタは書籍「XML+XSLサンプル集」です。
 
-sample43/sample43.xml sample43/sample43.xsl
-�i�f�o�b�O���j
+01 （デバッグ中）
+sample43.xml sample43.xsl
+
 XML <- CSS + VC + XSL

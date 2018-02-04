@@ -1,19 +1,16 @@
-sample37/sample37.xml sample37/sample37.xsl
-iƒfƒoƒbƒO’†j
-XML <- CSS + VC + XSL
+å…ƒãƒã‚¿ã¯æ›¸ç±ã€ŒXML+XSLã‚µãƒ³ãƒ—ãƒ«é›†ã€ã§ã™ã€‚
 
-sample38/sample38.xml sample38/sample38.xsl
-iƒfƒoƒbƒO’†j
-XML <- CSS + VC + XSL
+01 XML <- CSS + VC + XSLï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample37.xml sample37.xsl
 
-sample39/sample39.xml sample39/sample39.xsl
-iƒfƒoƒbƒO’†j
-XML <- CSS + VC + XSL
+02 XML <- CSS + VC + XSLï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample38.xml sample38.xsl
 
-sample40/sample40.xml sample40/sample40.xsl
-iƒfƒoƒbƒO’†j
-XML <- CSS + VC + XSL
+03 XML <- CSS + VC + XSLï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample39.xml sample39.xsl
 
-sample41/sample41.xml sample41/sample41.xsl
-iƒfƒoƒbƒO’†j
-XML <- CSS + VC + XSL
+04 XML <- CSS + VC + XSLï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample40.xml sample40.xsl
+
+05 XML <- CSS + VC + XSLï¼ˆãƒ‡ãƒãƒƒã‚°ä¸­ï¼‰
+sample41.xml sample41.xsl
