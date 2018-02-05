@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample32.xsl"?>
+<全体>
+	<題名>Sample32</題名>
+	<本文>
+	<リンク>
+		<リンク先 url="https://www.google.co.jp/">Google</リンク先> 
+	</リンク>
+	<リンク>
+		<リンク先 url="https://www.yahoo.co.jp/">Yahoo</リンク先>
+	</リンク>
+	<リンク>
+		<リンク先 url="https://msdn.microsoft.com/ja-jp/">MSDN</リンク先>
+	</リンク>
+	</本文>
+</全体>
+
