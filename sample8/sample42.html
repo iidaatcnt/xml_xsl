@@ -6,7 +6,7 @@
 <!--
 .style1{padding:6;position:absolute;width:150;
 height:150;border-width:thick;border-style:double;
-overflow:auto;font-family:"‚l‚r ‚o–¾’©",serif;font-size:12pt;}
+overflow:auto;font-family:"ï¼­ï¼³ ï¼°æ˜æœ",serif;font-size:12pt;}
 table{border:solid 1pt black;position:absolute;margin-left:200	;}
 th{border:solid 1pt gray;padding:5;background-color:silver;}
 td{border:solid 1pt gray;padding:5;}
@@ -32,47 +32,47 @@ sub window_onload()
 	set xmldoc=createObject("Microsoft.XMLDom")
 	xmldoc.async=false
 
-	'xmlƒtƒ@ƒCƒ‹‚ª•s“Á’è”‚Ì‚½‚ßA‚±‚±‚Å‚Í1000‚Ìƒtƒ@ƒCƒ‹–˜‚ğ“Ç‚İ‚Ş‚Æ‰¼’è‚·‚éB
+	'xmlãƒ•ã‚¡ã‚¤ãƒ«ãŒä¸ç‰¹å®šæ•°ã®ãŸã‚ã€ã“ã“ã§ã¯1000ã®ãƒ•ã‚¡ã‚¤ãƒ«è¿„ã‚’èª­ã¿è¾¼ã‚€ã¨ä»®å®šã™ã‚‹ã€‚
 	for i=1 to 1000
 		xmldoc.load("dummy" & i & ".xml")
-		set namaeNode=xmldoc.getElementsByTagName("–¼")
-		'xmlƒtƒ@ƒCƒ‹‚ª‚ ‚ê‚ÎdummyNo‚ğ‰ÁZ‚·‚éB
+		set namaeNode=xmldoc.getElementsByTagName("æ°å")
+		'xmlãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚Œã°dummyNoã‚’åŠ ç®—ã™ã‚‹ã€‚
 		if namaeNode.length>0 then dummyNo=dummyNo+1
 		if namaeNode.length<=0 then exit for
 		namae=namae & "<div style='cursor:hand' id=" & "'" & "namaeMenu" & i-1 & "'" & "onclick=" & "'" & "go(" & i-1 & ")'" & ">" & namaeNode(0).text & "</div>"
 	next
-		'•¡”‚Ìxmlƒtƒ@ƒCƒ‹‚©‚ç–¼‚Ì—v‘f“à—e‚¾‚¯‚ğæ‚èo‚µ‚Ä•\¦‚·‚éB
+		'è¤‡æ•°ã®xmlãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰æ°åã®è¦ç´ å†…å®¹ã ã‘ã‚’å–ã‚Šå‡ºã—ã¦è¡¨ç¤ºã™ã‚‹ã€‚
 		
 		namaeBox.innerHTML=namae
 end sub
 
 sub go(allNo)
-	'–¼‚ğƒNƒŠƒbƒN‚µ‚½“_‚Ì”wŒi‚ÌFˆ—B
+	'æ°åã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸæ™‚ç‚¹ã®èƒŒæ™¯ã®è‰²å‡¦ç†ã€‚
 	for i=0 to dummyNo-1
 		document.all("namaeMenu" & i).style.backgroundcolor="white"
 	next
 		document.all("namaeMenu" & allNo).style.backgroundcolor="silver"
-		'ƒNƒŠƒbƒN‚µ‚½–¼‚Ì“à—e‚ğ•Ï”searchName‚ÉŠi”[‚·‚éB
+		'ã‚¯ãƒªãƒƒã‚¯ã—ãŸæ°åã®å†…å®¹ã‚’å¤‰æ•°searchNameã«æ ¼ç´ã™ã‚‹ã€‚
 		searchName=document.all("namaeMenu" & allNo).innerText
 		call NameSenntaku(searchName)
 end sub
 
 sub NameSenntaku(searchName)
 
-	'–¼‚É‡’v‚·‚é—v‘f‚ğ’Šo‚·‚é‚Æ‚¢‚¤ğŒ‚ğw’è‚·‚éB
+	'æ°åã«åˆè‡´ã™ã‚‹è¦ç´ ã‚’æŠ½å‡ºã™ã‚‹ã¨ã„ã†æ¡ä»¶ã‚’æŒ‡å®šã™ã‚‹ã€‚
 
-	patternstring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchName & "']/‚¨‹q—l”Ô†"
-	shimeistring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchName & "']/–¼"
-	fukennstring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchName & "']/ZŠ/@“s“¹•{Œ§"
-	addressstring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchName & "']/ZŠ"
-	dennwastring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchName & "']/“d˜b"
+	patternstring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchName & "']/ãŠå®¢æ§˜ç•ªå·"
+	shimeistring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchName & "']/æ°å"
+	fukennstring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchName & "']/ä½æ‰€/@éƒ½é“åºœçœŒ"
+	addressstring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchName & "']/ä½æ‰€"
+	dennwastring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchName & "']/é›»è©±"
 
-	kinngakustring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchName & "']/‚¨”ƒ‚¢ã‚°‹àŠz"
-	tukistring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchName & "']/‚¨”ƒ‚¢ã‚°‹àŠz/@Œ"
+	kinngakustring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchName & "']/ãŠè²·ã„ä¸Šã’é‡‘é¡"
+	tukistring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchName & "']/ãŠè²·ã„ä¸Šã’é‡‘é¡/@æœˆ"
 	
 	for i=1 to dummyNo
-		'‚»‚ê‚¼‚ê‚Ìxmlƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚İAw’è‚³‚ê‚½ğŒ‚ÅA‚»‚ê‚¼‚ê‚Ì—v‘f‚Ì
-		'“à—e‚ğæ“¾‚·‚éB
+		'ãã‚Œãã‚Œã®xmlãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã¿ã€æŒ‡å®šã•ã‚ŒãŸæ¡ä»¶ã§ã€ãã‚Œãã‚Œã®è¦ç´ ã®
+		'å†…å®¹ã‚’å–å¾—ã™ã‚‹ã€‚
 		xmldoc.load("dummy" & i & ".xml")
 		set noNode=xmldoc.selectNodes(patternstring)
 		if noNode.length>0 then	no=noNode(0).text
@@ -96,7 +96,7 @@ sub NameSenntaku(searchName)
 		if tukiNode.length>0 then tuki=tukiNode(0).text
 
 	next
-		'æ“¾‚µ‚½—v‘f‚Ì“à—e‚ğ•\¦‚·‚éB
+		'å–å¾—ã—ãŸè¦ç´ ã®å†…å®¹ã‚’è¡¨ç¤ºã™ã‚‹ã€‚
 		 noTable.innerHTML=no
 		 namaeTable.innerHTML=shimei
 		 fukennTable.innerHTML=fukenn
@@ -113,8 +113,8 @@ end sub
 <div id="namaeBox" class="style1"></div>
 <table>
 <tr>
-	<th>”Ô†</th><th>–¼</th><th>“s“¹•{Œ§</th>
-	<th>ZŠ</th><th>“d˜b</th><th>w“ü‹àŠz</th><th>w“üŒ</th>
+	<th>ç•ªå·</th><th>æ°å</th><th>éƒ½é“åºœçœŒ</th>
+	<th>ä½æ‰€</th><th>é›»è©±</th><th>è³¼å…¥é‡‘é¡</th><th>è³¼å…¥æœˆ</th>
 </tr>
 <tr>
 	<td><span id="noTable"></span></td>

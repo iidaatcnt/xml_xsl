@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/TR/WD-xsl"
 xmlns:html="http://www.w3.org/Profiles/XHTML-transitional" xmlns:kyss="http://user.shikoku.ne.jp/kyss/" xml:lang="ja">
 

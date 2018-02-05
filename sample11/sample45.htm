@@ -4,7 +4,7 @@
 <title>sample45</title>
 <style type="text/css">
 <!--
-td{font-family:"‚l‚r ‚o–¾’©",serif;font-size:12pt;padding:5;}
+td{font-family:"ï¼­ï¼³ ï¼°æ˜æœ",serif;font-size:12pt;padding:5;}
 th{background-color:aquamarine;padding:5;}
 -->
 </style>
@@ -13,22 +13,22 @@ th{background-color:aquamarine;padding:5;}
 
 <div>
 <img id="image1" src="silver_map1.gif" style="position:absolute;boder-width:2">
-<div id="maru" style="position:absolute;color:red">œ</div>
+<div id="maru" style="position:absolute;color:red">â—</div>
 <img id="personalimage" style="position:absolute;visibility:hidden"></img>
-<span style="position:absolute;margin-top:10;margin-left:500;font-size:12pt;font-weight:bold;">ƒwƒ‹ƒp[–K–âæ(‚—îÒ–¼)</span>
-<div id="text1" style="padding:5;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:12pt;line-height:15pt;position:absolute;border-width:2;border-style:inset;width:200;height:80;overflow:auto;margin-top:30;margin-left:500"></div>
+<span style="position:absolute;margin-top:10;margin-left:500;font-size:12pt;font-weight:bold;">ãƒ˜ãƒ«ãƒ‘ãƒ¼è¨ªå•å…ˆ(é«˜é½¢è€…æ°å)</span>
+<div id="text1" style="padding:5;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:12pt;line-height:15pt;position:absolute;border-width:2;border-style:inset;width:200;height:80;overflow:auto;margin-top:30;margin-left:500"></div>
 </div>
 
 <div>
-<span style="position:absolute;margin-top:130;margin-left:500;font-size:12pt;font-weight:bold;">‰Æ‘°î•ñ</span>
+<span style="position:absolute;margin-top:130;margin-left:500;font-size:12pt;font-weight:bold;">å®¶æ—æƒ…å ±</span>
 <table id="mytable" style="padding:5;position:absolute;margin-top:150;margin-left:500" border="1"></table>
 </div>
 
 <div>
-<span style="position:absolute;margin-top:330;margin-left:10;font-size:12pt;font-weight:bold;">–{lÚ×î•ñ</span>
+<span style="position:absolute;margin-top:330;margin-left:10;font-size:12pt;font-weight:bold;">æœ¬äººè©³ç´°æƒ…å ±</span>
 <table border="2" width="85%" style="position:absolute;border-width:2;border-style:inset;margin-top:350;margin-left:10">
 <thead style="background-color:lightpink;text-align:center">
-	<tr><td>”N—î</td><td>ZŠ</td><td>“à—e</td><td>óf‰È</td><td>Šù‰Ç</td><td>ŒŒ‰tŒ^</td><td>’S“–ƒwƒ‹ƒp[</td></tr>
+	<tr><td>å¹´é½¢</td><td>ä½æ‰€</td><td>å†…å®¹</td><td>å—è¨ºç§‘</td><td>æ—¢å¾€ç—‡</td><td>è¡€æ¶²å‹</td><td>æ‹…å½“ãƒ˜ãƒ«ãƒ‘ãƒ¼</td></tr>
 </thead>
 <tbody>
 	<tr>
@@ -66,7 +66,7 @@ sub window_onload()
 end sub
 
 sub cyuusyutu()
- 	'sample45.xml•¶‘‚©‚ç—v‘funamaev‚Ì“à—e‚ğæ‚èo‚·D
+ 	'sample45.xmlæ–‡æ›¸ã‹ã‚‰è¦ç´ ã€Œnamaeã€ã®å†…å®¹ã‚’å–ã‚Šå‡ºã™ï¼
 
 	patternstring="family/setai/namae"
  	 set selnode=xmldoc.selectNodes(patternstring)
@@ -78,14 +78,14 @@ sub cyuusyutu()
 		next
 			text1.innerHTML=namae
 	else
-		msgbox "ƒf[ƒ^‚È‚µI"
+		msgbox "ãƒ‡ãƒ¼ã‚¿ãªã—ï¼"
 		exit sub
 	end if
  
 end sub
 
 sub changecolor(allNo)
-	'–¼‘O‚ğƒNƒŠƒbƒN‚µ‚½‚Ì”wŒi‚ÌF
+	'åå‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸæ™‚ã®èƒŒæ™¯ã®è‰²
 	for i=0 to selnode.length-1
 		document.all("namaeMenu" & i).style.backgroundColor="white"
 	next
@@ -93,7 +93,7 @@ sub changecolor(allNo)
 		window.clearinterval(timer1)
 		timer1=window.setinterval("blink()",30)
 
-		'ƒNƒŠƒbƒN‚µ‚½–¼‘O‚ğ•Ï”main_name‚ÉŠi”[‚·‚éD
+		'ã‚¯ãƒªãƒƒã‚¯ã—ãŸåå‰ã‚’å¤‰æ•°main_nameã«æ ¼ç´ã™ã‚‹ï¼
 		main_name=document.all("namaeMenu" & allNo).innerText
 		call maru_move(allNo)
 		call kazoku()
@@ -104,7 +104,7 @@ sub jyoutai()
 	dim jyoutaistring
 	dim jyoutainode
 
-	'‘I‘ğ‚³‚ê‚½–¼‘O‚Éˆê’v‚·‚é“à—e‚ğŒŸõ‚µC‚»‚ê‚¼‚ê‚Ì€–Ú‚ğ•\¦‚·‚éD
+	'é¸æŠã•ã‚ŒãŸåå‰ã«ä¸€è‡´ã™ã‚‹å†…å®¹ã‚’æ¤œç´¢ã—ï¼Œãã‚Œãã‚Œã®é …ç›®ã‚’è¡¨ç¤ºã™ã‚‹ï¼
 
 	jyoutaistring="//setai[namae='" & main_name & "']/jyoukyou/nennrei"
 
@@ -137,8 +137,8 @@ sub jyoutai()
 	tanntoumei.innerHTML=jyoutainode(0).text
 end sub
 
-'w’è‚³‚ê‚½–¼‘O‚ÉŠY“–‚·‚é’n}ã‚ÌˆÊ’u‚ÉCœ‚ğˆÚ“®‚·‚éD
-'“¯‚É–¼‘O‚ÉŠY“–‚·‚él•¨‚Ì‰æ‘œ‚ğ•\¦‚·‚éD
+'æŒ‡å®šã•ã‚ŒãŸåå‰ã«è©²å½“ã™ã‚‹åœ°å›³ä¸Šã®ä½ç½®ã«ï¼Œâ—ã‚’ç§»å‹•ã™ã‚‹ï¼
+'åŒæ™‚ã«åå‰ã«è©²å½“ã™ã‚‹äººç‰©ã®ç”»åƒã‚’è¡¨ç¤ºã™ã‚‹ï¼
 sub maru_move(banngou)
 	personalImage.style.visibility="visible"
 	personalImage.src=nameGazo(banngou)
@@ -172,8 +172,8 @@ sub kazoku()
 	dim myZokugara
 	dim myName
 
-	'•\‚ªŒ`¬‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğallNO‚Ì’l‚Å”»•Ê‚µ‚Ä‚¢‚éD
-	'•\‚ªŒ`¬‚³‚ê‚Ä‚¢‚½‚çˆê“x‘S‚Ä‚Ìs‚ğíœ‚·‚éD
+	'è¡¨ãŒå½¢æˆã•ã‚Œã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’allNOã®å€¤ã§åˆ¤åˆ¥ã—ã¦ã„ã‚‹ï¼
+	'è¡¨ãŒå½¢æˆã•ã‚Œã¦ã„ãŸã‚‰ä¸€åº¦å…¨ã¦ã®è¡Œã‚’å‰Šé™¤ã™ã‚‹ï¼
 	
 	if hannteiNo=2525 then
 		for i=0 to zokugaranode.length
@@ -181,34 +181,34 @@ sub kazoku()
 		next
 	end if	
 	
-	'TABLE‚ÉV‚µ‚¢siTRj‚ğì¬‚µArowsƒRƒŒƒNƒVƒ‡ƒ“‚É’Ç‰Á‚·‚éD
-	'-1 ‚ÍinsertRow‚ÌƒfƒtƒHƒ‹ƒg’l‚ÅAtr‚ğcellsƒRƒŒƒNƒVƒ‡ƒ“‚ÌÅŒã‚É’Ç‰Á‚·‚éD
+	'TABLEã«æ–°ã—ã„è¡Œï¼ˆTRï¼‰ã‚’ä½œæˆã—ã€rowsã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã«è¿½åŠ ã™ã‚‹ï¼
+	'-1 ã¯insertRowã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã§ã€trã‚’cellsã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã®æœ€å¾Œã«è¿½åŠ ã™ã‚‹ï¼
 
 	set myRow=myTable.insertRow(-1)
 
-	'‚»‚ê‚¼‚ê‚Ìƒe[ƒuƒ‹‚ÉŠÖ‚·‚é—v‘f‚ğ¶¬‚µA‚Ü‚½‚»‚Ì“à—e‚ğ¶¬‚·‚éD
+	'ãã‚Œãã‚Œã®ãƒ†ãƒ¼ãƒ–ãƒ«ã«é–¢ã™ã‚‹è¦ç´ ã‚’ç”Ÿæˆã—ã€ã¾ãŸãã®å†…å®¹ã‚’ç”Ÿæˆã™ã‚‹ï¼
 	set myCell1=document.createElement("th")
 	set myCell2=document.createElement("th")
 
-	set myKoumoku1=document.createTextNode("‘±•¿")
-	set myKoumoku2=document.createTextNode("–¼‘O")
+	set myKoumoku1=document.createTextNode("ç¶šæŸ„")
+	set myKoumoku2=document.createTextNode("åå‰")
 
-	'¶¬‚µ‚½—v‘f‚ÉA“à—e‚ğ’Ç‰Á‚·‚éD
+	'ç”Ÿæˆã—ãŸè¦ç´ ã«ã€å†…å®¹ã‚’è¿½åŠ ã™ã‚‹ï¼
 	myCell1.appendChild(myKoumoku1)
 	myCell2.appendChild(myKoumoku2)
 
-	'‚»‚ê‚¼‚ê‚Ì“à—e‚ğ’Ç‰Á‚µ‚½—v‘f‚ğA¡“x‚Ís‚É’Ç‰Á‚·‚éD
+	'ãã‚Œãã‚Œã®å†…å®¹ã‚’è¿½åŠ ã—ãŸè¦ç´ ã‚’ã€ä»Šåº¦ã¯è¡Œã«è¿½åŠ ã™ã‚‹ï¼
 	myRow.appendChild(myCell1)
 	myRow.appendChild(myCell2)
  		
-	'Šeƒ^ƒO‚Ì“à—e‚ğ—\‚ß‘S‚Ä“®“I‚È”z—ñ•Ï”‚ÉŠi”[‚µ‚Ä‚¨‚­D
+	'å„ã‚¿ã‚°ã®å†…å®¹ã‚’äºˆã‚å…¨ã¦å‹•çš„ãªé…åˆ—å¤‰æ•°ã«æ ¼ç´ã—ã¦ãŠãï¼
 	kazokustring="family/setai[namae='" & main_name & "']/kazoku/jyuuninn/namae"
 	set kazokunode=xmldoc.selectNodes(kazokustring)
 		
 	zokugarastring="family/setai[namae='" & main_name & "']/kazoku/jyuuninn/zokugara"
     set zokugaranode=xmldoc.selectNodes(zokugarastring)
  	
-	'ƒm[ƒh‚ÌŒÂ”•ªAtd—v‘f‚â‚»‚Ì“à—e‚ğ¶¬‚µs‚É’Ç‰Á‚µ‚Ä‚¢‚­D	
+	'ãƒãƒ¼ãƒ‰ã®å€‹æ•°åˆ†ã€tdè¦ç´ ã‚„ãã®å†…å®¹ã‚’ç”Ÿæˆã—è¡Œã«è¿½åŠ ã—ã¦ã„ãï¼	
 	for i=0 to kazokunode.length-1
 			
 		set myRow=myTable.insertRow(-1)
@@ -225,12 +225,12 @@ sub kazoku()
 		myRow.appendChild(myCell02)
 	next
 
-		'‚±‚Ì”Ô†‚Å‰æ–Êã‚É•\‚ª¶¬‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğ”»•Ê‚·‚éB
+		'ã“ã®ç•ªå·ã§ç”»é¢ä¸Šã«è¡¨ãŒç”Ÿæˆã•ã‚Œã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’åˆ¤åˆ¥ã™ã‚‹ã€‚
 		hannteiNo=2525
 
 end sub
 
-'’n}ã‚Åœ‚ª“_–Å‚·‚éˆ—B
+'åœ°å›³ä¸Šã§â—ãŒç‚¹æ»…ã™ã‚‹å‡¦ç†ã€‚
 sub blink()
 	select case col
 		case 1

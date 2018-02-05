@@ -7,7 +7,7 @@
 .frame1{position:absolute;border-width:thick;border-style:double;border-color:gray;width:150;overflow:auto;font-size:11pt;padding:3;}
 .frame2{position:absolute;margin-top:0;margin-left:200;visibility:hidden;}
 th{paddig:3;background-color:silver;width:100;}
-td{font-family:‚l‚r ‚o–¾’©,serif;font-size:11pt;line-height:15pt;padding:3;}
+td{font-family:ï¼­ï¼³ ï¼°æ˜æœ,serif;font-size:11pt;line-height:15pt;padding:3;}
 -->
 </style>
 <script type="text/vbscript">
@@ -29,11 +29,11 @@ sub window_onload()
 		redim eventNaiyou(31)
 		
 	
-		'•¡”‚ÌXML•¶‘‚ÉƒAƒNƒZƒX‚µ‚Ä—v‘f‚Ì“à—e‚ğæ‚èo‚·i‚±‚±‚Å‚Íƒtƒ@ƒCƒ‹”31ŒÂi1ƒ–Œjj
+		'è¤‡æ•°ã®XMLæ–‡æ›¸ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦è¦ç´ ã®å†…å®¹ã‚’å–ã‚Šå‡ºã™ï¼ˆã“ã“ã§ã¯ãƒ•ã‚¡ã‚¤ãƒ«æ•°31å€‹ï¼ˆ1ãƒ¶æœˆï¼‰ï¼‰
 		for i=1 to 31
 			xmldoc.load("event" & i & ".xml")
-			set nennTukihiNode=xmldoc.getElementsByTagName("”NŒ“ú")
-			set eventNode=xmldoc.getElementsByTagName("ƒCƒxƒ“ƒgî•ñ")
+			set nennTukihiNode=xmldoc.getElementsByTagName("å¹´æœˆæ—¥")
+			set eventNode=xmldoc.getElementsByTagName("ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ±")
 			if nennTukihiNode.length<=0 then exit for
 			eventNaiyou(i)=eventNode(0).text
 		 	nennTukihi=nennTukihi & "<div style='cursor:hand' id='tukiMenu" & i & "'" & " onclick='go(" & i & ")'>" & nennTukihiNode(0).text & "</div>"
@@ -41,19 +41,19 @@ sub window_onload()
 		next
 			tukihi.innerHTML=nennTukihi
 
-			'‚»‚Ì“ú‚ÌC”N‚ÆŒ‚Æ“ú‚ğ•ÊŒÂ‚Éæ‚èo‚µ˜AŒ‹‚³‚¹‚éD
+			'ãã®æ—¥ã®ï¼Œå¹´ã¨æœˆã¨æ—¥ã‚’åˆ¥å€‹ã«å–ã‚Šå‡ºã—é€£çµã•ã›ã‚‹ï¼
 			nenn_tuki_hi= now()
 			nenn=year(nenn_tuki_hi)
 			tuki=month(nenn_tuki_hi)
 			hi=day(nenn_tuki_hi)
-			dummyNennTukiHi=nenn & "”N" & tuki & "Œ" & hi & "“ú"
+			dummyNennTukiHi=nenn & "å¹´" & tuki & "æœˆ" & hi & "æ—¥"
 			
 			for i=1 to no
 
-				'˜AŒ‹‚³‚¹‚½‚»‚Ì“ú‚Ì”NŒ“ú‚ÆC•\¦‚³‚ê‚Ä‚¢‚é”NŒ“ú‚ªˆê’v‚·‚é‚©‚Ç‚¤‚©‚ğ”»•Ê‚·‚éD
+				'é€£çµã•ã›ãŸãã®æ—¥ã®å¹´æœˆæ—¥ã¨ï¼Œè¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹å¹´æœˆæ—¥ãŒä¸€è‡´ã™ã‚‹ã‹ã©ã†ã‹ã‚’åˆ¤åˆ¥ã™ã‚‹ï¼
 				hannbetu=strcomp(document.all("tukiMenu" & i).innerText,dummyNennTukiHi)
 			
-				'ˆê’v‚·‚ê‚Î‚»‚Ì“ú‚Ì”wŒiF‚ğ‹âF‚É‚·‚éD
+				'ä¸€è‡´ã™ã‚Œã°ãã®æ—¥ã®èƒŒæ™¯è‰²ã‚’éŠ€è‰²ã«ã™ã‚‹ï¼
 				if hannbetu=0 then
 					document.all("tukiMenu" & i).style.backgroundColor="silver"
 					naiyou.style.visibility="visible"
@@ -72,7 +72,7 @@ sub go(allNo)
 	next
 		document.all("tukiMenu" & allNo).style.backgroundColor="silver"
 
-		'ƒ}ƒEƒX‚ÌƒNƒŠƒbƒN‚É‰‚¶‚ÄC•Ï”allNo‚É‘Î‰‚·‚é“à—e‚ğ•\¦‚·‚éD
+		'ãƒã‚¦ã‚¹ã®ã‚¯ãƒªãƒƒã‚¯ã«å¿œã˜ã¦ï¼Œå¤‰æ•°allNoã«å¯¾å¿œã™ã‚‹å†…å®¹ã‚’è¡¨ç¤ºã™ã‚‹ï¼
 		myDate.innerHTML=document.all("tukiMenu" & allNo).innerText
 		myNaiyou.innerHTML=eventNaiyou(allNo)
 end sub
@@ -90,10 +90,10 @@ end sub
 <div id="naiyou" class="frame2">
 <table border="1" width="250">
 	<tr>
-	<th>”NŒ“ú</th><td colspan="3"><span id="myDate"></span></td>
+	<th>å¹´æœˆæ—¥</th><td colspan="3"><span id="myDate"></span></td>
 	</tr>
 	<tr>
-	<th>ƒCƒxƒ“ƒgî•ñ</th>
+	<th>ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ±</th>
 	<td colspan="3"><span id="myNaiyou"></span></td>
 	</tr>
 </table>

@@ -13,11 +13,11 @@ option explicit
 	dim yomi,namae
 
 sub window_onload()
-	'XML DOMƒIƒuƒWƒFƒNƒg‚ğg‚¦‚é‚æ‚¤‚É‚·‚éi‚¨–ñ‘©jD
+	'XML DOMã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹ï¼ˆãŠç´„æŸï¼‰ï¼
 	set xmldoc=CreateObject("Microsoft.XMLDom")
 	xmldoc.async=false
-	'u“cÉ‘ºv‚ğƒ‹[ƒg—v‘f‚É‚ÂXML‚Ìƒeƒ“ƒvƒŒ[ƒg‚ğì‚éD
-	xmldoc.loadXML("<?xml version='1.0'?><“cÉ‘º/>")
+	'ã€Œç”°èˆæ‘ã€ã‚’ãƒ«ãƒ¼ãƒˆè¦ç´ ã«æŒã¤XMLã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã‚’ä½œã‚‹ï¼
+	xmldoc.loadXML("<?xml version='1.0'?><ç”°èˆæ‘/>")
 	xmlData.textbox1.value=""
 	call alldel()
 end sub
@@ -28,7 +28,7 @@ sub alldel()
 end sub
 
 sub datainn()
-	'—v‘f‚ÌŠÔ‚É“ü‚ê‚é‰üs‚ğ¶¬‚·‚éD
+	'è¦ç´ ã®é–“ã«å…¥ã‚Œã‚‹æ”¹è¡Œã‚’ç”Ÿæˆã™ã‚‹ï¼
 	set space1=xmldoc.createTextNode(chr(13))
 	set space2=xmldoc.createTextNode(chr(13))
 	set space3=xmldoc.createTextNode(chr(13))
@@ -41,30 +41,30 @@ sub datainn()
 	set space10=xmldoc.createTextNode(chr(13))
 	set space11=xmldoc.createTextNode(chr(13))
 	
-	'‚»‚ê‚¼‚ê‚Ì—v‘f‚ğ¶¬‚µŒã‚É‰üs‚ğ“ü‚ê‚éD
+	'ãã‚Œãã‚Œã®è¦ç´ ã‚’ç”Ÿæˆã—å¾Œã«æ”¹è¡Œã‚’å…¥ã‚Œã‚‹ï¼
 	xmldoc.documentElement.appendChild(space1)
 
-	set mainElement=xmldoc.createElement("”í•ÛŒ¯Ò")
+	set mainElement=xmldoc.createElement("è¢«ä¿é™ºè€…")
 	mainElement.appendChild(space2)
 	xmldoc.documentElement.appendChild(mainElement)
 	xmldoc.documentElement.appendChild(space3)
 
-	set nushielement=xmldoc.createElement("¢‘Ñå")
+	set nushielement=xmldoc.createElement("ä¸–å¸¯ä¸»")
 	mainElement.appendChild(nushielement)
 	mainElement.appendChild(space4)
 	nushiElement.appendChild(space5)
 	
-	set yomielement=xmldoc.createElement("‚Ó‚è‚ª‚È")
+	set yomielement=xmldoc.createElement("ãµã‚ŠãŒãª")
 	nushielement.appendChild(yomielement)
 	nushiElement.appendChild(space6)
 	yomiElement.appendChild(space7)
 
-	set namaeelement=xmldoc.createElement("–¼")
+	set namaeelement=xmldoc.createElement("æ°å")
 	nushielement.appendChild(namaeelement)
 	nushiElement.appendChild(space8)
 	namaeElement.appendChild(space9)
 	
-	   '¶¬‚µ‚½—v‘f‚É“à—e‚ğ’Ç‰Á‚·‚éD
+	   'ç”Ÿæˆã—ãŸè¦ç´ ã«å†…å®¹ã‚’è¿½åŠ ã™ã‚‹ï¼
 		yomi=xmlData.kyssyomi.value
 		set mytext=xmldoc.createTextNode(yomi)
 		yomielement.appendChild(mytext)
@@ -88,11 +88,11 @@ sub styleGo()
 	stylesheet.async=false
 
 	if len(xmlData.textbox1.value)<=0 then
-		msgbox "•\¦‚Å‚«‚éƒf[ƒ^‚ª‚ ‚è‚Ü‚¹‚ñD"
+		msgbox "è¡¨ç¤ºã§ãã‚‹ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ï¼"
 		exit sub
 	else
 
-		'ƒeƒLƒXƒgƒGƒŠƒA“à‚É•\¦‚³‚ê‚½XML•¶‘‚ÉXSL‚ğŠÖ˜A•t‚¯‚Ä•\¦‚·‚éD
+		'ãƒ†ã‚­ã‚¹ãƒˆã‚¨ãƒªã‚¢å†…ã«è¡¨ç¤ºã•ã‚ŒãŸXMLæ–‡æ›¸ã«XSLã‚’é–¢é€£ä»˜ã‘ã¦è¡¨ç¤ºã™ã‚‹ï¼
 		xmldoc2.loadXML(xmlData.textbox1.value)
 		stylesheet.load("sample49.xsl")
 		set mado=window.open("")
@@ -106,16 +106,16 @@ end sub
 </head>
 <body>
 
-<button style="position:absolute;font-family:‚l‚r ‚o–¾’©;font-size:11pt;margin-left:300;margin-top:20" onclick="datainn()">‚n‚j</button>
+<button style="position:absolute;font-family:ï¼­ï¼³ ï¼°æ˜æœ;font-size:11pt;margin-left:300;margin-top:20" onclick="datainn()">ï¼¯ï¼«</button>
 
-<button style="position:absolute;font-family:‚l‚r ‚o–¾’©;font-size:11pt;margin-left:350;margin-top:20" onclick="styleGo()">Š®—¹</button>
+<button style="position:absolute;font-family:ï¼­ï¼³ ï¼°æ˜æœ;font-size:11pt;margin-left:350;margin-top:20" onclick="styleGo()">å®Œäº†</button>
 
 <form name="xmlData">
-“Ç‚İF<input type="text" name="kyssyomi" size="40" " style="ime-mode:active" />
+èª­ã¿ï¼š<input type="text" name="kyssyomi" size="40" " style="ime-mode:active" />
 <br />
-–¼‘OF<input type="text" name="kyssnamae" size="40" style="ime-mode:active"/>
+åå‰ï¼š<input type="text" name="kyssnamae" size="40" style="ime-mode:active"/>
 <br />
-<textarea style="font-family:‚l‚r ‚o–¾’©;font-size:11pt;margin-left:10;margin-top:30" id="textbox1" rows="20" cols="80"></textarea>
+<textarea style="font-family:ï¼­ï¼³ ï¼°æ˜æœ;font-size:11pt;margin-left:10;margin-top:30" id="textbox1" rows="20" cols="80"></textarea>
 </form>
 
 </body>
