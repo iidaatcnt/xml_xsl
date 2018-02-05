@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="sample.xsl" type="text/xsl" ?>
- <books>
-   <title>�N</title>
-   <title>��</title>
-   <title>�]</title>
-   <title>��</title>
+<books>
+   <title genre="travel">東北地方ガイドブック</title>
+   <title genre="computer">標準XML 完全解説 改訂版</title>
+   <title genre="ecology">オゾン層破壊と紫外線</title>
+   <title genre="hobby">入門デジタルカメラ撮影術</title>
  </books>

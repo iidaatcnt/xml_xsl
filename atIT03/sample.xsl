@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="shift_jis" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" > 
   <xsl:template match="/">
@@ -9,11 +9,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
      </html>
    </xsl:template>
    <xsl:template match="books">
-     <h3>繰り返し処理による一覧</h3>
+     <h3>繧ｳ繝ｳ繝斐Η繝ｼ繧ｿ繝ｼ髢｢騾｣譖ｸ邀�</h3>
      <ul>
-       <xsl:for-each select="title">
-         <li><xsl:value-of select="."/></li>
-       </xsl:for-each>
+       <xsl:apply-templates/>
      </ul>
+   </xsl:template>
+   <xsl:template match="title">
+     <xsl:if test="@genre='computer'">
+       <li><xsl:value-of select="."/></li>
+     </xsl:if>
    </xsl:template>
  </xsl:stylesheet>
