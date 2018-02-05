@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+
 <xsl:template match="/">
-<html lang="ja">
-<head>
-<title><xsl:value-of select="全体/題名" /></title>
-<style type="text/css">
-strong{color:red}
-table{border:solid 1pt black;}
-th{border:solid 1pt gray;padding:2;}
-td{border:solid 1pt gray;padding:2;}
-</style>
-</head>
-<body>
-<xsl:apply-templates select="全体/概要" />
-<xsl:apply-templates select="全体/詳細" />
-</body>
-</html>
+	<html lang="ja">
+		<head>
+		<title><xsl:value-of select="全体/題名" /></title>
+			<style type="text/css">
+			strong{color:red}
+			table{border:solid 1pt black;}
+			th{border:solid 1pt gray;padding:2;}
+			td{border:solid 1pt gray;padding:2;}
+			</style>
+		</head>
+		<body>
+			<xsl:apply-templates select="全体/概要" />
+			<xsl:apply-templates select="全体/詳細" />
+		</body>
+	</html>
 </xsl:template>
+
 <xsl:template match="全体/概要">
 	<xsl:value-of select="タイトル/@サブタイトル" />
 	<h1><xsl:value-of select="タイトル" /></h1>
 	<img>
 		<xsl:attribute name="src">
-		<xsl:value-of select="図" />
+			<xsl:value-of select="図" />
 		</xsl:attribute>
 	</img>
 	<xsl:apply-templates />
 </xsl:template>
+
 <xsl:template match="コピー">
-	<h2><xsl:apply-templates /></h2>
+	<h2><xsl:apply-templates select="."/></h2>
 </xsl:template>
+
 <xsl:template match="強調">
-	<strong><xsl:value-of /></strong>
+	<strong><xsl:value-of select="."/></strong>
 </xsl:template>
+
 <xsl:template match="リード">
-	<p><xsl:apply-templates /></p>
+	<p><xsl:apply-templates select="."/></p>
 </xsl:template>
 
 <xsl:template match="全体/詳細">
 	<xsl:element name="div">
-		<xsl:apply-templates />
+		<xsl:apply-templates select="."/>
 	</xsl:element>
 </xsl:template>
+
 <xsl:template match="全体/詳細/仕様">
 <table>
 	<tr>
@@ -76,14 +81,16 @@ td{border:solid 1pt gray;padding:2;}
 	</tr>
 </table>
 </xsl:template>
+
 <xsl:template match="全体/詳細/目次">
 	<h3>目次</h3>	
 	<ol>
 	<xsl:for-each select="項目">
-		<li><xsl:value-of /></li>
+		<li><xsl:value-of select="."/></li>
 	</xsl:for-each>
 	</ol>
 </xsl:template>
+
 <xsl:template match="全体/詳細/リンク">
 	<h3><xsl:value-of select="小見出し" /></h3>
 	<xsl:for-each select="リンク先">
@@ -92,12 +99,14 @@ td{border:solid 1pt gray;padding:2;}
 			<xsl:attribute name="href">
 				<xsl:value-of select="@url" />
 			</xsl:attribute>
-				<xsl:value-of />
+				<xsl:value-of select="."/>
 		</xsl:element>
 		</div>
 	</xsl:for-each>
 </xsl:template>
+
 <xsl:template match="text()">
-	<xsl:value-of />
+	<xsl:value-of select="."/>
 </xsl:template>	
+
 </xsl:stylesheet>
