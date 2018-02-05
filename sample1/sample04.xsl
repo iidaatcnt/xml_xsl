@@ -2,16 +2,16 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
 	<xsl:template match="/">
-		<html lang="ja">
-		<head><title><xsl:value-of select="全体/題名" /></title></head>
-		<body><xsl:apply-templates select="全体" /></body>
-		</html>
+		<HTML lang="ja">
+		<HEAD><TITLE><xsl:value-of select="全体/題名" /></TITLE></HEAD>
+		<BODY><xsl:apply-templates select="全体" /></BODY>
+		</HTML>
 	</xsl:template>
 	
 	<xsl:template match="全体">
 		<xsl:for-each select="本文">
-			<h2><xsl:value-of select="見出し" /></h2>
-			<p><xsl:apply-templates select="段落" /></p>
+			<H2><xsl:value-of select="見出し" /></H2>
+			<P><xsl:apply-templates select="段落" /></P>
 		</xsl:for-each>
 	</xsl:template>
 
@@ -20,7 +20,7 @@
 	</xsl:template>
 
 	<xsl:template match="強調">
-		<strong><xsl:apply-templates /></strong>
+		<STRONG><xsl:apply-templates /></STRONG>
 	</xsl:template>
 
 	<xsl:template match="text()">
