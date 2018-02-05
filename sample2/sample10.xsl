@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
 <xsl:template match="/">
-<html lang="ja">
-<head>
-<title><xsl:value-of select="全体/題名" /></title>
-</head>
-<body><xsl:apply-templates select="全体/本文" /></body>
-</html>
+	<HTML lang="ja">
+	<HEAD>
+	<TITLE><xsl:value-of select="全体/題名" /></TITLE>
+	</HEAD>
+	<BODY><xsl:apply-templates select="全体/本文" /></BODY>
+	</HTML>
 </xsl:template>
 <xsl:template match="全体/本文">
 	<xsl:for-each select="段落">
@@ -16,11 +15,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 	</xsl:for-each>
 </xsl:template>
 	<xsl:template match="段落/リスト">
-		<ol>
+		<OL>
 			<xsl:for-each select="項目">
-			<li><xsl:value-of select="."/></li>
+			<LI><xsl:value-of select="."/></LI>
 			</xsl:for-each>
-		</ol>
+		</OL>
 </xsl:template>
 <xsl:template match="text()">
 	<xsl:value-of select="."/>
