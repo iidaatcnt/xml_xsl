@@ -19,15 +19,15 @@ dim xmldoc,i,allNo
 dim headerNode,midashi
 dim headerName
 sub window_onload()
-	'XML DOMƒIƒuƒWƒFƒNƒg‚ğg‚¦‚é‚æ‚¤‚É‚·‚éD(‚¨–ñ‘©) 
+	'XML DOMã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹ï¼(ãŠç´„æŸ) 
 	set xmldoc=createObject("Microsoft.XMLDom")
 	xmldoc.async=false
 	xmldoc.load("sample46.xml")
 	
-	'u‘åŒ©o‚µv‚Ì“à—e‚ÉƒAƒNƒZƒX‚·‚éD
-	set headerNode=xmldoc.getElementsByTagName("‘åŒ©o‚µ")
+	'ã€Œå¤§è¦‹å‡ºã—ã€ã®å†…å®¹ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ï¼
+	set headerNode=xmldoc.getElementsByTagName("å¤§è¦‹å‡ºã—")
 
-	'u‘åŒ©o‚µv‚ª‚ ‚ê‚ÎC‚»‚Ì“à—e‚ğ•Ï”midashi‚ÉŠi”[‚·‚éD
+	'ã€Œå¤§è¦‹å‡ºã—ã€ãŒã‚ã‚Œã°ï¼Œãã®å†…å®¹ã‚’å¤‰æ•°midashiã«æ ¼ç´ã™ã‚‹ï¼
 	if headerNode.length>0 then
 		for i=0 to headerNode.length-1
 			midashi=midashi & "<div style='cursor:hand' id='headerID" & i & "'" & " onclick='headerGo(" & i & ")'>" & headerNode(i).text & "</div>"
@@ -35,18 +35,18 @@ sub window_onload()
 	else
 		exit sub
 	end if
-			'‘åŒ©o‚µ‚ğ•\¦‚·‚éD
+			'å¤§è¦‹å‡ºã—ã‚’è¡¨ç¤ºã™ã‚‹ï¼
 			headerMenu.innerHTML=midashi
 end sub
 
 sub headerGo(allNo)
-	'‘åŒ©o‚µ‚ğƒNƒŠƒbƒN‚µ‚½‚Æ‚«‚Ì”wŒiF‚Ìİ’èD
+	'å¤§è¦‹å‡ºã—ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸã¨ãã®èƒŒæ™¯è‰²ã®è¨­å®šï¼
 	for i=0 to headerNode.length-1
 		document.all("headerID" & i).style.backgroundColor="white"
 	next
 		document.all("headerID" & allNo).style.backgroundColor="silver"
 
-		'ƒNƒŠƒbƒN‚µ‚½‘åŒ©o‚µ‚ğ•Ï”headerName‚ÉŠi”[‚·‚éD
+		'ã‚¯ãƒªãƒƒã‚¯ã—ãŸå¤§è¦‹å‡ºã—ã‚’å¤‰æ•°headerNameã«æ ¼ç´ã™ã‚‹ï¼
 		headerName=document.all("headerID" & allNo).innerText
 		call headerSearch(headerName)
 end sub
@@ -57,11 +57,11 @@ sub headerSearch(headerName)
 	header2Menu.innerHTML=""
 	honnbunn.innerHTML=""
 
-	'‘åŒ©o‚µ‚ğŠi”[‚µ‚½•Ï”headerName‚ğŒŸõƒL[‚Æ‚µ‚ÄC‚»‚ê‚¼‚ê‚Ì—v‘f‚Ì“à—e‚ğæ‚èo‚·D
-	honnbunnString="ƒ}ƒjƒ…ƒAƒ‹/“à—e/Í[‘åŒ©o‚µ='" & headerName & "'" & "]/–{•¶"
+	'å¤§è¦‹å‡ºã—ã‚’æ ¼ç´ã—ãŸå¤‰æ•°headerNameã‚’æ¤œç´¢ã‚­ãƒ¼ã¨ã—ã¦ï¼Œãã‚Œãã‚Œã®è¦ç´ ã®å†…å®¹ã‚’å–ã‚Šå‡ºã™ï¼
+	honnbunnString="ãƒãƒ‹ãƒ¥ã‚¢ãƒ«/å†…å®¹/ç« [å¤§è¦‹å‡ºã—='" & headerName & "'" & "]/æœ¬æ–‡"
 	set honnbunnNode=xmldoc.selectNodes(honnbunnString)
 
-	patternstring="ƒ}ƒjƒ…ƒAƒ‹/“à—e/Í[‘åŒ©o‚µ='" & headerName & "'" & "]/¬Œ©o‚µ"
+	patternstring="ãƒãƒ‹ãƒ¥ã‚¢ãƒ«/å†…å®¹/ç« [å¤§è¦‹å‡ºã—='" & headerName & "'" & "]/å°è¦‹å‡ºã—"
 	set selNode=xmldoc.selectNodes(patternstring)
 
 	if honnbunnNode.length>0 then 
@@ -70,11 +70,11 @@ sub headerSearch(headerName)
 		exit sub
 	end if
 
-	'¬Œ©o‚µ‚ª‚È‚¢ê‡‚ÍƒƒbƒZ[ƒW‚ğ•\¦‚³‚¹‚éD
+	'å°è¦‹å‡ºã—ãŒãªã„å ´åˆã¯ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã•ã›ã‚‹ï¼
 	if selNode.length>0 then 
 			komidashi=selNode(0).text
 	else
-			komidashi="<b style='color:red'>" & "‚±‚ÌÍ‚É‚Í¬Œ©o‚µ‚ ‚è‚Ü‚¹‚ñD" & "</b>"
+			komidashi="<b style='color:red'>" & "ã“ã®ç« ã«ã¯å°è¦‹å‡ºã—ã‚ã‚Šã¾ã›ã‚“ï¼" & "</b>"
 	end if
 	
 		honnbunn.innerHTML=honnbunnNaiyou
@@ -86,10 +86,10 @@ end sub
 </script>
 </head>
 <body>
-<b style="position:absolute">¤‘åŒ©o‚µ‚ª•\¦‚³‚ê‚Ä‚¢‚Ü‚·DƒNƒŠƒbƒN‚µ‚Ä‰º‚³‚¢D</b>
+<b style="position:absolute">â–½å¤§è¦‹å‡ºã—ãŒè¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã™ï¼ã‚¯ãƒªãƒƒã‚¯ã—ã¦ä¸‹ã•ã„ï¼</b>
 <div class="frame1" id="headerMenu"></div>
-<div class="frame2" id="header2Menu">¬Œ©o‚µ•\¦‚³‚ê‚Ü‚·D</div>
-<div class="frame3" id="honnbunn">–{•¶‚Ì“à—e‚ª•\¦‚³‚ê‚Ü‚·D</div>
+<div class="frame2" id="header2Menu">å°è¦‹å‡ºã—è¡¨ç¤ºã•ã‚Œã¾ã™ï¼</div>
+<div class="frame3" id="honnbunn">æœ¬æ–‡ã®å†…å®¹ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ï¼</div>
 </body>
 </html>
 </xsl:template>
