@@ -4,7 +4,7 @@
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title>ŠGè†</title>
+<title>çµµæ‰‹ç´™</title>
 <style type="text/css">
 body
 {
@@ -27,15 +27,15 @@ dim allmoji,kyssseasonmoji,allgazou
 sub window_onload()
 	no=0
 	banngou=0
-	gonoku.value="v‚¢o‚Ì"
-	nananoku.value="•ê‚Í˜V‚¢‚½‚è"
-	gonoku2.value="ƒAƒPƒr‚ÌÀ"
+	gonoku.value="æ€ã„å‡ºã®"
+	nananoku.value="æ¯ã¯è€ã„ãŸã‚Š"
+	gonoku2.value="ã‚¢ã‚±ãƒ“ã®å®Ÿ"
 
 	for i=0 to 7
 		document.all("data" & i).value=document.all("kyss" & i).innerText
 	next
 
-	kyss5.innerHTML="TelF" & data5.value
+	kyss5.innerHTML="Telï¼š" & data5.value
 
 	allmoji=""
 
@@ -46,11 +46,11 @@ sub window_onload()
 
 	xmldoc.load("haiku.xml")
 
-	   set kisetu=xmldoc.getElementsByTagName("‹Gß")
+	   set kisetu=xmldoc.getElementsByTagName("å­£ç¯€")
 		kisetu_len=kisetu.length-1
 
 		for j=0 to kisetu_len
-		kisetumoji=kisetumoji & "<span style='cursor:hand' title='¸Ø¯¸‚µ‚Ä‚­‚¾‚³‚¢' id='kysskisetu" & j & "'" & " onclick='kisetuChange(" & j & ")'" & ">" & kisetu(j).text & "</span>" & "<br>"
+		kisetumoji=kisetumoji & "<span style='cursor:hand' title='ï½¸ï¾˜ï½¯ï½¸ã—ã¦ãã ã•ã„' id='kysskisetu" & j & "'" & " onclick='kisetuChange(" & j & ")'" & ">" & kisetu(j).text & "</span>" & "<br>"
 		
 	next
 		
@@ -60,13 +60,13 @@ sub window_onload()
 
 	select case j
 		case 0
-			set selnode=xmldoc.getElementsByTagName("t‰æ‘œ")
+			set selnode=xmldoc.getElementsByTagName("æ˜¥ç”»åƒ")
 		case 1
-			set selnode=xmldoc.getElementsByTagName("‰Ä‰æ‘œ")
+			set selnode=xmldoc.getElementsByTagName("å¤ç”»åƒ")
 		case 2
-			set selnode=xmldoc.getElementsByTagName("H‰æ‘œ")
+			set selnode=xmldoc.getElementsByTagName("ç§‹ç”»åƒ")
 		case 3
-			set selnode=xmldoc.getElementsByTagName("“~‰æ‘œ")
+			set selnode=xmldoc.getElementsByTagName("å†¬ç”»åƒ")
 		case else
 			exit sub
 	end select
@@ -74,7 +74,7 @@ sub window_onload()
 		redim gazouurl(selnode.length)
 		nagasa=selnode.length-1
 	for i=0 to nagasa
-		kyssgazou=kyssgazou & "<span style='cursor:hand' title='¸Ø¯¸‚µ‚Ä‚­‚¾‚³‚¢' id='gazou" & i & "'" & " onclick='colorChange(" & i & ")'" & ">" & selnode(i).text & "</span>" & "<br>"
+		kyssgazou=kyssgazou & "<span style='cursor:hand' title='ï½¸ï¾˜ï½¯ï½¸ã—ã¦ãã ã•ã„' id='gazou" & i & "'" & " onclick='colorChange(" & i & ")'" & ">" & selnode(i).text & "</span>" & "<br>"
 		gazouurl(i)=selnode(i).getAttribute("url")
 	next
 		illust.src=gazouurl(0)
@@ -103,8 +103,8 @@ end sub
 
 sub kisetugazou(kyssseasonmoji)
 	select case kyssseasonmoji
-		case "t","‰Ä","“~"
-			msgbox "H‚É§ì‚µ‚Ü‚µ‚½‚Ì‚ÅCH‚Ì‰æ‘œ‚µ‚©—pˆÓ‚µ‚Ä‚¨‚è‚Ü‚¹‚ñI"
+		case "æ˜¥","å¤","å†¬"
+			msgbox "ç§‹ã«åˆ¶ä½œã—ã¾ã—ãŸã®ã§ï¼Œç§‹ã®ç”»åƒã—ã‹ç”¨æ„ã—ã¦ãŠã‚Šã¾ã›ã‚“ï¼"
 				for j=0 to kisetu_len
 					document.all("kysskisetu" & j).style.backgroundcolor="white"
 				next
@@ -178,14 +178,14 @@ sub gogo()
 	for k=0 to 7
 		document.all("kyss" & k).innerHTML=document.all("data" & k).value
 	next
-		kyss5.innerHTML="TelF" & data5.value
+		kyss5.innerHTML="Telï¼š" & data5.value
 		timer1=window.setinterval("printmoji()",30)
 end sub
 
 sub go()
 	dim mado
 	select case innsatu.value
-		case "ˆóü‘OŠm”F‚Æˆóü‚Ìd•û"
+		case "å°åˆ·å‰ç¢ºèªã¨å°åˆ·ã®ä»•æ–¹"
 			mado=showModelessDialog("howtoprint.htm",window,"status:false;dialogWidth:370px;dialogHeight:300px")
 			gamenn.style.display="none"
 			with letter.style
@@ -194,7 +194,7 @@ sub go()
 			end with
 			window.clearinterval(timer1)
 			innsatu.style.color="crimson"
-			innsatu.value="’†~‚µ‚Ä˜gü‚ğ•\¦‚·‚é"
+			innsatu.value="ä¸­æ­¢ã—ã¦æ ç·šã‚’è¡¨ç¤ºã™ã‚‹"
 			hyouji.style.display=""
 		case else
 			exit sub
@@ -206,7 +206,7 @@ sub allhyouji()
 		.bordercolor="silver"
 		.borderstyle="inset"
 	end with
-	innsatu.value="ˆóü‘OŠm”F‚Æˆóü‚Ìd•û"
+	innsatu.value="å°åˆ·å‰ç¢ºèªã¨å°åˆ·ã®ä»•æ–¹"
 	hyouji.style.display="none"
 	gamenn.style.display=""
 end sub
@@ -221,26 +221,26 @@ end sub
 <div id="letter" style="position:absolute;border-width:2;border-color:silver;border-style:inset;width:9.0cm;height:13.8cm">
 
 
-<div id="haikumoji" style="filter:RevealTrans(duration=3,transition=23);margin-top:30;margin-left:315;position:absolute;font-family:HG³²‘‘Ì-PRO;font-size:18pt;width:4;font-weight:bold">v‚¢o‚Ì•ê‚Í˜V‚¢‚½‚èƒAƒPƒr‚ÌÀ</div>
+<div id="haikumoji" style="filter:RevealTrans(duration=3,transition=23);margin-top:30;margin-left:315;position:absolute;font-family:HGæ­£æ¥·æ›¸ä½“-PRO;font-size:18pt;width:4;font-weight:bold">æ€ã„å‡ºã®æ¯ã¯è€ã„ãŸã‚Šã‚¢ã‚±ãƒ“ã®å®Ÿ</div>
 
 <img id="illust" style="filter:RevealTrans(transition=23,duration=4);margin-left:30;margin-top:40" />
 
-<div id="kyss0" style="letter-spacing:0.2em;margin-top:50;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:12pt;width:200;margin-left:30;font-weight:bold">“Ş—ÇE‘ˆÀ˜a®</div>
+<div id="kyss0" style="letter-spacing:0.2em;margin-top:50;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:12pt;width:200;margin-left:30;font-weight:bold">å¥ˆè‰¯ãƒ»å›½å®‰å’Œå°š</div>
 
-<span id="kyss1" style="font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:11pt;line-height:13pt;width:100;margin-left:30">§123-4567</span>
+<span id="kyss1" style="font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:11pt;line-height:13pt;width:100;margin-left:30">ã€’123-4567</span>
 
-<div id="kyss2" style="font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:11pt;line-height:13pt;width:300;margin-left:30">ˆ¤•QŒ§“cÉŒS“cÉ’¬</div>
+<div id="kyss2" style="font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:11pt;line-height:13pt;width:300;margin-left:30">æ„›åª›çœŒç”°èˆéƒ¡ç”°èˆç”º</div>
 
-<div id="kyss3" style="margin-left:30;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:11pt;line-height:13pt;width:300">‘åšŒF–I1100</div>
+<div id="kyss3" style="margin-left:30;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:11pt;line-height:13pt;width:300">å¤§å­—ç†Šèœ‚1100</div>
 
-<div id="kyss4" style="margin-top:5;letter-spacing:0.2em;margin-left:30;font-family:‚l‚r ‚o–¾’©;font-size:11pt;line-height:13pt;width:380">–òt›‘ˆÀ</div>
+<div id="kyss4" style="margin-top:5;letter-spacing:0.2em;margin-left:30;font-family:ï¼­ï¼³ ï¼°æ˜æœ;font-size:11pt;line-height:13pt;width:380">è–¬å¸«å¯ºå›½å®‰</div>
 
 <div style="width:380;margin-left:30;margin-top:2">
 <span id="kyss5" style="font-family:Times New Roman;font-size:10pt;line-height:13pt;font-weight:bold">0895-77-7777</span>
 <span id="kyss6" style="text-indent:2em;font-family:Times New Roman;font-size:10pt;line-height:13pt;font-weight:bold">kyss@shikoku.ne.jp</span>
 </div>
 
-<div id="kyss7" style="margin-top:5;letter-spacing:0.2em;margin-left:30;font-family:‚l‚r ‚o–¾’©;font-size:12pt;line-height:13pt;width:380;font-weight:bold">“Ş—Ç”o‹å˜A‡‰ï</div>
+<div id="kyss7" style="margin-top:5;letter-spacing:0.2em;margin-left:30;font-family:ï¼­ï¼³ ï¼°æ˜æœ;font-size:12pt;line-height:13pt;width:380;font-weight:bold">å¥ˆè‰¯ä¿³å¥é€£åˆä¼š</div>
 
 
 </div>
@@ -250,43 +250,43 @@ end sub
 <img src="haiku_title.gif" style="position:absolute;margin-left:450;margin-top:20" />
 
 
-<!--ƒƒjƒ…[-->
+<!--ãƒ¡ãƒ‹ãƒ¥ãƒ¼-->
 <div id="season" style="overflow:auto;padding:5;border-style:inset;text-align:left;border-width:2;border-color:silver;position:absolute;margin-left:450;margin-top:100;width:60;height:60"></div>
 
 <div id="seasongazou" style="overflow:auto;padding:5;border-style:inset;border-width:2;border-color:silver;text-align:left;position:absolute;margin-left:520;margin-top:100;width:110;height:60"></div>
 
 <div id="haiku" style="padding:5;border-style:inset;border-width:2;border-color:silver;position:absolute;margin-top:170;margin-left:450">
 
-‚T‚Ì‹åF<input name="gonoku" type="text" style="ime-mode:active" size="20" /><br />
-‚V‚Ì‹åF<input name="nananoku" type="text" style="ime-mode:active" size="30" /><br />
-‚T‚Ì‹åF<input name="gonoku2" type="text" style="ime-mode:active" size="20" />
+ï¼•ã®å¥ï¼š<input name="gonoku" type="text" style="ime-mode:active" size="20" /><br />
+ï¼—ã®å¥ï¼š<input name="nananoku" type="text" style="ime-mode:active" size="30" /><br />
+ï¼•ã®å¥ï¼š<input name="gonoku2" type="text" style="ime-mode:active" size="20" />
 <button id="jikkou" style="background-color:beige;color:crimson;font-family:Arial Black;font-size:9pt" onclick="haikugo()">OK</button>
 <button id="ng" style="background-color:beige;color:blue;font-family:Arial Black;font-size:9pt" onclick="haikucancel()">Cancel</button>
 
 </div>
 
 <div id="jyouhou" style="padding:5;border-style:inset;border-width:2;border-color:silver;position:absolute;margin-top:260;margin-left:450">
-”o †F<input name="data0" type="text" style="ime-mode:active" size="20" /><br />
-§F<input name="data1" type="text" style="margin-left:24;ime-mode:inactive" size="7" /><br />
-ZŠ1F<input name="data2" type="text" style="ime-mode:active" size="40" /><br />
-ZŠ2F<input name="data3" type="text" style="ime-mode:active" size="40" /><br />
-–¼ ‘OF<input name="data4" type="text" style="ime-mode:active" size="20" /><br />
-“d ˜bF<input name="data5" type="text" style="ime-mode:inactive" size="15" /><br />
-e-mailF<input name="data6" type="text" style="ime-mode:inactive" size="30" /><br />
-‹å ‰ïF<input name="data7" type="text" style="ime-mode:active" size="20" /><br />
+ä¿³ å·ï¼š<input name="data0" type="text" style="ime-mode:active" size="20" /><br />
+ã€’ï¼š<input name="data1" type="text" style="margin-left:24;ime-mode:inactive" size="7" /><br />
+ä½æ‰€1ï¼š<input name="data2" type="text" style="ime-mode:active" size="40" /><br />
+ä½æ‰€2ï¼š<input name="data3" type="text" style="ime-mode:active" size="40" /><br />
+å å‰ï¼š<input name="data4" type="text" style="ime-mode:active" size="20" /><br />
+é›» è©±ï¼š<input name="data5" type="text" style="ime-mode:inactive" size="15" /><br />
+e-mailï¼š<input name="data6" type="text" style="ime-mode:inactive" size="30" /><br />
+å¥ ä¼šï¼š<input name="data7" type="text" style="ime-mode:active" size="20" /><br />
 <div>
 <button id="jikkou" style="background-color:beige;color:crimson;font-family:Arial Black;font-size:10pt" onclick="gogo()">OK</button>
 <button id="reset" style="background-color:beige;color:blue;font-family:Arial Black;font-size:10pt" onclick="goreset()">Reset</button>
-<button id="innsatu" onclick="go()" style="background-color:beige;color:crimson;padding:3;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-weight:bold;font-size:10pt">ˆóü‘OŠm”F‚Æˆóü‚Ìd•û</button>
+<button id="innsatu" onclick="go()" style="background-color:beige;color:crimson;padding:3;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-weight:bold;font-size:10pt">å°åˆ·å‰ç¢ºèªã¨å°åˆ·ã®ä»•æ–¹</button>
 </div>
 </div>
-<div style="margin-top:505;margin-left:450;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:9pt;color:indianred">
-XML§ìE’˜ìFPROJECT KySS
+<div style="margin-top:505;margin-left:450;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:9pt;color:indianred">
+XMLåˆ¶ä½œãƒ»è‘—ä½œï¼šPROJECT KySS
 </div>
 </div>
 
-<button id="hyouji" style="display:none;position:absolute;margin-left:500;margin-top:20;font-weight:bold;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:14pt;color:red;background-color:beige" onclick="allhyouji()">
-‘S‚Ä•\¦
+<button id="hyouji" style="display:none;position:absolute;margin-left:500;margin-top:20;font-weight:bold;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:14pt;color:red;background-color:beige" onclick="allhyouji()">
+å…¨ã¦è¡¨ç¤º
 </button>
 
 </body>

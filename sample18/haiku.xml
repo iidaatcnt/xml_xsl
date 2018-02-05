@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="Shift_JIS"?>
 <?xml-stylesheet type="text/xsl" href="haiku.xsl"?>
-<�S��>
-<�t��>
-	<�o��G�莆>
-		<�摜>
-			<�G�ߖ�>
-				<�G��>�t</�G��>
-				<�G��>��</�G��>
-				<�G��>�H</�G��>
-				<�G��>�~</�G��>
-			</�G�ߖ�>
+<全体>
+<葉書>
+	<俳句絵手紙>
+		<画像>
+			<季節名>
+				<季節>春</季節>
+				<季節>夏</季節>
+				<季節>秋</季節>
+				<季節>冬</季節>
+			</季節名>
 					
-			<�o��摜>
-				<�H�摜 url="haiku01.gif">������</�H�摜>
-				<�H�摜 url="haiku02.gif">�H�̋�</�H�摜>
-				<�H�摜 url="haiku03.gif">�Ȃ�Ă�</�H�摜>
-				<�H�摜 url="haiku04.gif">������</�H�摜>
-				<�H�摜 url="haiku05.gif">�ԂƂ��</�H�摜>
-				<�H�摜 url="haiku06.gif">����</�H�摜>
-				<�H�摜 url="haiku07.gif">�H�̑���</�H�摜>
-				<�H�摜 url="haiku08.gif">�H��</�H�摜>
-				<�H�摜 url="haiku09.gif">�X</�H�摜>
-				<�H�摜 url="haiku10.gif">����</�H�摜>
-			</�o��摜>
-		</�摜>
+			<俳句画像>
+				<秋画像 url="haiku01.gif">あけび</秋画像>
+				<秋画像 url="haiku02.gif">秋の空</秋画像>
+				<秋画像 url="haiku03.gif">なんてん</秋画像>
+				<秋画像 url="haiku04.gif">すすき</秋画像>
+				<秋画像 url="haiku05.gif">赤とんぼ</秋画像>
+				<秋画像 url="haiku06.gif">紫苑</秋画像>
+				<秋画像 url="haiku07.gif">秋の草花</秋画像>
+				<秋画像 url="haiku08.gif">秋桜</秋画像>
+				<秋画像 url="haiku09.gif">森</秋画像>
+				<秋画像 url="haiku10.gif">光り</秋画像>
+			</俳句画像>
+		</画像>
 	<!--
-		<�t�H���g>
-			<����>�l�r �o����</����>
-			<����>HG��������-PRO</����>
-			<����>�`�q�o�s�����̂g</����>
-			<����>�`�q�o�ꏑ�̂l</����>
-		</�t�H���g>
+		<フォント>
+			<書体>ＭＳ Ｐ明朝</書体>
+			<書体>HG正楷書体-PRO</書体>
+			<書体>ＡＲＰ行楷書体Ｈ</書体>
+			<書体>ＡＲＰ隷書体Ｍ</書体>
+		</フォント>
 	-->
-</�o��G�莆>
-</�t��>
-</�S��>
+</俳句絵手紙>
+</葉書>
+</全体>

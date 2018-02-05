@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;}
 th{border:solid 1pt gray;padding:2;}
@@ -12,56 +12,56 @@ td{border:solid 1pt gray;padding:2;}
 </style>
 </head>
 <body>
-<xsl:apply-templates select="‘S‘Ì/ŠT—v" />
-<xsl:apply-templates select="‘S‘Ì/Šé‹Æî•ñ" />
+<xsl:apply-templates select="å…¨ä½“/æ¦‚è¦" />
+<xsl:apply-templates select="å…¨ä½“/ä¼æ¥­æƒ…å ±" />
 </body>
 </html>
 </xsl:template>
-<xsl:template match="‘S‘Ì/ŠT—v">
+<xsl:template match="å…¨ä½“/æ¦‚è¦">
 	<div>
 		<xsl:element name="img">
 			<xsl:attribute name="src">
-				<xsl:value-of select="ƒƒS" />
+				<xsl:value-of select="ãƒ­ã‚´" />
 			</xsl:attribute>
 		</xsl:element>
 	</div>
 	<div>
 		<h1>
-		<xsl:value-of select="ƒ^ƒCƒgƒ‹" />
-		<xsl:value-of select="ƒ^ƒCƒgƒ‹/@•ª—Þ" />
+		<xsl:value-of select="ã‚¿ã‚¤ãƒˆãƒ«" />
+		<xsl:value-of select="ã‚¿ã‚¤ãƒˆãƒ«/@åˆ†é¡ž" />
 		</h1>
 	</div>
 	<div>
-		<h2><xsl:value-of select="ƒRƒs[" /></h2>
-		<p><xsl:value-of select="ƒŠ[ƒh" /></p>
+		<h2><xsl:value-of select="ã‚³ãƒ”ãƒ¼" /></h2>
+		<p><xsl:value-of select="ãƒªãƒ¼ãƒ‰" /></p>
 	</div>
 </xsl:template>
-<xsl:template match="‘S‘Ì/Šé‹Æî•ñ">
-	<div><xsl:apply-templates select="‰ïŽÐŠT—v" /></div>
-	<div><xsl:apply-templates select="Ž–‹Æ“à—e" /></div>
-	<div><xsl:apply-templates select="ƒŠƒ“ƒN" /></div>
+<xsl:template match="å…¨ä½“/ä¼æ¥­æƒ…å ±">
+	<div><xsl:apply-templates select="ä¼šç¤¾æ¦‚è¦" /></div>
+	<div><xsl:apply-templates select="äº‹æ¥­å†…å®¹" /></div>
+	<div><xsl:apply-templates select="ãƒªãƒ³ã‚¯" /></div>
 </xsl:template>
-<xsl:template match="‰ïŽÐŠT—v">
-	<h3><xsl:value-of select="¬Œ©o‚µ" /></h3>
+<xsl:template match="ä¼šç¤¾æ¦‚è¦">
+	<h3><xsl:value-of select="å°è¦‹å‡ºã—" /></h3>
 	<table>
-		<xsl:for-each select="ƒf[ƒ^">
+		<xsl:for-each select="ãƒ‡ãƒ¼ã‚¿">
 		<tr>
-		<th><xsl:value-of select="€–Ú" /></th>
-		<td><xsl:value-of select="“E—v" /></td>
+		<th><xsl:value-of select="é …ç›®" /></th>
+		<td><xsl:value-of select="æ‘˜è¦" /></td>
 		</tr>
 		</xsl:for-each>
 	</table>
 </xsl:template>
-<xsl:template match="Ž–‹Æ“à—e">
-	<h3><xsl:value-of select="¬Œ©o‚µ" /></h3>
+<xsl:template match="äº‹æ¥­å†…å®¹">
+	<h3><xsl:value-of select="å°è¦‹å‡ºã—" /></h3>
 	<ul>
-		<xsl:for-each select="€–Ú">
+		<xsl:for-each select="é …ç›®">
 		<li><xsl:value-of /></li>
 		</xsl:for-each>
 	</ul>
 </xsl:template>
-<xsl:template match="ƒŠƒ“ƒN">
-	<xsl:for-each select="ƒŠƒ“ƒNæ">
+<xsl:template match="ãƒªãƒ³ã‚¯">
+	<xsl:for-each select="ãƒªãƒ³ã‚¯å…ˆ">
 		<div>
 		<xsl:element name="a">
 			<xsl:attribute name="href">

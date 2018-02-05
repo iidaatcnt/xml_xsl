@@ -10,18 +10,18 @@ td{padding:3;font-size:11pt;}
 </style>
 </head>
 <body>
-	<xsl:apply-templates select="“cÉ‘º" />
+	<xsl:apply-templates select="ç”°èˆæ‘" />
 </body>
 </html>
 </xsl:template>
 
-<xsl:template match="“cÉ‘º">
+<xsl:template match="ç”°èˆæ‘">
 <table border="1">
-	<tr><th>“Ç‚İ</th><th>–¼‘O</th></tr>
-	<xsl:for-each select="”í•ÛŒ¯Ò">
+	<tr><th>èª­ã¿</th><th>åå‰</th></tr>
+	<xsl:for-each select="è¢«ä¿é™ºè€…">
 	<tr>
-		<td><xsl:value-of select="¢‘Ñå/‚Ó‚è‚ª‚È" /></td>
-		<td><xsl:value-of select="¢‘Ñå/–¼" /></td>
+		<td><xsl:value-of select="ä¸–å¸¯ä¸»/ãµã‚ŠãŒãª" /></td>
+		<td><xsl:value-of select="ä¸–å¸¯ä¸»/æ°å" /></td>
 	</tr>
 	</xsl:for-each>
 </table>

@@ -5,7 +5,7 @@ xmlns:html="http://www.w3.org/Profiles/XHTML-transitional" xmlns:kyss="http://us
 <xsl:template match="/">
 <html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
-<title><xsl:value-of select="html/head/kyss:ŠÇ—î•ñ/kyss:ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒgƒ‹" /><xsl:value-of select="html/head/kyss:ŠÇ—î•ñ/kyss:ƒR[ƒiƒ^ƒCƒgƒ‹" /></title>
+<title><xsl:value-of select="html/head/kyss:ç®¡ç†æƒ…å ±/kyss:ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒˆãƒ«" /><xsl:value-of select="html/head/kyss:ç®¡ç†æƒ…å ±/kyss:ã‚³ãƒ¼ãƒŠã‚¿ã‚¤ãƒˆãƒ«" /></title>
 
 <OBJECT ID="kyss1" WIDTH="11" HEIGHT="11"
  CLASSID="CLSID:D7A7D7C3-D47F-11D0-89D3-00A0C90833E6">
@@ -23,7 +23,7 @@ xmlns:html="http://www.w3.org/Profiles/XHTML-transitional" xmlns:kyss="http://us
 <object id="VMLRender" classid="CLSID:10072CEC-8CC1-11D1-986E-00A0C955B42E"></object>
 
 <style>
-v\:* { behavior: url(#VMLRender); }
+vÂ¥:* { behavior: url(#VMLRender); }
 </style>
 
 <script type="text/vbscript">
@@ -46,11 +46,11 @@ sub window_onload()
 	openno2=0
 	treeno=0
 	
-	patternstring="html/body/kyss:—\"
+	patternstring="html/body/kyss:äºˆå‘Š"
 	set selnode=document.XMLDocument.selectNodes(patternstring)
 	yokokumoji=selnode(0).text
 
-	patternstring="html/body/kyss:ƒOƒ‰ƒtƒBƒbƒNƒX/kyss:”wŒi/kyss:ƒtƒBƒ‹/kyss:ƒ^ƒCƒv"
+	patternstring="html/body/kyss:ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚¹/kyss:èƒŒæ™¯/kyss:ãƒ•ã‚£ãƒ«/kyss:ã‚¿ã‚¤ãƒ—"
 	set selnode=document.XMLDocument.selectNodes(patternstring)
 	kyss.type=selnode(0).text
 	kysstree.type=selnode(0).text
@@ -349,7 +349,7 @@ end sub
 
 <div id="treegazou" style="visibility:hidden">
 <v:rect style='margin-left:-250;width:490px;height:390px;position:absolute' fillcolor="#8a2be2">
-	<xsl:apply-templates select="html/body/kyss:ƒOƒ‰ƒtƒBƒbƒNƒX/kyss:”wŒi/kyss:ƒtƒBƒ‹/kyss:‰æ‘œ[index()='1']" />
+	<xsl:apply-templates select="html/body/kyss:ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚¹/kyss:èƒŒæ™¯/kyss:ãƒ•ã‚£ãƒ«/kyss:ç”»åƒ[index()='1']" />
 <v:fill id="kysstree" angle="0" color2="black"  type="" />
 </v:rect>
 </div>
@@ -360,7 +360,7 @@ end sub
 <v:rect style='margin-left:-250;width:490px;height:390px;position:absolute' fillcolor="#66cdaa">
 
 <!--
-	<xsl:apply-templates select="html/body/kyss:ƒOƒ‰ƒtƒBƒbƒNƒX/kyss:”wŒi/kyss:ƒtƒBƒ‹/kyss:‰æ‘œ[index()='0']" />
+	<xsl:apply-templates select="html/body/kyss:ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚¹/kyss:èƒŒæ™¯/kyss:ãƒ•ã‚£ãƒ«/kyss:ç”»åƒ[index()='0']" />
 -->
 
 <v:image id="riverimage1" style='position:absolute;margin-top:-250;margin-left:-500;width:250;height:200' src="river.gif" cropbottom="0.5" cropright="0.5" />
@@ -384,11 +384,11 @@ end sub
 </div>
 
 <div id="all_hotaru">
-<div id="hotaru1" style="visibility:hidden;margin-left:500;margin-top:300;text-align:center;width:30%;filter:glow(color=#adff2f,strength=0);position:relative;font-size:8pt;color:gray">œ</div>
+<div id="hotaru1" style="visibility:hidden;margin-left:500;margin-top:300;text-align:center;width:30%;filter:glow(color=#adff2f,strength=0);position:relative;font-size:8pt;color:gray">â—</div>
 
-<div id="hotaru2" style="visibility:hidden;margin-left:400;margin-top:10;text-align:center;width:30%;filter:glow(color=#adff2f,strength=0);position:relative;font-size:8pt;color:gray">œ</div>
+<div id="hotaru2" style="visibility:hidden;margin-left:400;margin-top:10;text-align:center;width:30%;filter:glow(color=#adff2f,strength=0);position:relative;font-size:8pt;color:gray">â—</div>
 
-<div id="hotaru3" style="visibility:hidden;top:490;left:10;text-align:center;width:30%;filter:glow(color=#adff2f,strength=0);position:absolute;font-size:8pt;color:gray">œ</div>
+<div id="hotaru3" style="visibility:hidden;top:490;left:10;text-align:center;width:30%;filter:glow(color=#adff2f,strength=0);position:absolute;font-size:8pt;color:gray">â—</div>
 </div>
 
 <div align="center">
@@ -398,12 +398,12 @@ end sub
 </div>
 
 <div align="center">
-<div id="textbox1" style="display:none;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:11pt;color:black;line-height:16pt">
+<div id="textbox1" style="display:none;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:11pt;color:black;line-height:16pt">
 <v:rect id="moji" style='width:350;height:0;' fillcolor="#b0c4de">
 <v:fill type="gradient" color2="black" angle="180" />
 <v:textbox style='text-align:left'>
-<xsl:apply-templates select="html/body/kyss:ƒeƒNƒXƒg" />
-<div id="yokoku" style="display:none;width:100%;filter:alpha(opacity=0);font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:11pt;color:white;font-weight:bold"></div>
+<xsl:apply-templates select="html/body/kyss:ãƒ†ã‚¯ã‚¹ãƒˆ" />
+<div id="yokoku" style="display:none;width:100%;filter:alpha(opacity=0);font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:11pt;color:white;font-weight:bold"></div>
 </v:textbox>
 </v:rect>
 </div>
@@ -419,7 +419,7 @@ end sub
 </html>
 </xsl:template>
 
-<xsl:template match="html/body/kyss:ƒeƒNƒXƒg|div|p|br">
+<xsl:template match="html/body/kyss:ãƒ†ã‚¯ã‚¹ãƒˆ|div|p|br">
 	<xsl:copy>
 		<xsl:apply-templates select="*|@*|text()" />
 	</xsl:copy>
@@ -432,14 +432,14 @@ end sub
 </xsl:template>
 
 <!--
-<xsl:template match="html/body/kyss:ƒOƒ‰ƒtƒBƒbƒNƒX/kyss:”wŒi/kyss:ƒtƒBƒ‹/kyss:‰æ‘œ[index()='0']">
+<xsl:template match="html/body/kyss:ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚¹/kyss:èƒŒæ™¯/kyss:ãƒ•ã‚£ãƒ«/kyss:ç”»åƒ[index()='0']">
 	<img id="mainopen" width="500" height="350" border="0" alt="river" style="visibility:hidden;filter:RevealTrans(duration=5,transition=3)">
 		<xsl:attribute name="src"><xsl:value-of /></xsl:attribute>
 	</img>
 </xsl:template>
 -->
 
-<xsl:template match="html/body/kyss:ƒOƒ‰ƒtƒBƒbƒNƒX/kyss:”wŒi/kyss:ƒtƒBƒ‹/kyss:‰æ‘œ[index()='1']">
+<xsl:template match="html/body/kyss:ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚¹/kyss:èƒŒæ™¯/kyss:ãƒ•ã‚£ãƒ«/kyss:ç”»åƒ[index()='1']">
 	<img id="mainopen2" width="500" height="400" border="0" alt="river" style="visibility:hidden;filter:RevealTrans(duration=5,transition=3)">
 		<xsl:attribute name="src"><xsl:value-of /></xsl:attribute>
 	</img>

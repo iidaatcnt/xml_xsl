@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;}
 th{border:solid 1pt gray;padding:2;}
@@ -21,25 +21,25 @@ sub window_onload()
 	set source=document.XMLDocument
 	set stylesheet=document.XSLDocument
 	
-	'order-by‘®«‚ğŠÜ‚Şƒeƒ“ƒvƒŒ[ƒg‚ÉƒAƒNƒZƒX‚·‚éB
+	'order-byå±æ€§ã‚’å«ã‚€ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã€‚
 
 	set sortfield=stylesheet.selectSingleNode("//@order-by")
 end sub
 
-'valueƒvƒƒpƒeƒB‚ğg‚Á‚Äƒ\[ƒg‘ÎÛ—v‘f‚ğw’è‚·‚éB
-'¸‡‚È‚ç—v‘f–¼‚Ì‘O‚É+iƒvƒ‰ƒXjA~‡‚È‚ç-iƒ}ƒCƒiƒXj‚ğ•t‰Á‚·‚éB
-'—v‘f‚Ì“à—e‚ª”’l‚Ìê‡‚Ínumber‚ğg—p‚·‚éB
+'valueãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’ä½¿ã£ã¦ã‚½ãƒ¼ãƒˆå¯¾è±¡è¦ç´ ã‚’æŒ‡å®šã™ã‚‹ã€‚
+'æ˜‡é †ãªã‚‰è¦ç´ åã®å‰ã«+ï¼ˆãƒ—ãƒ©ã‚¹ï¼‰ã€é™é †ãªã‚‰-ï¼ˆãƒã‚¤ãƒŠã‚¹ï¼‰ã‚’ä»˜åŠ ã™ã‚‹ã€‚
+'è¦ç´ ã®å†…å®¹ãŒæ•°å€¤ã®å ´åˆã¯numberã‚’ä½¿ç”¨ã™ã‚‹ã€‚
 
 sub kinngakuSort()
 	select case button1.value
-		case "‹àŠzƒ\[ƒg"
-			sortfield.value="-number(‚¨”ƒ‚¢ã‚°‹àŠz)"
+		case "é‡‘é¡ã‚½ãƒ¼ãƒˆ"
+			sortfield.value="-number(ãŠè²·ã„ä¸Šã’é‡‘é¡)"
 			myTable.innerHTML=source.documentElement.transformNode(stylesheet)
-			button1.value="Œ³‚É–ß‚·"
-		case "Œ³‚É–ß‚·"
-			sortfield.value="+number(‚¨‹q—l”Ô†)"
+			button1.value="å…ƒã«æˆ»ã™"
+		case "å…ƒã«æˆ»ã™"
+			sortfield.value="+number(ãŠå®¢æ§˜ç•ªå·)"
 			myTable.innerHTML=source.documentElement.transformNode(stylesheet)
-			button1.value="‹àŠzƒ\[ƒg"
+			button1.value="é‡‘é¡ã‚½ãƒ¼ãƒˆ"
 		case else
 			exit sub
 	end select
@@ -47,14 +47,14 @@ end sub
 
 sub namaeSort()
 	select case button2.value
-		case "–¼‘Oƒ\[ƒg"
-			sortfield.value="+–¼"
+		case "åå‰ã‚½ãƒ¼ãƒˆ"
+			sortfield.value="+æ°å"
 			myTable.innerHTML=source.documentElement.transformNode(stylesheet)
-			button2.value="Œ³‚É–ß‚·"
-		case "Œ³‚É–ß‚·"
-			sortfield.value="+number(‚¨‹q—l”Ô†)"
+			button2.value="å…ƒã«æˆ»ã™"
+		case "å…ƒã«æˆ»ã™"
+			sortfield.value="+number(ãŠå®¢æ§˜ç•ªå·)"
 			myTable.innerHTML=source.documentElement.transformNode(stylesheet)
-			button2.value="–¼‘Oƒ\[ƒg"
+			button2.value="åå‰ã‚½ãƒ¼ãƒˆ"
 		case else
 			exit sub
 	end select
@@ -66,12 +66,12 @@ end sub
 
 </head>
 <body>
-<button id="button1" onclick="kinngakuSort()">‹àŠzƒ\[ƒg</button>
-<button id="button2" onclick="namaeSort()">–¼‘Oƒ\[ƒg</button>
+<button id="button1" onclick="kinngakuSort()">é‡‘é¡ã‚½ãƒ¼ãƒˆ</button>
+<button id="button2" onclick="namaeSort()">åå‰ã‚½ãƒ¼ãƒˆ</button>
 <table>
 <tr>
 	<td>
-	<div id="myTable"><xsl:apply-templates select="‘S‘Ì" /></div>
+	<div id="myTable"><xsl:apply-templates select="å…¨ä½“" /></div>
 	</td>
 </tr>
 </table>
@@ -79,27 +79,27 @@ end sub
 </html>
 </xsl:template>
 
-<xsl:template match="‘S‘Ì">
+<xsl:template match="å…¨ä½“">
 <table>
 <tr>
-	<th>”Ô†</th><th>–¼</th><th>“s“¹•{Œ§</th><th>ZŠ</th>
-	<th>“d˜b</th><th>‚¨”ƒã‚°‹àŠz</th>
+	<th>ç•ªå·</th><th>æ°å</th><th>éƒ½é“åºœçœŒ</th><th>ä½æ‰€</th>
+	<th>é›»è©±</th><th>ãŠè²·ä¸Šã’é‡‘é¡</th>
 </tr>
-	<xsl:for-each select="ŒÚ‹qî•ñ" order-by="dont-match-anything">
+	<xsl:for-each select="é¡§å®¢æƒ…å ±" order-by="dont-match-anything">
 <tr>
-	<td style="text-align:right"><xsl:value-of select="‚¨‹q—l”Ô†" /></td>
-	<td><xsl:value-of select="–¼" /></td>
-	<td><xsl:value-of select="ZŠ/@“s“¹•{Œ§" /></td>
-	<td><xsl:value-of select="ZŠ" /></td>
-	<td><xsl:value-of select="“d˜b" /></td>
+	<td style="text-align:right"><xsl:value-of select="ãŠå®¢æ§˜ç•ªå·" /></td>
+	<td><xsl:value-of select="æ°å" /></td>
+	<td><xsl:value-of select="ä½æ‰€/@éƒ½é“åºœçœŒ" /></td>
+	<td><xsl:value-of select="ä½æ‰€" /></td>
+	<td><xsl:value-of select="é›»è©±" /></td>
 	<td style="text-align:right">
-	<xsl:apply-templates select="‚¨”ƒ‚¢ã‚°‹àŠz" /></td>
+	<xsl:apply-templates select="ãŠè²·ã„ä¸Šã’é‡‘é¡" /></td>
 </tr>
 	</xsl:for-each>
 	</table>
 </xsl:template>
-<xsl:template match="‚¨”ƒ‚¢ã‚°‹àŠz">
-	<!--formatNumberŠÖ”‚ÅA‹àŠz‚ğOŒ…‹æØ‚è‚Ì•\¦‚É‚·‚é-->
+<xsl:template match="ãŠè²·ã„ä¸Šã’é‡‘é¡">
+	<!--formatNumberé–¢æ•°ã§ã€é‡‘é¡ã‚’ä¸‰æ¡åŒºåˆ‡ã‚Šã®è¡¨ç¤ºã«ã™ã‚‹-->
 	<xsl:eval>formatNumber(this.nodeTypedValue,"#,###")</xsl:eval>
 </xsl:template>
 </xsl:stylesheet>

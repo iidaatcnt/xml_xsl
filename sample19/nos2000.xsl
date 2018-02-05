@@ -5,7 +5,7 @@ xmlns:html="http://www.w3.org/Profiles/XHTML-transitional" xmlns:kyss="http://us
 <xsl:template match="/">
 <html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
-<title><xsl:value-of select="html/head/kyss:ŠÇ—î•ñ/kyss:ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒgƒ‹" /><xsl:value-of select="html/head/kyss:ŠÇ—î•ñ/kyss:ƒR[ƒiƒ^ƒCƒgƒ‹" /></title>
+<title><xsl:value-of select="html/head/kyss:ç®¡ç†æƒ…å ±/kyss:ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒˆãƒ«" /><xsl:value-of select="html/head/kyss:ç®¡ç†æƒ…å ±/kyss:ã‚³ãƒ¼ãƒŠã‚¿ã‚¤ãƒˆãƒ«" /></title>
 <!--
 <meta http-equiv="contnt-type" content="text/html; charset=utf-8" />
 -->
@@ -14,7 +14,7 @@ xmlns:html="http://www.w3.org/Profiles/XHTML-transitional" xmlns:kyss="http://us
 </object>
 <style type="text/css">
 
-v\:* { behavior: url(#VMLRender); }
+vÂ¥:* { behavior: url(#VMLRender); }
 
 body
 	{
@@ -23,12 +23,12 @@ body
 	margin-left	:	0;
 	}
 
-.–ÚŸ
+.ç›®æ¬¡
 	{
 	margin-top	:	16;
 	margin-right	:	90;
 	font-size	:	13pt;
-	font-family	:	"‚l‚r ‚o–¾’©",serif;
+	font-family	:	"ï¼­ï¼³ ï¼°æ˜æœ",serif;
 	font-style	:	italic;
 	line-height	:	18pt;
 	}
@@ -55,7 +55,7 @@ dim no,timer,selnode,patternstring
 
 sub window_onload()
 	
-	patternstring="html/body/kyss:”wŒi/kyss:ƒtƒBƒ‹/kyss:ƒ^ƒCƒv"
+	patternstring="html/body/kyss:èƒŒæ™¯/kyss:ãƒ•ã‚£ãƒ«/kyss:ã‚¿ã‚¤ãƒ—"
 	set selnode=document.XMLDocument.selectNodes(patternstring)
 	kyss.type=selnode(0).text
 	no=0
@@ -93,7 +93,7 @@ end sub
 
 <div align="right">
 <div id="menu1" style="display:none">
-<xsl:apply-templates select="html/body/kyss:ƒeƒNƒXƒg"/>
+<xsl:apply-templates select="html/body/kyss:ãƒ†ã‚¯ã‚¹ãƒˆ"/>
 </div>
 </div>
 
@@ -101,8 +101,8 @@ end sub
 </html>
 </xsl:template>
 
-<xsl:template match="html/body/kyss:ƒeƒNƒXƒg">
-	<p class="–ÚŸ">
+<xsl:template match="html/body/kyss:ãƒ†ã‚¯ã‚¹ãƒˆ">
+	<p class="ç›®æ¬¡">
 			<a><xsl:attribute name="href">hotaru2000.xml</xsl:attribute><xsl:value-of select="div/p[index()='0']" /></a>
 	</p>
 </xsl:template>

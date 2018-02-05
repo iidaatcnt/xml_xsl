@@ -8,7 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <style type="text/css">
 table{border:solid 1pt black;}
 th{border:solid 1pt gray;}
-td{border:solid 1pt gray;font-family:"‚l‚r ‚o–¾’©",serif;
+td{border:solid 1pt gray;font-family:"ï¼­ï¼³ ï¼°æ˜æœ",serif;
 font-size:18pt;font-weight:bold;}
 </style>
 </head>
@@ -22,16 +22,16 @@ option explicit
 	dim nagasa,searchname
 
 sub window_onload()
-	'DOM ƒIƒuƒWƒFƒNƒg‚ğg‚¦‚é‚æ‚¤‚É‚·‚é(‚¨–ñ‘©jD
+	'DOM ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹(ãŠç´„æŸï¼‰ï¼
 	set xmldoc=createObject("Microsoft.XMLDom")
-	'“¯Šú‚ğ‹–‰Â‚·‚é‚©‚Ç‚¤‚©‚ğİ’è‚·‚éDƒfƒtƒHƒ‹ƒg‚Ítrue
+	'åŒæœŸã‚’è¨±å¯ã™ã‚‹ã‹ã©ã†ã‹ã‚’è¨­å®šã™ã‚‹ï¼ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯true
 	xmldoc.async=false
-	'XMLƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚ŞD
+	'XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚€ï¼
 	xmldoc.load("sample43.xml")
-	'“Ç‚İ‚ñ‚¾XML•¶‘‚Ìu–¼v—v‘f‚ÉƒAƒNƒZƒX‚·‚éD
-	set selnode=xmldoc.getElementsByTagName("–¼")
+	'èª­ã¿è¾¼ã‚“ã XMLæ–‡æ›¸ã®ã€Œæ°åã€è¦ç´ ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ï¼
+	set selnode=xmldoc.getElementsByTagName("æ°å")
 	nagasa=selnode.length-1
-	'—v‘fu–¼v‚Ì“à—e‚ğA‚»‚ÌŒÂ”•ªæ‚èo‚µC•Ï”namae‚Éƒ^ƒO•t‚«‚Ì‚Ü‚ÜŠi”[‚·‚éD
+	'è¦ç´ ã€Œæ°åã€ã®å†…å®¹ã‚’ã€ãã®å€‹æ•°åˆ†å–ã‚Šå‡ºã—ï¼Œå¤‰æ•°namaeã«ã‚¿ã‚°ä»˜ãã®ã¾ã¾æ ¼ç´ã™ã‚‹ï¼
 	if selnode.length>0 then
 		for i=0 to nagasa
 			namae=namae & "<div id='xmlname" & i & "'" & "style='padding:10;border-width:4;border-color:blue;border-style:inset;width:300;cursor:hand' onclick='search(" & i & ")'>" & selnode(i).text & "</div>"
@@ -39,13 +39,13 @@ sub window_onload()
 	else
 		exit sub
 	end if
-			'–¼‚ğ•\¦‚·‚éD
+			'æ°åã‚’è¡¨ç¤ºã™ã‚‹ï¼
 			personal_namae.innerHTML=namae
 end sub
 
-'‘I‘ğ‚³‚ê‚½–¼‚É]‚Á‚ÄCŠÖ˜A‚·‚é“à—e‚ğ’Šo•\¦‚·‚éƒTƒuƒ‹[ƒ`ƒ“D
+'é¸æŠã•ã‚ŒãŸæ°åã«å¾“ã£ã¦ï¼Œé–¢é€£ã™ã‚‹å†…å®¹ã‚’æŠ½å‡ºè¡¨ç¤ºã™ã‚‹ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³ï¼
 sub search(no)
-'‘I‘ğ‚³‚ê‚½–¼‚Ì”wŒiF‚ğ•Ï‚¦‚éˆ—D
+'é¸æŠã•ã‚ŒãŸæ°åã®èƒŒæ™¯è‰²ã‚’å¤‰ãˆã‚‹å‡¦ç†ï¼
 	for i=0 to nagasa
 		document.all("xmlname" & i).style.backgroundcolor="white"
 	next
@@ -55,29 +55,29 @@ sub search(no)
 
 	searchname=document.all("xmlname" & no).innerText
 
-	'‘I‘ğ‚³‚ê‚½–¼‚ğ•Ï”searchname‚ÉŠi”[‚µCsearchname‚Éˆê’v‚·‚é‚»‚ê‚¼‚ê‚Ì“à—e‚ğ•\¦‚·‚éD
+	'é¸æŠã•ã‚ŒãŸæ°åã‚’å¤‰æ•°searchnameã«æ ¼ç´ã—ï¼Œsearchnameã«ä¸€è‡´ã™ã‚‹ãã‚Œãã‚Œã®å†…å®¹ã‚’è¡¨ç¤ºã™ã‚‹ï¼
 
-	patternstring="“cÉ‘º”í•ÛŒ¯Ò/”í•ÛŒ¯ÒØî•ñ/¢‘Ñå[–¼='" & searchname & "'" & "]/‚Ó‚è‚ª‚È"
+	patternstring="ç”°èˆæ‘è¢«ä¿é™ºè€…/è¢«ä¿é™ºè€…è¨¼æƒ…å ±/ä¸–å¸¯ä¸»[æ°å='" & searchname & "'" & "]/ãµã‚ŠãŒãª"
 	set selnode=xmldoc.selectNodes(patternstring)
 	yomi.innerHTML=selnode(0).text
 
-	patternstring="“cÉ‘º”í•ÛŒ¯Ò/”í•ÛŒ¯ÒØî•ñ/¢‘Ñå[–¼='" & searchname & "'" & "]/«•Ê"
+	patternstring="ç”°èˆæ‘è¢«ä¿é™ºè€…/è¢«ä¿é™ºè€…è¨¼æƒ…å ±/ä¸–å¸¯ä¸»[æ°å='" & searchname & "'" & "]/æ€§åˆ¥"
 	set selnode=xmldoc.selectNodes(patternstring)
 	sex.innerHTML=selnode(0).text
 
-	patternstring="“cÉ‘º”í•ÛŒ¯Ò/”í•ÛŒ¯ÒØî•ñ/¢‘Ñå[–¼='" & searchname & "'" & "]/ZŠ"
+	patternstring="ç”°èˆæ‘è¢«ä¿é™ºè€…/è¢«ä¿é™ºè€…è¨¼æƒ…å ±/ä¸–å¸¯ä¸»[æ°å='" & searchname & "'" & "]/ä½æ‰€"
 	set selnode=xmldoc.selectNodes(patternstring)
 	address.innerHTML=selnode(0).text
 
-	patternstring="“cÉ‘º”í•ÛŒ¯Ò/”í•ÛŒ¯ÒØî•ñ/¢‘Ñå[–¼='" & searchname & "'" & "]/‰æ‘œ"
+	patternstring="ç”°èˆæ‘è¢«ä¿é™ºè€…/è¢«ä¿é™ºè€…è¨¼æƒ…å ±/ä¸–å¸¯ä¸»[æ°å='" & searchname & "'" & "]/ç”»åƒ"
 	set selnode=xmldoc.selectNodes(patternstring)
 	image1.src=selnode(0).text
 
-	patternstring="“cÉ‘º”í•ÛŒ¯Ò/”í•ÛŒ¯ÒØî•ñ[¢‘Ñå/–¼='" & searchname & "'" & "]/Ø‘/—LŒøŠúŒÀ"
+	patternstring="ç”°èˆæ‘è¢«ä¿é™ºè€…/è¢«ä¿é™ºè€…è¨¼æƒ…å ±[ä¸–å¸¯ä¸»/æ°å='" & searchname & "'" & "]/è¨¼æ›¸/æœ‰åŠ¹æœŸé™"
 	set selnode=xmldoc.selectNodes(patternstring)
 	kigenn.innerHTML=selnode(0).text
 
-	patternstring="“cÉ‘º”í•ÛŒ¯Ò/”í•ÛŒ¯ÒØî•ñ[¢‘Ñå/–¼='" & searchname & "'" & "]/Ø‘/‹L†”Ô†"
+	patternstring="ç”°èˆæ‘è¢«ä¿é™ºè€…/è¢«ä¿é™ºè€…è¨¼æƒ…å ±[ä¸–å¸¯ä¸»/æ°å='" & searchname & "'" & "]/è¨¼æ›¸/è¨˜å·ç•ªå·"
 	set selnode=xmldoc.selectNodes(patternstring)
 	banngou.innerHTML=selnode(0).text
 end sub
@@ -85,13 +85,13 @@ end sub
 </xsl:comment>
 </script>
 <body>
-<div style="margin-left:10;margin-top:100;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:32pt;margin-top:30" id="personal_namae"></div>
+<div style="margin-left:10;margin-top:100;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:32pt;margin-top:30" id="personal_namae"></div>
 
 <div id="hyou" style="position:absolute;visibility:hidden;margin-left:330;margin-top:-350">
 <table>
 <tr>
 	<td>
-	<xsl:apply-templates select="“cÉ‘º”í•ÛŒ¯Ò" />
+	<xsl:apply-templates select="ç”°èˆæ‘è¢«ä¿é™ºè€…" />
 	</td>
 </tr>
 </table>
@@ -102,27 +102,27 @@ end sub
 </html>
 </xsl:template>
 
-<xsl:template match="“cÉ‘º”í•ÛŒ¯Ò">
+<xsl:template match="ç”°èˆæ‘è¢«ä¿é™ºè€…">
 <table>
 	<tr>
-	<td style="background-color:silver" rowspan="3">¢‘Ñå</td>
-	<td style="background-color:snow"><span id="change">‚Ó‚è‚ª‚È</span></td>
+	<td style="background-color:silver" rowspan="3">ä¸–å¸¯ä¸»</td>
+	<td style="background-color:snow"><span id="change">ãµã‚ŠãŒãª</span></td>
 	<td><span id="yomi"></span></td>
 	</tr>
 	<tr>
-	<td style="background-color:snow">«•Ê</td>
+	<td style="background-color:snow">æ€§åˆ¥</td>
 	<td><span id="sex"></span></td>
 	</tr>		
 	<tr>
-	<td style="background-color:snow">ZŠ</td>
+	<td style="background-color:snow">ä½æ‰€</td>
 	<td><span id="address"></span></td>
 	</tr>
 	<tr>
-	<td style="background-color:silver" rowspan="2">Ø‘</td>
-	<td style="background-color:snow">—LŒøŠúŒÀ</td>
+	<td style="background-color:silver" rowspan="2">è¨¼æ›¸</td>
+	<td style="background-color:snow">æœ‰åŠ¹æœŸé™</td>
 	<td><span id="kigenn"></span></td>
 	</tr>
-	<tr><td style="background-color:snow">‹L†”Ô†</td>
+	<tr><td style="background-color:snow">è¨˜å·ç•ªå·</td>
 	<td><span id="banngou"></span></td>
 	</tr>
 </table>

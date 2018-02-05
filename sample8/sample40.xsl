@@ -4,12 +4,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;}
 th{border:solid 1pt gray;padding:2;}
 td{border:solid 1pt gray;padding:2;}
-.style1{font-family:"‚l‚r ‚oƒSƒVƒbƒN",sans-serif;
+.style1{font-family:"ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯",sans-serif;
 font-size:24pt;border-width:thick;border-style:double;
 width:300;margin-left:285;text-align:right;padding:5;}
 </style>
@@ -25,17 +25,17 @@ sub window_onload()
 	set source=document.XMLDocument
 	set stylesheet=document.XSLDocument
 	goukeiKinngaku=0
-	set sumNode=source.getElementsByTagName("‚¨”ƒ‚¢ã‚°‹àŠz")
+	set sumNode=source.getElementsByTagName("ãŠè²·ã„ä¸Šã’é‡‘é¡")
 	if sumNode.length>0 then
 		for i=0 to sumNode.length-1
-			'u‚¨”ƒ‚¢ã‚°‹àŠzv‚ğ‰ÁZ‚·‚éB
+			'ã€ŒãŠè²·ã„ä¸Šã’é‡‘é¡ã€ã‚’åŠ ç®—ã™ã‚‹ã€‚
 			goukeiKinngaku=goukeiKinngaku+eval(sumNode(i).text)
 		next
 	else
 		exit sub
 	end if
-			'‡Œv‹àŠz‚ğformatNumberŠÖ”‚ÅOŒ…‹æØ‚è‚É•\¦‚·‚éB
-			goukei.innerHTML="‡Œv=" & formatNumber(goukeiKinngaku,0)
+			'åˆè¨ˆé‡‘é¡ã‚’formatNumberé–¢æ•°ã§ä¸‰æ¡åŒºåˆ‡ã‚Šã«è¡¨ç¤ºã™ã‚‹ã€‚
+			goukei.innerHTML="åˆè¨ˆ=" & formatNumber(goukeiKinngaku,0)
 end sub
 
 ]]>
@@ -47,7 +47,7 @@ end sub
 <table>
 <tr>
 	<td>
-	<div><xsl:apply-templates select="‘S‘Ì" /></div>
+	<div><xsl:apply-templates select="å…¨ä½“" /></div>
 	</td>
 </tr>
 </table>
@@ -56,27 +56,27 @@ end sub
 </html>
 </xsl:template>
 
-<xsl:template match="‘S‘Ì">
+<xsl:template match="å…¨ä½“">
 <table>
 	<tr>
-	<th>”Ô†</th><th>–¼</th><th>“s“¹•{Œ§</th>
-	<th>ZŠ</th><th>“d˜b</th><th>‚¨”ƒã‚°‹àŠz</th>
+	<th>ç•ªå·</th><th>æ°å</th><th>éƒ½é“åºœçœŒ</th>
+	<th>ä½æ‰€</th><th>é›»è©±</th><th>ãŠè²·ä¸Šã’é‡‘é¡</th>
 	</tr>
-<xsl:for-each select="ŒÚ‹qî•ñ" order-by="dont-match-anything">
+<xsl:for-each select="é¡§å®¢æƒ…å ±" order-by="dont-match-anything">
 	<tr>
 	<td style="text-align:right">
-		<xsl:value-of select="‚¨‹q—l”Ô†" /></td>
-	<td><xsl:value-of select="–¼" /></td>
-	<td><xsl:value-of select="ZŠ/@“s“¹•{Œ§" /></td>
-	<td><xsl:value-of select="ZŠ" /></td>
-	<td><xsl:value-of select="“d˜b" /></td>
+		<xsl:value-of select="ãŠå®¢æ§˜ç•ªå·" /></td>
+	<td><xsl:value-of select="æ°å" /></td>
+	<td><xsl:value-of select="ä½æ‰€/@éƒ½é“åºœçœŒ" /></td>
+	<td><xsl:value-of select="ä½æ‰€" /></td>
+	<td><xsl:value-of select="é›»è©±" /></td>
 	<td style="text-align:right">
-		<xsl:apply-templates select="‚¨”ƒ‚¢ã‚°‹àŠz" /></td>
+		<xsl:apply-templates select="ãŠè²·ã„ä¸Šã’é‡‘é¡" /></td>
 	</tr>
 </xsl:for-each>
 </table>
 </xsl:template>
-<xsl:template match="‚¨”ƒ‚¢ã‚°‹àŠz">
+<xsl:template match="ãŠè²·ã„ä¸Šã’é‡‘é¡">
 	<xsl:eval>formatNumber(this.nodeTypedValue,"#,###")</xsl:eval>
 </xsl:template>
 </xsl:stylesheet>

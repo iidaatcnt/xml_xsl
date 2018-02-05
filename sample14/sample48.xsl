@@ -13,22 +13,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 	</style>
 	</head>
 	<body>
-		<xsl:apply-templates select="‰c‹Æ“ú•ñ" />
+		<xsl:apply-templates select="å–¶æ¥­æ—¥å ±" />
 	</body>
 </html>
 </xsl:template>
 
-<xsl:template match="‰c‹Æ“ú•ñ">
+<xsl:template match="å–¶æ¥­æ—¥å ±">
 	<table>
-	<xsl:for-each select="“ú•ñ">
+	<xsl:for-each select="æ—¥å ±">
 	<tr>
-		<th>”NŒŽ“ú</th><td colspan="3" class="hinichi"><xsl:value-of select="ŠÇ—î•ñ/”NŒŽ“ú" /></td>
+		<th>å¹´æœˆæ—¥</th><td colspan="3" class="hinichi"><xsl:value-of select="ç®¡ç†æƒ…å ±/å¹´æœˆæ—¥" /></td>
 	</tr>
 	<tr>
-		<th>’S“–ŽÒ</th><td colspan="3"><xsl:value-of select="ŠÇ—î•ñ/’S“–ŽÒ" /></td>
+		<th>æ‹…å½“è€…</th><td colspan="3"><xsl:value-of select="ç®¡ç†æƒ…å ±/æ‹…å½“è€…" /></td>
 	</tr>
 	<tr>
-		<th>–{•¶</th><td style="width:150"><xsl:value-of select="“à—e/–{•¶" /></td>
+		<th>æœ¬æ–‡</th><td style="width:150"><xsl:value-of select="å†…å®¹/æœ¬æ–‡" /></td>
 	</tr>
 
 	</xsl:for-each>

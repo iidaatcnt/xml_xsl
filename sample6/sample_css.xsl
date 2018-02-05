@@ -4,24 +4,24 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="ëSëÃ/ëËñº" /></title>
+<title><xsl:value-of select="ÂÖ®‰Ωì/È°åÂêç" /></title>
 <style type="text/css">
 body{background:url(xml_icon.gif) fixed no-repeat bottom right white;
 margin-top:25;margin-left:15%;margin-right:25%;
-font-family:"ÇlÇr Çoñæí©",serif;
+font-family:"Ôº≠Ôº≥ Ôº∞ÊòéÊúù",serif;
 font-size:11pt;line-height:16pt;color:dimgray;}
 
-h1{font-family:"ÇlÇr ÇoÉSÉVÉbÉN",sans-serif;color:black;
+h1{font-family:"Ôº≠Ôº≥ Ôº∞„Ç¥„Ç∑„ÉÉ„ÇØ",sans-serif;color:black;
 width:100%;filter:shadow(color=gainsboro,direction=135);
 line-height:30pt;}
 
 span{color:crimson;}
 
-h2{font-family:"ÇlÇr ÇoÉSÉVÉbÉN",sans-serif;font-weight:bold;
+h2{font-family:"Ôº≠Ôº≥ Ôº∞„Ç¥„Ç∑„ÉÉ„ÇØ",sans-serif;font-weight:bold;
 margin-top:30;padding:0.2em;
 color:white;background:royalblue;width:540;}
 
-h3{font-family:"ÇlÇr ÇoÉSÉVÉbÉN",sans-serif;
+h3{font-family:"Ôº≠Ôº≥ Ôº∞„Ç¥„Ç∑„ÉÉ„ÇØ",sans-serif;
 margin-top:20;border-bottom:solid 1pt cornflowerblue;
 width:540;color:mediumblue;}
 
@@ -45,56 +45,56 @@ a:visited{color:mediumblue;}
 </style>
 </head>
 <body>
-<xsl:apply-templates select="ëSëÃ/äTóv" />
-<xsl:apply-templates select="ëSëÃ/äÈã∆èÓïÒ" />
+<xsl:apply-templates select="ÂÖ®‰Ωì/Ê¶ÇË¶Å" />
+<xsl:apply-templates select="ÂÖ®‰Ωì/‰ºÅÊ•≠ÊÉÖÂ†±" />
 </body>
 </html>
 </xsl:template>
-<xsl:template match="ëSëÃ/äTóv">
+<xsl:template match="ÂÖ®‰Ωì/Ê¶ÇË¶Å">
 	<div>
 		<xsl:element name="img">
 			<xsl:attribute name="src">
-				<xsl:value-of select="ÉçÉS" />
+				<xsl:value-of select="„É≠„Ç¥" />
 			</xsl:attribute>
 		</xsl:element>
 	</div>
 	<div>
 		<h1>
-		<xsl:value-of select="É^ÉCÉgÉã" />
-		<xsl:value-of select="É^ÉCÉgÉã/@ï™óﬁ" />
+		<xsl:value-of select="„Çø„Ç§„Éà„É´" />
+		<xsl:value-of select="„Çø„Ç§„Éà„É´/@ÂàÜÈ°û" />
 		</h1>
 	</div>
 	<div>
-		<h2><xsl:value-of select="ÉRÉsÅ[" /></h2>
-		<p><xsl:value-of select="ÉäÅ[Éh" /></p>
+		<h2><xsl:value-of select="„Ç≥„Éî„Éº" /></h2>
+		<p><xsl:value-of select="„É™„Éº„Éâ" /></p>
 	</div>
 </xsl:template>
-<xsl:template match="ëSëÃ/äÈã∆èÓïÒ">
-	<div><xsl:apply-templates select="âÔé–äTóv" /></div>
-	<div><xsl:apply-templates select="éñã∆ì‡óe" /></div>
-	<div><xsl:apply-templates select="ÉäÉìÉN" /></div>
+<xsl:template match="ÂÖ®‰Ωì/‰ºÅÊ•≠ÊÉÖÂ†±">
+	<div><xsl:apply-templates select="‰ºöÁ§æÊ¶ÇË¶Å" /></div>
+	<div><xsl:apply-templates select="‰∫ãÊ•≠ÂÜÖÂÆπ" /></div>
+	<div><xsl:apply-templates select="„É™„É≥„ÇØ" /></div>
 </xsl:template>
-<xsl:template match="âÔé–äTóv">
-	<h3><xsl:value-of select="è¨å©èoÇµ" /></h3>
+<xsl:template match="‰ºöÁ§æÊ¶ÇË¶Å">
+	<h3><xsl:value-of select="Â∞èË¶ãÂá∫„Åó" /></h3>
 	<table>
-		<xsl:for-each select="ÉfÅ[É^">
+		<xsl:for-each select="„Éá„Éº„Çø">
 		<tr>
-		<th><xsl:value-of select="çÄñ⁄" /></th>
-		<td><xsl:value-of select="ìEóv" /></td>
+		<th><xsl:value-of select="È†ÖÁõÆ" /></th>
+		<td><xsl:value-of select="ÊëòË¶Å" /></td>
 		</tr>
 		</xsl:for-each>
 	</table>
 </xsl:template>
-<xsl:template match="éñã∆ì‡óe">
-	<h3><xsl:value-of select="è¨å©èoÇµ" /></h3>
+<xsl:template match="‰∫ãÊ•≠ÂÜÖÂÆπ">
+	<h3><xsl:value-of select="Â∞èË¶ãÂá∫„Åó" /></h3>
 	<ul>
-		<xsl:for-each select="çÄñ⁄">
+		<xsl:for-each select="È†ÖÁõÆ">
 		<li><xsl:value-of /></li>
 		</xsl:for-each>
 	</ul>
 </xsl:template>
-<xsl:template match="ÉäÉìÉN">
-	<xsl:for-each select="ÉäÉìÉNêÊ">
+<xsl:template match="„É™„É≥„ÇØ">
+	<xsl:for-each select="„É™„É≥„ÇØÂÖà">
 		<div>
 		<xsl:element name="a">
 			<xsl:attribute name="href">

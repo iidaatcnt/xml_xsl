@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 
 <script type="text/vbscript">
 <xsl:comment>
@@ -18,7 +18,7 @@ sub window_onload()
 	set xmldoc=createObject("Microsoft.XMLDom")
 	xmldoc.async=false
 	xmldoc.load("sample36.xml")
-	set selnode=xmldoc.getElementsByTagName("–¼")
+	set selnode=xmldoc.getElementsByTagName("æ°å")
 	nagasa=selnode.length-1
 	if selnode.length>0 then
 		for i=0 to nagasa
@@ -27,13 +27,13 @@ sub window_onload()
 	else
 		exit sub
 	end if
-			'–¼‚ğ•\¦‚·‚éD
+			'æ°åã‚’è¡¨ç¤ºã™ã‚‹ï¼
 			personal_namae.innerHTML=namae
 end sub
 
 sub search(no)
 	searchname=document.all("xmlname" & no).innerText
-	patternstring="‘S‘Ì/ŒÚ‹qî•ñ[–¼='" & searchname & "'" & "]/ZŠ"
+	patternstring="å…¨ä½“/é¡§å®¢æƒ…å ±[æ°å='" & searchname & "'" & "]/ä½æ‰€"
 	set selnode=xmldoc.selectNodes(patternstring)
 	address.innerHTML=selnode(0).text
 end sub

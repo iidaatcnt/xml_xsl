@@ -4,12 +4,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="/">
 <html lang="ja">
 <head>
-<title><xsl:value-of select="‘S‘Ì/‘è–¼" /></title>
+<title><xsl:value-of select="å…¨ä½“/é¡Œå" /></title>
 <style type="text/css">
 table{border:solid 1pt black;position:absolute;margin-left:100;}
 th{border:solid 1pt gray;padding:2;}
 td{border:solid 1pt gray;padding:2;}
-select{font-family:"‚l‚r ‚o–¾’©",serif;font-size:14pt;
+select{font-family:"ï¼­ï¼³ ï¼°æ˜æœ",serif;font-size:14pt;
 padding:3;position:absolute;}
 </style>
 
@@ -33,86 +33,86 @@ end sub
 
 sub go()
 	
-	'•\‚ªŒ`¬‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğallNO‚Ì’l‚Å”»•Ê‚µ‚Ä‚¢‚éB
-	'•\‚ªŒ`¬‚³‚ê‚Ä‚¢‚½‚çˆê“x‘S‚Ä‚Ìs‚ğíœ‚·‚éB
+	'è¡¨ãŒå½¢æˆã•ã‚Œã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’allNOã®å€¤ã§åˆ¤åˆ¥ã—ã¦ã„ã‚‹ã€‚
+	'è¡¨ãŒå½¢æˆã•ã‚Œã¦ã„ãŸã‚‰ä¸€åº¦å…¨ã¦ã®è¡Œã‚’å‰Šé™¤ã™ã‚‹ã€‚
 	if allNO=2525 then
 		for i=0 to addressNode.length
 			myTable.deleteRow(0)
 		next
 	end if
 
-	'table‚ÉV‚µ‚¢sitrj‚ğì¬‚µArowsƒRƒŒƒNƒVƒ‡ƒ“‚É’Ç‰Á‚·‚éB
-	'-1 ‚ÍinsertRow‚ÌƒfƒtƒHƒ‹ƒg’l‚ÅAtr‚ğcellsƒRƒŒƒNƒVƒ‡ƒ“‚ÌÅŒã‚É’Ç‰Á‚·‚éB
+	'tableã«æ–°ã—ã„è¡Œï¼ˆtrï¼‰ã‚’ä½œæˆã—ã€rowsã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã«è¿½åŠ ã™ã‚‹ã€‚
+	'-1 ã¯insertRowã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã§ã€trã‚’cellsã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã®æœ€å¾Œã«è¿½åŠ ã™ã‚‹ã€‚
 	set myRow=myTable.insertRow(-1)
 	
-	'Še—v‘f‚Ì“à—e‚ğ—\‚ß‘S‚Ä“®“I‚È”z—ñ•Ï”‚ÉŠi”[‚µ‚Ä‚¨‚­B
-	'selectƒ{ƒbƒNƒX‚Å‘I‘ğ‚³‚ê‚½option—v‘f‚Ì“à—e‚ğ•Ï”selectAddress‚ÉŠi”[‚µ
-	'selectNodesƒƒ\ƒbƒh‚ğg‚Á‚ÄselectAddress‚É‡’v‚·‚é—v‘f‚Ì“à—e‚ğŒŸõ‚µ‚Ä‚¢‚éB
-	'‚»‚Ì“à—e‚ğ“®“I”z—ñ•Ï”‚ÉŠi”[‚µ‚Ä‚¢‚éB
+	'å„è¦ç´ ã®å†…å®¹ã‚’äºˆã‚å…¨ã¦å‹•çš„ãªé…åˆ—å¤‰æ•°ã«æ ¼ç´ã—ã¦ãŠãã€‚
+	'selectãƒœãƒƒã‚¯ã‚¹ã§é¸æŠã•ã‚ŒãŸoptionè¦ç´ ã®å†…å®¹ã‚’å¤‰æ•°selectAddressã«æ ¼ç´ã—
+	'selectNodesãƒ¡ã‚½ãƒƒãƒ‰ã‚’ä½¿ã£ã¦selectAddressã«åˆè‡´ã™ã‚‹è¦ç´ ã®å†…å®¹ã‚’æ¤œç´¢ã—ã¦ã„ã‚‹ã€‚
+	'ãã®å†…å®¹ã‚’å‹•çš„é…åˆ—å¤‰æ•°ã«æ ¼ç´ã—ã¦ã„ã‚‹ã€‚
 
 	selectAddress=mySelect.options.value
-	patternstring="‘S‘Ì/ŒÚ‹qî•ñ[ZŠ/@“s“¹•{Œ§=" & "'" & selectAddress & "'" & "]/ZŠ"
+	patternstring="å…¨ä½“/é¡§å®¢æƒ…å ±[ä½æ‰€/@éƒ½é“åºœçœŒ=" & "'" & selectAddress & "'" & "]/ä½æ‰€"
 	set addressNode=document.XMLDocument.selectNodes(patternstring)
 	redim address1(addressNode.length)
 	redim myAddress2(addressNode.length)
 	for i=0 to addressNode.length-1
 		address1(i)=addressNode(i).text
-		myAddress2(i)=addressNode(i).getAttribute("“s“¹•{Œ§")
+		myAddress2(i)=addressNode(i).getAttribute("éƒ½é“åºœçœŒ")
 	next
 
-	patternstring="‘S‘Ì/ŒÚ‹qî•ñ[ZŠ/@“s“¹•{Œ§=" & "'" & selectAddress & "'" & "]/‚¨‹q—l”Ô†"
+	patternstring="å…¨ä½“/é¡§å®¢æƒ…å ±[ä½æ‰€/@éƒ½é“åºœçœŒ=" & "'" & selectAddress & "'" & "]/ãŠå®¢æ§˜ç•ªå·"
 	set noNode=document.XMLDocument.selectNodes(patternstring)
 	redim myNo(noNode.length)
 	for i=0 to noNode.length-1
 		myNo(i)=noNode(i).text
 	next
 
-	patternstring="‘S‘Ì/ŒÚ‹qî•ñ[ZŠ/@“s“¹•{Œ§=" & "'" & selectAddress & "'" & "]/–¼"
+	patternstring="å…¨ä½“/é¡§å®¢æƒ…å ±[ä½æ‰€/@éƒ½é“åºœçœŒ=" & "'" & selectAddress & "'" & "]/æ°å"
 	set shimeiNode=document.XMLDocument.selectNodes(patternstring)
 	redim myShimei(shimeiNode.length)
 	for i=0 to shimeiNode.length-1
 		myShimei(i)=shimeiNode(i).text
 	next
 	
-	patternstring="‘S‘Ì/ŒÚ‹qî•ñ[ZŠ/@“s“¹•{Œ§=" & "'" & selectAddress & "'" & "]/“d˜b"
+	patternstring="å…¨ä½“/é¡§å®¢æƒ…å ±[ä½æ‰€/@éƒ½é“åºœçœŒ=" & "'" & selectAddress & "'" & "]/é›»è©±"
 	set telNode=document.XMLDocument.selectNodes(patternstring)
 	redim dennwa(telNode.length)
 	for i=0 to telNode.length-1
 		dennwa(i)=telNode(i).text
 	next
 
-	'‚»‚ê‚¼‚ê‚Ìtable‚ÉŠÖ‚·‚é—v‘f‚ğ¶¬‚µA‚Ü‚½‚»‚ÌƒeƒLƒXƒgƒm[ƒh‚ğ¶¬‚·‚éB
+	'ãã‚Œãã‚Œã®tableã«é–¢ã™ã‚‹è¦ç´ ã‚’ç”Ÿæˆã—ã€ã¾ãŸãã®ãƒ†ã‚­ã‚¹ãƒˆãƒãƒ¼ãƒ‰ã‚’ç”Ÿæˆã™ã‚‹ã€‚
 	set myCell1=document.createElement("th")
-	set myNumber=document.createTextNode("”Ô†")
+	set myNumber=document.createTextNode("ç•ªå·")
 
 	set myCell2=document.createElement("th")
-	set myName=document.createTextNode("–¼")
+	set myName=document.createTextNode("æ°å")
 
 	set myCell3=document.createElement("th")
-	set myKen=document.createTextNode("“s“¹•{Œ§")
+	set myKen=document.createTextNode("éƒ½é“åºœçœŒ")
 
 	set myCell4=document.createElement("th")
-	set myJyuusyo=document.createTextNode("ZŠ")
+	set myJyuusyo=document.createTextNode("ä½æ‰€")
 
 	set myCell5=document.createElement("th")
-	set myTel=document.createTextNode("“d˜b")
+	set myTel=document.createTextNode("é›»è©±")
 
-	'¶¬‚µ‚½—v‘f‚ÉA“à—e‚ğ’Ç‰Á‚·‚éB
+	'ç”Ÿæˆã—ãŸè¦ç´ ã«ã€å†…å®¹ã‚’è¿½åŠ ã™ã‚‹ã€‚
 	myCell1.appendChild(myNumber)
 	myCell2.appendChild(myName)
 	myCell3.appendChild(myken)
 	myCell4.appendChild(myJyuusyo)
 	myCell5.appendChild(myTel)
 
-	'‚»‚ê‚¼‚ê‚Ì—v‘f‚ğA‚³‚ç‚És‚É’Ç‰Á‚·‚éB
+	'ãã‚Œãã‚Œã®è¦ç´ ã‚’ã€ã•ã‚‰ã«è¡Œã«è¿½åŠ ã™ã‚‹ã€‚
 	myRow.appendChild(myCell1)
 	myRow.appendChild(myCell2)
 	myRow.appendChild(myCell3)
 	myRow.appendChild(myCell4)
 	myRow.appendChild(myCell5)
-'----------------------‚±‚±‚Ü‚Å‚Í•\‘g‚İ‚ÌTable Header‚ğ¶¬‚µ‚Ä‚¢‚éB
+'----------------------ã“ã“ã¾ã§ã¯è¡¨çµ„ã¿ã®Table Headerã‚’ç”Ÿæˆã—ã¦ã„ã‚‹ã€‚
 
-	'ƒm[ƒh‚ÌŒÂ”•ªAtd—v‘f‚â‚»‚Ì“à—e‚ğ¶¬‚µs‚É’Ç‰Á‚µ‚Ä‚¢‚­B	
+	'ãƒãƒ¼ãƒ‰ã®å€‹æ•°åˆ†ã€tdè¦ç´ ã‚„ãã®å†…å®¹ã‚’ç”Ÿæˆã—è¡Œã«è¿½åŠ ã—ã¦ã„ãã€‚	
 	for i=0 to addressNode.length-1
 		set myRow=myTable.insertRow(-1)
 		set myCell01=document.createElement("td")
@@ -141,7 +141,7 @@ sub go()
 		myRow.appendChild(myCell05)
 		
 	next
-				'‚±‚Ì”Ô†‚Å‰æ–Êã‚É•\‚ª¶¬‚³‚ê‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğ”»•Ê‚·‚éB
+				'ã“ã®ç•ªå·ã§ç”»é¢ä¸Šã«è¡¨ãŒç”Ÿæˆã•ã‚Œã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’åˆ¤åˆ¥ã™ã‚‹ã€‚
 				
 				allNO=2525
 end sub
@@ -153,11 +153,11 @@ end sub
 <table id="myTable">
 </table>
 <select id="mySelect" onChange="go()">
-	<option value="ˆ¤•QŒ§">ˆ¤•QŒ§</option>
-	<option value="‘åã•{">‘åã•{</option>
-	<option value="•ºŒÉŒ§">•ºŒÉŒ§</option>
-	<option value="“Œ‹“s">“Œ‹“s</option>
-	<option value="‘å•ªŒ§">‘å•ªŒ§</option>
+	<option value="æ„›åª›çœŒ">æ„›åª›çœŒ</option>
+	<option value="å¤§é˜ªåºœ">å¤§é˜ªåºœ</option>
+	<option value="å…µåº«çœŒ">å…µåº«çœŒ</option>
+	<option value="æ±äº¬éƒ½">æ±äº¬éƒ½</option>
+	<option value="å¤§åˆ†çœŒ">å¤§åˆ†çœŒ</option>
 </select>
 </body>
 </html>

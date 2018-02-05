@@ -6,8 +6,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <head>
 <title>Sample44</title>
 <style type="text/css">
-td{font-family:"‚l‚r ‚o–¾’©",serif;font-size:12pt;}
-button{font-family:"‚l‚r ‚oƒSƒVƒbƒN",sans-serif;font-size:10pt;}
+td{font-family:"ï¼­ï¼³ ï¼°æ˜æœ",serif;font-size:12pt;}
+button{font-family:"ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯",sans-serif;font-size:10pt;}
 </style>
 </head>
 
@@ -32,28 +32,28 @@ sub window_onload()
 	iro=0
 	syainn_no.value=""
 	no=0
-'DOMƒIƒuƒWƒFƒNƒg‚ğg‚¦‚é‚æ‚¤‚É‚·‚éD
+'DOMã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹ï¼
 	set xmldoc=CreateObject("Microsoft.XMLDom")
 	xmldoc.async=false
 	xmldoc.load("sample44.xml")
 
-	set ichi=xmldoc.getElementsByTagName("Ğˆõî•ñ")
+	set ichi=xmldoc.getElementsByTagName("ç¤¾å“¡æƒ…å ±")
 	redim ichix(ichi.length)
 	redim ichiy(ichi.length)
 	
-	'XML•¶‘’†‚ÌuĞˆõî•ñv—v‘f‚ª‚Â‘®«uˆÊ’uxv‚ÆuˆÊ’uyv
-	'‚Ì’l‚ğgetAttribute‚Åæ“¾‚·‚éD
+	'XMLæ–‡æ›¸ä¸­ã®ã€Œç¤¾å“¡æƒ…å ±ã€è¦ç´ ãŒæŒã¤å±æ€§ã€Œä½ç½®xã€ã¨ã€Œä½ç½®yã€
+	'ã®å€¤ã‚’getAttributeã§å–å¾—ã™ã‚‹ï¼
 	for i=0 to ichi.length-1
-		ichix(i)=ichi(i).getAttribute("ˆÊ’ux")
-		ichiy(i)=ichi(i).getAttribute("ˆÊ’uy")
+		ichix(i)=ichi(i).getAttribute("ä½ç½®x")
+		ichiy(i)=ichi(i).getAttribute("ä½ç½®y")
 	next 
 	call search()
 end sub
 
-'“o˜^‚³‚ê‚Ä‚¢‚éĞˆõî•ñ‚ÌŒÂ”‚ğ’²‚×‚éD
+'ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹ç¤¾å“¡æƒ…å ±ã®å€‹æ•°ã‚’èª¿ã¹ã‚‹ï¼
 sub search()
-    set selnode=xmldoc.getElementsByTagName("Ğˆõ”Ô†")
-	message.innerHTML=selnode.length & "–¼‚Ìƒf[ƒ^‚ª‚ ‚è‚Ü‚·D1`" & selnode.length & "‚Ì”Ô†‚ğ“ü—Í‚µ‚Ä‰º‚³‚¢."
+    set selnode=xmldoc.getElementsByTagName("ç¤¾å“¡ç•ªå·")
+	message.innerHTML=selnode.length & "åã®ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã™ï¼1ã€œ" & selnode.length & "ã®ç•ªå·ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„."
 	no2=selnode.length
 end sub
 
@@ -66,81 +66,81 @@ sub go()
 	search_no=eval(syainn_no.value)
 	no3=search_no
 
-	'“o˜^‚³‚ê‚Ä‚¢‚éĞˆõ”Ô†‚Æ“ü—Í‚³‚ê‚½”’l‚ªˆê’v‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ì”»•ÊD
+	'ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹ç¤¾å“¡ç•ªå·ã¨å…¥åŠ›ã•ã‚ŒãŸæ•°å€¤ãŒä¸€è‡´ã—ã¦ã„ã‚‹ã‹ã©ã†ã‹ã®åˆ¤åˆ¥ï¼
 	if search_no>no2 or search_no<=0 then
-		msgbox "Ğˆõ”Ô†‚ª•s³‚Å‚·D"
+		msgbox "ç¤¾å“¡ç•ªå·ãŒä¸æ­£ã§ã™ï¼"
 		syainn_no.value=""
 		exit sub
 	end if
 
-	'“ü—Í‚³‚ê‚½Ğˆõ”Ô†‚Ì’lisearch_noj‚Éˆê’v‚·‚éC‚»‚ê‚¼‚ê‚Ì—v‘f‚Ì“à—e‚ğæ“¾‚µ‚Ä•\¦D
+	'å…¥åŠ›ã•ã‚ŒãŸç¤¾å“¡ç•ªå·ã®å€¤ï¼ˆsearch_noï¼‰ã«ä¸€è‡´ã™ã‚‹ï¼Œãã‚Œãã‚Œã®è¦ç´ ã®å†…å®¹ã‚’å–å¾—ã—ã¦è¡¨ç¤ºï¼
 
-	patternstring="ŠÖ¼‰c‹ÆŠ/Ğˆõî•ñ[Ğˆõ”Ô†='" & search_no & "']/Ğˆõ”Ô†"
+	patternstring="é–¢è¥¿å–¶æ¥­æ‰€/ç¤¾å“¡æƒ…å ±[ç¤¾å“¡ç•ªå·='" & search_no & "']/ç¤¾å“¡ç•ªå·"
 	set selnode=xmldoc.selectNodes(patternstring)
 	banngou.innerHTML=selnode(0).text
 
-	patternstring="ŠÖ¼‰c‹ÆŠ/Ğˆõî•ñ[Ğˆõ”Ô†='" & search_no & "']/‚Ó‚è‚ª‚È"
+	patternstring="é–¢è¥¿å–¶æ¥­æ‰€/ç¤¾å“¡æƒ…å ±[ç¤¾å“¡ç•ªå·='" & search_no & "']/ãµã‚ŠãŒãª"
 	set selnode=xmldoc.selectNodes(patternstring)
 	yomi.innerHTML=selnode(0).text
 
-	patternstring="ŠÖ¼‰c‹ÆŠ/Ğˆõî•ñ[Ğˆõ”Ô†='" & search_no & "']/–¼"
+	patternstring="é–¢è¥¿å–¶æ¥­æ‰€/ç¤¾å“¡æƒ…å ±[ç¤¾å“¡ç•ªå·='" & search_no & "']/æ°å"
 	set selnode=xmldoc.selectNodes(patternstring)
 	namae.innerHTML=selnode(0).text
 
-	patternstring="ŠÖ¼‰c‹ÆŠ/Ğˆõî•ñ[Ğˆõ”Ô†='" & search_no & "']/’S“–"
+	patternstring="é–¢è¥¿å–¶æ¥­æ‰€/ç¤¾å“¡æƒ…å ±[ç¤¾å“¡ç•ªå·='" & search_no & "']/æ‹…å½“"
 	set selnode=xmldoc.selectNodes(patternstring)
 	tanntou.innerHTML=selnode(0).text
 
-	patternstring="ŠÖ¼‰c‹ÆŠ/Ğˆõî•ñ[Ğˆõ”Ô†='" & search_no & "']/Ê^"
+	patternstring="é–¢è¥¿å–¶æ¥­æ‰€/ç¤¾å“¡æƒ…å ±[ç¤¾å“¡ç•ªå·='" & search_no & "']/å†™çœŸ"
 	set selnode=xmldoc.selectNodes(patternstring)
 	image1.src=selnode(0).text
 
-	patternstring="ŠÖ¼‰c‹ÆŠ/Ğˆõî•ñ[Ğˆõ”Ô†='" & search_no & "']/¶”NŒ“ú"
+	patternstring="é–¢è¥¿å–¶æ¥­æ‰€/ç¤¾å“¡æƒ…å ±[ç¤¾å“¡ç•ªå·='" & search_no & "']/ç”Ÿå¹´æœˆæ—¥"
 	set selnode=xmldoc.selectNodes(patternstring)
 	birth.innerHTML=selnode(0).text
 
-	patternstring="ŠÖ¼‰c‹ÆŠ/Ğˆõî•ñ[Ğˆõ”Ô†='" & search_no & "']/“d˜b"
+	patternstring="é–¢è¥¿å–¶æ¥­æ‰€/ç¤¾å“¡æƒ…å ±[ç¤¾å“¡ç•ªå·='" & search_no & "']/é›»è©±"
 	set selnode=xmldoc.selectNodes(patternstring)
 	dennwa.innerHTML=selnode(0).text
 
 
-	set selnode2=xmldoc.getElementsByTagName("Ğˆõ”Ô†")
+	set selnode2=xmldoc.getElementsByTagName("ç¤¾å“¡ç•ªå·")
 	redim kyssno(selnode2.length)
 	for i=0 to selnode2.length-1
 		kyssno(i)=selnode2(i).text
 	next
 
-	set selnode2=xmldoc.getElementsByTagName("‚Ó‚è‚ª‚È")
+	set selnode2=xmldoc.getElementsByTagName("ãµã‚ŠãŒãª")
 	redim kyssyomi(selnode2.length)
 	for i=0 to selnode2.length-1
 		kyssyomi(i)=selnode2(i).text
 	next
 
-	set selnode2=xmldoc.getElementsByTagName("–¼")
+	set selnode2=xmldoc.getElementsByTagName("æ°å")
 	redim kyssnamae(selnode2.length)
 	for i=0 to selnode2.length-1
 		kyssnamae(i)=selnode2(i).text
 	next
 
-	set selnode2=xmldoc.getElementsByTagName("’S“–")
+	set selnode2=xmldoc.getElementsByTagName("æ‹…å½“")
 	redim kysstanntou(selnode2.length)
 	for i=0 to selnode2.length-1
 		kysstanntou(i)=selnode2(i).text
 	next
 
-	set selnode2=xmldoc.getElementsByTagName("Ê^")
+	set selnode2=xmldoc.getElementsByTagName("å†™çœŸ")
 	redim kysssyashinn(selnode2.length)
 	for i=0 to selnode2.length-1
 		kysssyashinn(i)=selnode2(i).text
 	next
 
-	set selnode2=xmldoc.getElementsByTagName("¶”NŒ“ú")
+	set selnode2=xmldoc.getElementsByTagName("ç”Ÿå¹´æœˆæ—¥")
 	redim kyssnenntukihi(selnode2.length)
 	for i=0 to selnode2.length-1
 		kyssnenntukihi(i)=selnode2(i).text
 	next
 
-	set selnode2=xmldoc.getElementsByTagName("“d˜b")
+	set selnode2=xmldoc.getElementsByTagName("é›»è©±")
 	redim kyssdennwa(selnode2.length)
 	for i=0 to selnode2.length-1
 		kyssdennwa(i)=selnode2(i).text
@@ -149,7 +149,7 @@ sub go()
 	call markmove()
 end sub
 
-'‰æ–Ê”z’u}ã‚Åšƒ}[ƒN‚ªˆÚ“®‚·‚éˆ—
+'ç”»é¢é…ç½®å›³ä¸Šã§â˜…ãƒãƒ¼ã‚¯ãŒç§»å‹•ã™ã‚‹å‡¦ç†
 sub markmove()
 	markichi=banngou.innerText
 	mark.style.marginleft=ichix(markichi-1)
@@ -158,24 +158,24 @@ sub markmove()
 	timer1=window.setinterval("blink()",30)
 end sub
 
-'Ğˆõ”z’u}ã‚Åš‚ª“_–Å‚·‚éˆ—D
+'ç¤¾å“¡é…ç½®å›³ä¸Šã§â˜…ãŒç‚¹æ»…ã™ã‚‹å‡¦ç†ï¼
 sub blink()
 	select case iro
 		case 1
 			mark.style.color="blue"
-			mark.innerHTML="š"
+			mark.innerHTML="â˜…"
 		case 2
 			mark.style.color="red"
-			'datediff()ŠÖ”‚ğg‚Á‚Ä”N—î‚ğ©“®“I‚ÉŒvZ‚³‚¹‚Ä‚¢‚éD
+			'datediff()é–¢æ•°ã‚’ä½¿ã£ã¦å¹´é½¢ã‚’è‡ªå‹•çš„ã«è¨ˆç®—ã•ã›ã¦ã„ã‚‹ï¼
 			age=datediff("yyyy",birth.innerText,now)
-			mark.innerHTML="<span style='font-size:12pt'>" & age & "Ë" & "</span>"
+			mark.innerHTML="<span style='font-size:12pt'>" & age & "æ‰" & "</span>"
 		case else
 			iro=0
 	end select
 			iro=iro+1
 end sub
 
-'uŸĞˆõvu‘OĞˆõvƒ{ƒ^ƒ“‚Æ˜A“®‚µ‚Ä•\¦‚³‚¹‚éĞˆõƒf[ƒ^‚Ìˆ—D
+'ã€Œæ¬¡ç¤¾å“¡ã€ã€Œå‰ç¤¾å“¡ã€ãƒœã‚¿ãƒ³ã¨é€£å‹•ã—ã¦è¡¨ç¤ºã•ã›ã‚‹ç¤¾å“¡ãƒ‡ãƒ¼ã‚¿ã®å‡¦ç†ï¼
 sub naiyouhyouji()
 	banngou.innerHTML=kyssno(no3)
 	yomi.innerHTML=kyssyomi(no3)
@@ -188,10 +188,10 @@ sub naiyouhyouji()
 	call markmove()
 end sub
 
-'uŸĞˆõvƒ{ƒ^ƒ“‚ğƒNƒŠƒbƒN‚µ‚½‚Æ‚«‚Ìˆ—D
+'ã€Œæ¬¡ç¤¾å“¡ã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸã¨ãã®å‡¦ç†ï¼
 sub tugi()
 	if no3>=no2 then
-		msgbox "ÅŒã‚Ìƒf[ƒ^‚Å‚·I"
+		msgbox "æœ€å¾Œã®ãƒ‡ãƒ¼ã‚¿ã§ã™ï¼"
 		exit sub
 	else
 		call naiyouhyouji()
@@ -199,10 +199,10 @@ sub tugi()
 	end if
 end sub	
 
-'u‘OĞˆõvƒ{ƒ^ƒ“‚ğƒNƒŠƒbƒN‚µ‚½‚Æ‚«‚Ìˆ—D
+'ã€Œå‰ç¤¾å“¡ã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸã¨ãã®å‡¦ç†ï¼
 sub mae()
 	if no3<=0 then
-		msgbox "ÅãˆÊ‚Ìƒf[ƒ^‚Å‚·D"
+		msgbox "æœ€ä¸Šä½ã®ãƒ‡ãƒ¼ã‚¿ã§ã™ï¼"
 		exit sub
 	else
 		no3	=no3-1
@@ -216,16 +216,16 @@ end sub
 </script>
 <body>
 
-<div id="mark" style="visibility:hidden;position:absolute;margin-top:0;margin-left:0;color:red;font-size:14pt;font-weight:bold">š</div>
+<div id="mark" style="visibility:hidden;position:absolute;margin-top:0;margin-left:0;color:red;font-size:14pt;font-weight:bold">â˜…</div>
 
-<img src="floor.gif" width="295" height="410" alt="ƒtƒƒA}"/>
+<img src="floor.gif" width="295" height="410" alt="ãƒ•ãƒ­ã‚¢å›³"/>
 
-<span style="position:absolute;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:30pt;margin-left:10;width:300;filter:shadow(color=black,direction=135);color:aquamarine;letter-spacing:0.2em">Ğˆõ”z’u}</span>
+<span style="position:absolute;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:30pt;margin-left:10;width:300;filter:shadow(color=black,direction=135);color:aquamarine;letter-spacing:0.2em">ç¤¾å“¡é…ç½®å›³</span>
 
-<div id="message" style="margin-top:60;color:red;position:absolute;margin-left:10;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:12pt"></div>
-<div style="position:absolute;margin-left:10;margin-top:80;font-family:‚l‚r ‚oƒSƒVƒbƒN;font-size:11pt">
-Ğˆõ”Ô†F<input style="text-align:center" type="text" name="syainn_no" size="5" />
-<button onclick="go()">Às</button>
+<div id="message" style="margin-top:60;color:red;position:absolute;margin-left:10;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:12pt"></div>
+<div style="position:absolute;margin-left:10;margin-top:80;font-family:ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯;font-size:11pt">
+ç¤¾å“¡ç•ªå·ï¼š<input style="text-align:center" type="text" name="syainn_no" size="5" />
+<button onclick="go()">å®Ÿè¡Œ</button>
 </div>
 
 <div id="block" style="visibility:hidden;position:absolute;margin-left:5;margin-top:105">
@@ -233,7 +233,7 @@ end sub
 <tr>
 	<td>
 	<div>
-	<xsl:apply-templates select="ŠÖ¼‰c‹ÆŠ" />
+	<xsl:apply-templates select="é–¢è¥¿å–¶æ¥­æ‰€" />
 	</div>
 	</td>
 	</tr>
@@ -241,38 +241,38 @@ end sub
 </div>
 
 <div style="visibility:hidden;position:absolute;margin-top:320;margin-left:10" id="nextdata">
-<button onclick="tugi()">ŸĞˆõ</button>
-<button onclick="mae()">‘OĞˆõ</button>
+<button onclick="tugi()">æ¬¡ç¤¾å“¡</button>
+<button onclick="mae()">å‰ç¤¾å“¡</button>
 </div>
 </body>
 </html>
 </xsl:template>
 
-<xsl:template match="ŠÖ¼‰c‹ÆŠ">
+<xsl:template match="é–¢è¥¿å–¶æ¥­æ‰€">
 <table border="1" style="border-width:2;border-color:black">
 	<tr>
-	<td style="background-color:snow">Ğˆõ”Ô†</td>
+	<td style="background-color:snow">ç¤¾å“¡ç•ªå·</td>
 	<td><span id="banngou"></span></td>
 	<td rowspan="4"><img id="image1"></img></td>
 	</tr>
 	<tr>
-	<td style="background-color:snow">‚Ó‚è‚ª‚È</td>
+	<td style="background-color:snow">ãµã‚ŠãŒãª</td>
 	<td><span id="yomi"></span></td>
 	</tr>
 	<tr>
-	<td style="background-color:snow">–¼</td>
+	<td style="background-color:snow">æ°å</td>
 	<td><span id="namae"></span></td>
 	</tr>
 	<tr>
-	<td style="background-color:snow">’S“–</td>
+	<td style="background-color:snow">æ‹…å½“</td>
 	<td><span id="tanntou"></span></td>
 	</tr>
 	<tr>
-	<td  style="background-color:snow">¶”NŒ“ú</td>
+	<td  style="background-color:snow">ç”Ÿå¹´æœˆæ—¥</td>
 	<td colspan="2"><span id="birth"></span></td>
 	</tr>
 	<tr>
-	<td style="background-color:snow">“d˜b</td>
+	<td style="background-color:snow">é›»è©±</td>
 	<td colspan="2"><span id="dennwa"></span></td>
 	</tr>
 	</table>
