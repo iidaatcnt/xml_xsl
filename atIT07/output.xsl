@@ -6,13 +6,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
       <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="customer">
-      <ŒÚ‹q>
+      <é¡§å®¢>
         <xsl:apply-templates/>
-      </ŒÚ‹q>
+      </é¡§å®¢>
     </xsl:template>
     <xsl:template match="name">
-      <Ž–¼>
+      <æ°å>
       <xsl:value-of select="."/>
-    </Ž–¼>
+    </æ°å>
   </xsl:template>
 </xsl:stylesheet>

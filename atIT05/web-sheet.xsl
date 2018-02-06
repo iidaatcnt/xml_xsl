@@ -10,7 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
      </html>
    </xsl:template>
    <xsl:template match="reviews">
-     <h2>���]�ꗗ</h2>
+     <h2>書評一覧</h2>
      <xsl:apply-templates/>
    </xsl:template>
  </xsl:stylesheet>

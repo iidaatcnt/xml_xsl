@@ -1,7 +1,7 @@
-Œ³ƒlƒ^F
+å…ƒãƒã‚¿ï¼š
 
-XSLTƒXƒ^ƒCƒ‹ƒV[ƒg‘‚«•ûuÀi‰ž—p•Ò ÅI‰ñjF
+XSLTã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆæ›¸ãæ–¹è¬›åº§ï¼ˆå¿œç”¨ç·¨ æœ€çµ‚å›žï¼‰ï¼š
 
-ƒtƒ@ƒCƒ‹o—Í‚ÆXSLT‹@”\Šg’£
+ãƒ•ã‚¡ã‚¤ãƒ«å‡ºåŠ›ã¨XSLTæ©Ÿèƒ½æ‹¡å¼µ
 
 http://www.atmarkit.co.jp/ait/articles/0203/08/news002.html

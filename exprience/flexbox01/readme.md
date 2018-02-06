@@ -2,28 +2,28 @@ flexbox
 
 (CSS Flexible Box Layout )
 
-ŒöŽ®ƒTƒCƒg
+å…¬å¼ã‚µã‚¤ãƒˆ
 https://www.w3.org/TR/css-flexbox/#box-model
 
-Šeƒuƒ‰ƒEƒU‚Ì‘Î‰žó‹µ
+å„ãƒ–ãƒ©ã‚¦ã‚¶ã®å¯¾å¿œçŠ¶æ³
 https://caniuse.com/#feat=flexbox
 
-flex-direction(default : row i‚Â‚Ü‚èu->v‚Ì•ûŒü)‚ð main axis ‚ÆŒÄ‚ÑA ‚»‚ê‚É’¼s‚·‚é•ûŒü‚ðcross axis‚ÆŒÄ‚ÔB
-flex-direction‚ªcolumnic•ûŒüj‚É‚È‚ê‚ÎŠÖŒW‚Í‹t‚É‚È‚éB
+flex-direction(default : row ï¼ˆã¤ã¾ã‚Šã€Œ->ã€ã®æ–¹å‘)ã‚’ main axis ã¨å‘¼ã³ã€ ãã‚Œã«ç›´è¡Œã™ã‚‹æ–¹å‘ã‚’cross axisã¨å‘¼ã¶ã€‚
+flex-directionãŒcolumnï¼ˆç¸¦æ–¹å‘ï¼‰ã«ãªã‚Œã°é–¢ä¿‚ã¯é€†ã«ãªã‚‹ã€‚
 
-## flex container‚ÌƒvƒƒpƒeƒB
+## flex containerã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 + flex-direction
 + flex-wrap
 + justify-content
 + align-items
 + align-content
 
-## flex item‚ÌƒvƒƒpƒeƒB
+## flex itemã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 + order
 + align-self
 + flex-grow
 + flex-shrink
 + flex-basis
 
-flex-growA flex-shrinkA flex-basis‚Í3‚Â•¹‚¹‚ÄÝ’è‚·‚é‚±‚Æ‚ª‚Å‚«‚é
+flex-growã€ flex-shrinkã€ flex-basisã¯3ã¤ä½µã›ã¦è¨­å®šã™ã‚‹ã“ã¨ãŒã§ãã‚‹
  -> flex: 0 1 auto;

@@ -10,11 +10,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
      </html>
    </xsl:template>
    <xsl:template match="books">
-     <h3>���i���̏��Ж��ꗗ</h3>
+     <h3>価格順の書籍名一覧</h3>
      <ul>
        <xsl:for-each select="title">
          <xsl:sort select="./@price" data-type="number" order="ascending"/>
-         <li><xsl:value-of select="."/>�i�ŕ�<xsl:value-of select="./@price"/>�~�j</li>
+         <li><xsl:value-of select="."/>（税別<xsl:value-of select="./@price"/>円）</li>
        </xsl:for-each>
      </ul>
    </xsl:template>

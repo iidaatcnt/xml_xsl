@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="Shift_JIS"?>
 <?xml-stylesheet type="text/xsl" href="sample.xsl"?>
 <article>
-  <title>XSLTサンプル01</title>
+  <title>XSLT繧ｵ繝ｳ繝励Ν01</title>
   <paragraph>Apple Pen.</paragraph>
-  <title>XSLTサンプル02</title>
+  <title>XSLT繧ｵ繝ｳ繝励Ν02</title>
   <paragraph>PineApple Pen.</paragraph>
-  <title>XSLTサンプル03</title>
+  <title>XSLT繧ｵ繝ｳ繝励Ν03</title>
   <paragraph>Pen Apple PineApple Pen.</paragraph>
 </article>

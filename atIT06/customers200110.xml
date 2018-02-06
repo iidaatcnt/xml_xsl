@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="Shift_JIS" ?>
 <customers>
   <customer id="c001">
-    <name>H–{‘¾˜Y</name>
-    <addr>`‹æ–ƒ•z’KŒŠ’¬A-A-A</addr>
-    <area>ŠÖ“Œ</area>
+    <name>ç§‹æœ¬å¤ªéƒŽ</name>
+    <addr>æ¸¯åŒºéº»å¸ƒç‹¸ç©´ç”ºA-A-A</addr>
+    <area>é–¢æ±</area>
   </customer>
   <customer id="c002">
-    <name>‰Á“¡‰ÔŽq</name>
-    <addr>‰¡•lŽs‹à‘ò‹æ‰³äwB-B-B</addr>
-    <area>ŠÖ“Œ</area>
+    <name>åŠ è—¤èŠ±å­</name>
+    <addr>æ¨ªæµœå¸‚é‡‘æ²¢åŒºä¹™èˆ³B-B-B</addr>
+    <area>é–¢æ±</area>
   </customer>
   <customer id="c003">
-    <name>²X–ØŽŸ˜Y</name>
-    <addr>‘åãŽs’ßŒ©‹æ•úo“ŒC-C-C</addr>
-    <area>‹ß‹E</area>
+    <name>ä½ã€…æœ¨æ¬¡éƒŽ</name>
+    <addr>å¤§é˜ªå¸‚é¶´è¦‹åŒºæ”¾å‡ºæ±C-C-C</addr>
+    <area>è¿‘ç•¿</area>
   </customer>
   <customer id="c004">
-    <name>“c’†—ÇŽq</name>
-    <addr>‰Y“YŽs¨—‹qD-D-D</addr>
-    <area>‰«“ê</area>
+    <name>ç”°ä¸­è‰¯å­</name>
+    <addr>æµ¦æ·»å¸‚å‹¢ç†å®¢D-D-D</addr>
+    <area>æ²–ç¸„</area>
   </customer>
 </customers>

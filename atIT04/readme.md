@@ -1,7 +1,7 @@
-���l�^�F
+元ネタ：
 
-XSLT�X�^�C���V�[�g�������u���i4�j�F
+XSLTスタイルシート書き方講座（4）：
 
-XSLT�ɂ��f�[�^�̃\�[�g�ƕϐ��ƃp�����[�^
+XSLTによるデータのソートと変数とパラメータ
 
 http://www.atmarkit.co.jp/ait/articles/0109/18/news002.html

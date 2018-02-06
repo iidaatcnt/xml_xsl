@@ -18,8 +18,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:template match="tbl">
   <table border="3">
     <tr>
-      <th>‚¨–¼‘O</th>
-      <th>‚²ZŠ</th>
+      <th>ãŠåå‰</th>
+      <th>ã”ä½æ‰€</th>
     </tr>
     <xsl:variable name="t" select="document(@href)"/>
     <xsl:for-each select="$t//customer">

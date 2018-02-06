@@ -2,18 +2,18 @@
 <?xml-stylesheet href="web-sheet.xsl" type="text/xsl" ?>
 <reviews>
    <book>
-     <title>�ڐ�-XML Schema</title>
+     <title>詳説-XML Schema</title>
      <price>2500</price>
-     <review>���E�W���X�L�[�}����̂��ׂĂ�ԗ��B�Җ]�̈���I</review>
+     <review>世界標準スキーマ言語のすべてを網羅。待望の一冊！</review>
    </book>
    <book>
-     <title>Web�T�[�r�X�\�z�̂��߂�SOAP����</title>
+     <title>Webサービス構築のためのSOAP入門</title>
      <price>2000</price>
-     <review>�A�v���P�[�V�����ԒʐM�v���g�R��SOAP�̓��发�B</review>
+     <review>アプリケーション間通信プロトコルSOAPの入門書。</review>
    </book>
    <book>
-     <title>XQuery�T��</title>
+     <title>XQuery概説</title>
      <price>1500</price>
-     <review>2001�N6���ɑ��Ă��o���΂����XML�Ɖ��̊T�v��m��̂ɍD�K�B</review>
+     <review>2001年6月に草案が出たばかりのXML照会言語の概要を知るのに好適。</review>
    </book>
  </reviews>

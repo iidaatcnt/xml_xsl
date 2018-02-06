@@ -1,8 +1,8 @@
-Œ³ƒlƒ^F
-XSLTƒXƒ^ƒCƒ‹ƒV[ƒg‘‚«•ûuÀi1jF
+å…ƒãƒã‚¿ï¼š
+XSLTã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆæ›¸ãæ–¹è¬›åº§ï¼ˆ1ï¼‰ï¼š
 
-XSLTƒXƒ^ƒCƒ‹ƒV[ƒg‚ÌŠî‘b‚ÌŠî‘b
+XSLTã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆã®åŸºç¤Žã®åŸºç¤Ž
 
 http://www.atmarkit.co.jp/ait/articles/0108/24/news002.html
 
-ã‚ÌƒTƒ“ƒvƒ‹‚ð‚à‚Æ‚ÉŠg’£‚µ‚½
+ä¸Šã®ã‚µãƒ³ãƒ—ãƒ«ã‚’ã‚‚ã¨ã«æ‹¡å¼µã—ãŸ
