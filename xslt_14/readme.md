@@ -1,9 +1,10 @@
-ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO 
-14. ‚»‚Ì‘¼‚ÌŠÖ”
+å…ƒãƒã‚¿ã¯ã€
+ã€Œã‚µãƒ³ãƒ—ãƒ«ã§è¦šãˆã‚‹XSLTãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚° 
+14. ãã®ä»–ã®é–¢æ•°ã€
 
 http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt14.html
 
-—áF
+ä¾‹ï¼š
 element-available('xsl:apply-imports')
 element-available('xsl:apply-templates')
 element-available('xsl:attribute')

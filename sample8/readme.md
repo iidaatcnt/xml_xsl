@@ -1,9 +1,9 @@
 元ネタは書籍「XML+XSLサンプル集」です。
 
-01 XML <- CSS + VC + XSL（デバッグ中）
+01 XML <- CSS + VC + XSL
 sample37.xml sample37.xsl
 
-02 XML <- CSS + VC + XSL（デバッグ中）
+02 XML <- CSS + VC + XSL
 sample38.xml sample38.xsl
 
 03 XML <- CSS + VC + XSL（デバッグ中）

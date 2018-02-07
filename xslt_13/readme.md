@@ -1,8 +1,9 @@
-�T���v���Ŋo����XSLT�v���O���~���O 
-13. bool�㐔�n�֐�
+元ネタは、
+「サンプルで覚えるXSLTプログラミング 
+13. bool代数系関数」
 
 http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt13.html
 
-��Fboolean(A) != boolean(B) 
+例：boolean(A) != boolean(B) 
 
-��L�̕\���ŁA<A>�Ƃ����G�������g������ΕK��<B>�Ƃ����G�������g���A���݂̃G���� ���g�̎q�Ƃ��đ��݂��Ȃ���΂Ȃ�Ȃ��Ƃ�����������邱�Ƃ��ł��܂��B
+上記の表現で、<A>というエレメントがあれば必ず<B>というエレメントが、現在のエレメ ントの子として存在しなければならないという制約をつけることができます。

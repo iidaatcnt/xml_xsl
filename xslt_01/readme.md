@@ -1,9 +1,10 @@
-ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO
-1.XSLT‚É‚æ‚éHTML‚Ö‚Ì•ÏŠ· 
+å…ƒãƒã‚¿ã¯ã€
+ã€Œã‚µãƒ³ãƒ—ãƒ«ã§è¦šãˆã‚‹XSLTãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°
+1.XSLTã«ã‚ˆã‚‹HTMLã¸ã®å¤‰æ› ã€
 
-www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt01.html
+http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt01.html
 
-[Ql•¶Œ£‚¨‚æ‚ÑƒTƒCƒg]
+[å‚è€ƒæ–‡çŒ®ãŠã‚ˆã³ã‚µã‚¤ãƒˆ]
 
 http://www.w3.org/
 http://technet.oracle.com/xml

@@ -1,5 +1,6 @@
-ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO 
-8.‚»‚Ì‘¼‚ÌXSLTƒGƒŒƒƒ“ƒg
+å…ƒãƒã‚¿ã¯ã€
+ã€Œã‚µãƒ³ãƒ—ãƒ«ã§è¦šãˆã‚‹XSLTãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚° 
+8.ãã®ä»–ã®XSLTã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã€
 
 http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt08.html
 

@@ -1,4 +1,5 @@
-ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO
-2.XPath‚ÌŠî‘b’m¯
+å…ƒãƒã‚¿ã¯ã€
+ã€Œã‚µãƒ³ãƒ—ãƒ«ã§è¦šãˆã‚‹XSLTãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°
+2.XPathã®åŸºç¤çŸ¥è­˜ã€
 
 www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt02.html

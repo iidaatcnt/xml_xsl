@@ -1,17 +1,18 @@
-ƒTƒ“ƒvƒ‹‚ÅŠo‚¦‚éXSLTƒvƒƒOƒ‰ƒ~ƒ“ƒO 
-11. ”’lŒvŽZŒnŠÖ” 
+å…ƒãƒã‚¿ã¯ã€
+ã€Œã‚µãƒ³ãƒ—ãƒ«ã§è¦šãˆã‚‹XSLTãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚° 
+11. æ•°å€¤è¨ˆç®—ç³»é–¢æ•° ã€
 
 http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt11.html
 
-—áF
-iŒ³‚É‚È‚éXML•¶‘j
+ä¾‹ï¼š
+ï¼ˆå…ƒã«ãªã‚‹XMLæ–‡æ›¸ï¼‰
 <books>
 <book>The Innovator's Dilemma</book>
 <book>Adaptive Enterprise</book>
 <book>Race for the World</book>
 </books> 
 
-iXSLTƒvƒƒOƒ‰ƒ€j
+ï¼ˆXSLTãƒ—ãƒ­ã‚°ãƒ©ãƒ ï¼‰
 <xsl:template match="books">
 <xsl:value-of select="count('book')">
 </xsl:template>

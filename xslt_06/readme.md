@@ -1,4 +1,5 @@
-�T���v���Ŋo����XSLT�v���O���~���O
-6.�o�͌nXSLT�G�������g
+元ネタは、
+「サンプルで覚えるXSLTプログラミング
+6.出力系XSLTエレメント」
 
 http://www.atmarkit.co.jp/fxml/tanpatsu/xslt/xslt06.html
