@@ -30,8 +30,20 @@ sample09.xml sample09.xsl
 04 文章中にリストを表示する
 sample10.xml sample10.xsl
 
-05 条件分岐１(デバッグ中) 
+05 条件分岐１
 sample11.xml sample11.xsl
+	<xsl:if test="@chk='true'">
+	:
+	</xsl:if>
 
-06 条件分岐２(デバッグ中) 
+06 条件分岐２
 sample12.xml sample12.xsl
+
+	<xsl:choose>
+		<xsl:when test="@chk='true'">
+				<xsl:value-of select="."/>
+		</xsl:when>
+		<xsl:otherwise>
+				<xsl:value-of select="."/>
+		</xsl:otherwise>
+	</xsl:choose>
