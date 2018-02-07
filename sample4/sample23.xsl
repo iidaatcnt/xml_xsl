@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
+
 <xsl:template match="/">
-<html lang="ja">
-<head>
-<title><xsl:value-of select="全体/題名" /></title>
-<style type="text/css">
-table{border:solid 1pt black;}
-th{background-color:silver;padding:5;}
-td{border:solid 1pt black;padding:10;}
-</style>
-</head>
-<body><xsl:apply-templates select="全体" /></body>
-</html>
+	<HTML lang="ja">
+		<HEAD>
+			<TITLE><xsl:value-of select="全体/題名" /></TITLE>
+			<STYLE type="text/css">
+			table{border:solid 1pt black;}
+			th{background-color:silver;padding:5;}
+			td{border:solid 1pt black;padding:10;}
+			</STYLE>
+		</HEAD>
+		<BODY><xsl:apply-templates select="全体" /></BODY>
+	</HTML>
 </xsl:template>
+
 <xsl:template match="全体">
-<div>価格の高い順にソートされています</div>
-<table>
-	<tr><th>番号</th><th>品名</th><th>価格</th></tr>
-	<xsl:for-each select="商品" order-by="-number(価格)">
-		<tr>
-		<td><xsl:value-of select="番号" /></td>
-		<td><xsl:value-of select="品名" /></td>
-		<td style="text-align:right"><xsl:value-of select="価格" /></td>
-		</tr>
-	</xsl:for-each>
-</table>
+	<DIV>価格の高い順にソートされています</DIV>
+	<TABLE>
+		<TR><TH>番号</TH><TH>品名</TH><TH>価格</TH></TR>
+		<!-- <xsl:for-each select="商品" order-by="-number(価格)"> -->
+		<xsl:for-each select="商品">
+			<TR>
+			<TD><xsl:value-of select="番号" /></TD>
+			<TD><xsl:value-of select="品名" /></TD>
+			<TD style="text-align:right"><xsl:value-of select="価格" /></TD>
+			</TR>
+		</xsl:for-each>
+	</TABLE>
 </xsl:template>
+
 </xsl:stylesheet>
