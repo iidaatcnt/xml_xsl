@@ -22,7 +22,7 @@ sample04.xml sample04.xsl
 sample05.xml sample05.xsl
 <xsl:if test="見出し[.='']">
 
-06 条件分岐２（デバッグ中）
+06 条件分岐２
 sample06.xml sample06.xsl
 <xsl:choose>
 <xsl:when test="見出し[@色='silver']"></xsl:when>
