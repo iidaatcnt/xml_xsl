@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="drugs.xsl"?>
+<companies>
+  <company>
+    <name>Merck</name>
+    <drugs>
+      <drug>Zocor</drug>
+      <drug>Vasotec</drug>
+      <drug>Crixivan</drug>
+    </drugs>
+  </company>
+  <company>
+    <name>Bristol-Myers Squibb</name>
+    <drugs>
+      <drug>Paravachol</drug>
+      <drug>TAXOL</drug>
+    </drugs>
+  </company>
+  <company>
+    <name>Pfizer</name>
+    <drugs>
+      <drug>Viagra</drug>
+      <drug>Norvasc</drug>
+      <drug>Procardia XL</drug> 
+    </drugs>
+  </company>
+</companies>

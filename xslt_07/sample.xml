@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- <?xml-stylesheet type="text/xsl" href="prefectures1.xsl"?> -->
 <?xml-stylesheet type="text/xsl" href="prefectures2.xsl"?>
 <!-- <?xml-stylesheet type="text/xsl" href="prefectures3.xsl"?> -->
 <prefectures> 
   <prefecture id="1">
-  <name>–kŠC“¹</name>
-  <capital>ŽD–y</capital>
+  <name>åŒ—æµ·é“</name>
+  <capital>æœ­å¹Œ</capital>
   <area unit="sqkm">78420</area>
   <population>5691737</population>
 </prefecture>
 <prefecture id="2">
-  <name>ÂXŒ§</name>
-  <capital>ÂX</capital>
+  <name>é’æ£®çœŒ</name>
+  <capital>é’æ£®</capital>
   <area unit="sqkm">9606</area>
   <population>1504358</population>
 </prefecture>
 <prefecture id="46">
-  <name>Ž­Ž™“‡Œ§</name>
-  <capital>Ž­Ž™“‡</capital>
+  <name>é¹¿å…å³¶çœŒ</name>
+  <capital>é¹¿å…å³¶</capital>
   <area unit="sqkm">9186</area>
   <population>1790437</population>
 </prefecture>
 <prefecture id="47">
-  <name>‰«“êŒ§</name>
-  <capital>“ß”e</capital>
+  <name>æ²–ç¸„çœŒ</name>
+  <capital>é‚£è¦‡</capital>
   <area unit="sqkm">2266</area>
   <population>1313804</population>
 </prefecture>

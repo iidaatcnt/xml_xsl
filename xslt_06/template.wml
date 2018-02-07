@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+"http://www.wapforum.org/DTD/wml_1.1.xml">
+<!-- Main menu for WML examples -->
+<wml>
+  <head>
+    <meta http-equiv="Content-type" 
+content="text/vnd.wap.wml; charset=Shift_JIS"/>
+  </head>
+  <card title="WML Examples">
+    <p>
+      日本語表示のテストです。
+    </p>
+  </card>
+</wml>

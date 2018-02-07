@@ -4,7 +4,7 @@
 <book>Race for the World</book>
 </books> 
 
-iXSLTƒvƒƒOƒ‰ƒ€j
+ï¼ˆXSLTãƒ—ãƒ­ã‚°ãƒ©ãƒ ï¼‰
 <xsl:template match="books">
 <xsl:value-of select="count('book')">
 </xsl:template>

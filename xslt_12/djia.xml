@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="djia.xsl"?>
+<djia>
+  <company>ALCOA</company><company>ExxonMobil</company>
+  <company>McDonalds</company><company>American Express</company><company>General Electric</company>
+  <company>Merck</company><company>AT&amp;T</company>
+  <company>General Motors</company><company>Microsoft</company>
+  <company>Boeing</company><company>Hewlett-Packard</company><company>Minn Mining &amp; Manuf.</company><company>Caterpillar</company>
+  <company>Home Depot</company><company>Morgan, J.P.</company><company>Citigroup</company>
+  <company>Honeywell</company><company>Phillip Morris</company><company>Coca-Cola</company>
+  <company>Intel</company><company>Proctor &amp; Gamble</company><company>Disney</company>
+  <company>IBM</company><company>SBC Communications</company><company>DuPont</company>
+  <company>International Paper</company><company>United Technologies</company><company>Eastman Kodak</company>
+  <company>Johnson &amp; Johnson</company><company>Wal-Mart</company>
+</djia>
