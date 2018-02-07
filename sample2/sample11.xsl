@@ -11,12 +11,11 @@
 <xsl:template match="全体/本文">
 	<xsl:for-each select="リスト">
 		<xsl:if test="@chk='true'">
-			<ol>
+			<OL>
 				<xsl:for-each select="項目">
-					<li><xsl:value-of select="."/></li>
+					<LI><xsl:value-of select="."/></LI>
 				</xsl:for-each>
-			</ol>
-			<!-- <xsl:value-of select="."/> -->
+			</OL>
 		</xsl:if>
 	</xsl:for-each>
 </xsl:template>
