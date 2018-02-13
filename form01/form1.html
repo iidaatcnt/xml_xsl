@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<HTML LANG="JA">
+  <HEAD>
+    <META CHARSET="UTF8">
+    <TITLE>form:input</TITLE>
+    <script type="text/javascript"> 
+      <!-- 
+      function check(){
+        if(window.confirm('送信してよろしいですか？')){ // 確認ダイアログを表示
+          return true; // 「OK」時は送信を実行
+        }
+        else{ // 「キャンセル」時の処理
+          window.alert('キャンセルされました'); // 警告ダイアログを表示
+          return false; // 送信を中止
+        }
+      }
+      // -->
+      </script>
+  </HEAD>
+  <BODY>
+    <ARTICLE>
+        <H1>Form 1</H1>
+        <form method="POST" action="example.cgi" onSubmit="return check()"></form>
+        <!-- <FORM ACTION="survey.php" METHOD="POST"> -->
+            <P>会員番号: <INPUT TYPE="text" NAME="id" SIZE="50" PLACEHOLDER="Please enter ID"></P>
+            <P>ログイン: <INPUT TYPE="password" NAME="password"></P>
+            <INPUT TYPE="hidden" NAME="sec_id" VALUE="123456">
+            <P><INPUT TYPE="submit" VALUE="送信"></P>
+        </FORM>
+    </ARTICLE>
+  </BODY>
+</HTML>
