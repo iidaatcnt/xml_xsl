@@ -1,0 +1,20 @@
+<team>
+  <coach>
+    <name></name>
+    <age></age>
+    <experience></experience>
+    <college></college>
+  </coach>
+  <players>
+    <player>
+      <hash></hash>
+      <name></name>
+      <position></position>
+      <height></position>
+      <weight></weight>
+      <age></age>
+      <experience></experience>
+      <college></college>
+    </player>
+  </players>
+</team>
