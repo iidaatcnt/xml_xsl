@@ -1,0 +1,68 @@
+<bookstore>
+  <book category="ScienceFiction">
+    <title lang="en">Neuromancer</title>
+    <author>William Gibson</author>
+    <year>1984</year>
+    <isbn>12.00</isbn>
+  </book>
+  <book category="ScienceFiction">
+    <title lang="en">Count Zero</title>
+    <author>William Gibson</author>
+    <year>1986</year>
+    <isbn>13.99</isbn>
+  </book>
+  <book category="ScienceFiction">
+    <title lang="en">Mona Lisa Overdrive</title>
+    <author>William Gibson</author>
+    <year>1988</year>
+    <isbn>12.99</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">The Difference Engine</title>
+    <author>William Gibson</author>
+    <year>1990</year>
+    <isbn>11.95</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">Virtual Light</title>
+    <author>William Gibson</author>
+    <year>1993</year>
+    <isbn>11.95</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">Idoru</title>
+    <author>William Gibson</author>
+    <year>1996</year>
+    <isbn>13.95</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">Pattern Recognition</title>
+    <author>William Gibson</author>
+    <year>1996</year>
+    <isbn>11.65</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">Spook Country</title>
+    <author>William Gibson</author>
+    <year>2007</year>
+    <isbn>10.95</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">Zero History</title>
+    <author>William Gibson</author>
+    <year>1996</year>
+    <isbn>11.55</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">The Peripheral</title>
+    <author>William Gibson</author>
+    <year>2014</year>
+    <isbn>9.95</isbn>
+  </book>
+  <book category="ScienceFiction" cover="paperback">
+    <title lang="en">Burning Chrome</title>
+    <author>William Gibson</author>
+    <year>1986</year>
+    <isbn>19.95</isbn>
+  </book>
+</bookstore>
