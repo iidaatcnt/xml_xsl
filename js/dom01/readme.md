@@ -1,7 +1,12 @@
 JavascriptでXML操作
 
-books.xml
-index_01.html
-index_02.html
-index_03.html
-index_04.html
+デモ用データファイル：books.xml
+
+01. index_01.html
+  document.getElementById()
+02. index_02.html
+  document.getElementsByTagName()、その２
+03. index_03.html
+  xml.responseXML
+04. index_04.html
+  xmlDoc.getElementsByTagName()
