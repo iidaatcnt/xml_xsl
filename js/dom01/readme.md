@@ -4,9 +4,16 @@ JavascriptでXML操作
 
 01. index_01.html
   document.getElementById()
+
 02. index_02.html
-  document.getElementsByTagName()、その２
+  document.getElementsByTagName()
+
 03. index_03.html
-  xml.responseXML
+  xhttp.open("GET", "books.xml", true);
+      +
+  txt = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
 04. index_04.html
-  xmlDoc.getElementsByTagName()
+  xmlDoc = parser.parseFromString(text, "text/xml");
+      +
+  xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;

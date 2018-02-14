@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sample 04</title>
+</head>
+
+<body>
+
+  <p id="paragraph1"></p>
+
+  <p id="paragraph2"></p>
+
+  <script>
+    var text, parser, xmlDoc;
+
+    text = "<bookstore><book>" +
+      "<title>Count Zero</title>" +
+      "<author>William Gibson</author>" +
+      "<year>1986</year>" +
+      "</book>" +
+      "<book>" +
+      "<title>Mona Lisa Overdrive</title>" +
+      "<author>William Gibson</author>" +
+      "<year>1988</year>" +
+      "</book></bookstore>";
+
+    parser = new DOMParser();
+    xmlDoc = parser.parseFromString(text, "text/xml");
+
+    document.getElementById("paragraph1").innerHTML =
+      xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    document.getElementById("paragraph2").innerHTML =
+      xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+  </script>
+
+</body>
+
+</html>
