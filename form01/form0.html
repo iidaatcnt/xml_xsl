@@ -18,12 +18,10 @@
   <BODY>
     <ARTICLE>
         <H1>Form 1</H1>
-        <!-- <form ACTION="survey.php" METHOD="POST" onSubmit="return check()"> -->
         <form ACTION="survey.php" METHOD="POST">
             <P>会員番号: <INPUT TYPE="text" NAME="id" SIZE="50" PLACEHOLDER="Please enter ID"></P>
             <P>ログイン: <INPUT TYPE="password" NAME="password"></P>
             <INPUT TYPE="hidden" NAME="sec_code" VALUE="123456">
-            <!-- <P><INPUT TYPE="submit" VALUE="送信"></P> -->
             <input type='submit'  value='送信' onclick='return confirm("よろしいですか？");'/>
         </FORM>
     </ARTICLE>
