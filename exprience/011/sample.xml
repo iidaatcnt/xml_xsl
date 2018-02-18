@@ -1,0 +1,18 @@
+<cars>
+  <car>
+    <name>honda</name>
+    <price>100</price>
+    <option>radio</option>
+    <option>wing</option>
+    <option>jet</option>
+  </car>
+  <car>
+    <name>suzuki</name>
+    <option>turbo</option>
+    <price>200</price>
+  </car>
+  <car>
+    <name>yamaha</name>
+    <price>150</price>
+  </car>
+</cars>
