@@ -4,7 +4,7 @@
   <EMPLOYEES>
     <EMPLOYEE>
       <EMPNO>1</EMPNO>
-      <ENAME>佐野力</ENAME>
+      <ENAME>千尋</ENAME>
       <JOB>President</JOB>
       <HIREDATE>1990-04-01</HIREDATE>
       <SAL>10000</SAL>
@@ -12,7 +12,7 @@
     </EMPLOYEE>
     <EMPLOYEE>
       <EMPNO>50</EMPNO>
-      <ENAME>高橋敦子</ENAME>
+      <ENAME>月島雫</ENAME>
       <JOB>Director</JOB>
       <MGR>1</MGR>
       <HIREDATE>1991-04-01</HIREDATE>
@@ -21,7 +21,7 @@
     </EMPLOYEE>
     <EMPLOYEE>
       <EMPNO>1401</EMPNO>
-      <ENAME>小山尚彦</ENAME>
+      <ENAME>フィオ・ピッコロ</ENAME>
       <JOB>Analyst</JOB>
       <MGR>50</MGR>
       <HIREDATE>1999-09-01</HIREDATE>
