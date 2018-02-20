@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="Shift_JIS" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <customers>
   <customer id="c001">
-    <name>秋本太郎</name>
-    <addr>港区麻布狸穴町A-A-A</addr>
-    <area>関東</area>
+    <name>ナウシカ</name>
+    <addr>風の谷のナウシカ</addr>
+    <area>ジブリ作品</area>
   </customer>
   <customer id="c002">
-    <name>加藤花子</name>
-    <addr>横浜市金沢区乙舳B-B-B</addr>
-    <area>関東</area>
+    <name>サン</name>
+    <addr>もののけ姫</addr>
+    <area>ジブリ作品</area>
   </customer>
   <customer id="c003">
-    <name>佐々木次郎</name>
-    <addr>大阪市鶴見区放出東C-C-C</addr>
-    <area>近畿</area>
+    <name>キキ</name>
+    <addr>魔女の宅急便</addr>
+    <area>ジブリ作品</area>
   </customer>
   <customer id="c004">
-    <name>田中良子</name>
-    <addr>浦添市勢理客D-D-D</addr>
-    <area>沖縄</area>
+    <name>シータ</name>
+    <addr>天空の城ラピュタ</addr>
+    <area>ジブリ作品</area>
   </customer>
 </customers>
