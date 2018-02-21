@@ -1,67 +1,67 @@
-<manual>
+<docs>
 
-<xslt-elm>
+<xsl_elem>
   xsl:apply-template
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:atttibute name
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:element name
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:choose
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:for-each
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:if test
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:otherwise
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:template match
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
 xsl:when
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
 xsl:call-template
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xs;:comment
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:copy
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:param name
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:template match
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:text
-</xslt-elm>
+</xsl_elem>
 
-<xslt-elm>
+<xsl_elem>
   xsl:with-param name
-</xslt-elm>
+</xsl_elem>
 
-</manual>
+</docs>
