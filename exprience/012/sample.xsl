@@ -9,7 +9,7 @@
   <xsl:template match="bookstore">
     <xsl:for-each select="book">
       <div>
-        <xsl:number value="position()" format="10"/>
+        <xsl:number value="position()" format="1"/>
         .<xsl:value-of select="title"/>
       </div>
     </xsl:for-each>
