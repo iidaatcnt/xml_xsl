@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docs>
+  <doc>
+    <title>XMLサンプルDATA Vol.1</title>
+    <paragraph>Hello XSLT - 1</paragraph>
+  </doc>
+  <doc>
+    <title>XMLサンプルDATA Vol.2</title>
+    <paragraph>Hello XSLT - 2</paragraph>
+  </doc>
+  <doc>
+    <title>XMLサンプルDATA Vol.3</title>
+    <paragraph>Hello XSLT - 3</paragraph>
+  </doc>
+</docs>
