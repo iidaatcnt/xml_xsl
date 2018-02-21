@@ -1,2 +1,3 @@
 [ ] 文字コードが一致しない時に動くのか？
-SJIS + UTF8
+XML :UTF8
+XSL :SJIS

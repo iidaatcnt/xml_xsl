@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform" > 
-  <xsl:template match="/"> 
+<?xml version="1.0" encoding="Shift-jis"?>
+<!-- SJIS -->
+<xsl:stylesheet version="1.0" 
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="/">
     <xsl:apply-templates/>
-  </xsl:template> 
-  <xsl:template match="article"> 
-    <html><xsl:apply-templates/></html>
   </xsl:template>
-  <xsl:template match="title"> 
-    <h1><xsl:value-of select="."/></h1>
-  </xsl:template> 
-  <xsl:template match="paragraph" > 
-    <p><xsl:value-of select="."/></p>
-  </xsl:template> 
+  <xsl:template match="article">
+    <h1>
+      <xsl:value-of select="title"/>
+    </h1>
+    <p>
+      <xsl:value-of select="paragraph"/>
+    </p>
+  </xsl:template>
 </xsl:stylesheet>
