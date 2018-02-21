@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Super Bowl appearances and records -->
+<SuperBowl>
+  <game no="52" date=" 4, 2018" lang="ja">
+    <Stadium>USバンク・スタジアム</Stadium>
+    <nfc>イーグルス</nfc>
+    <afc>ペイトリオッツ<afc>
+    <halftime_show>ジャスティン・ティンバーレイク</halftime_show>
+  </game>
+  <game no="52" date="2018/2/4" lang="en">
+    <Stadium>U.S. Bank Stadium</Stadium>
+    <nfc>Philadelphia Eagles</nfc>
+    <afc>New England Patriots<afc>
+    <halftime_show>Justin Timberlake</halftime_show>
+    <channels>Fox</channels>
+  </game>
+  <game no="51" date="2017/2/5" lang="en">
+    <channels>Fox</channels>
+  </game>
+  <game no="50" date="2016/2/7" lang="en">
+    <channels>CBS</channels>
+  </game>
+  <game no="49" date="2015/2/1" lang="en">
+    <channels>NBC</channels>
+  </game>
+  <game no="48" date="2014/2/2" lang="en">
+    <channels>Fox</channels>
+  </game>
+</SuperBowl>
