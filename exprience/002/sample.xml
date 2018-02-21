@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-stylesheet type="text/xsl" href="sample.xsl"?> -->
+<!-- UTF-8 + LF -->
 <article>
   <title>XSLTサンプル</title>
   <paragraph>Hello World. Hello XSLT.</paragraph>
