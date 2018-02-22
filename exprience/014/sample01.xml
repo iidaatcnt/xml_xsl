@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample01.xsl"?>
+<応答メッセージ>
+  <朝の挨拶> 
+    <メッセージ xml:lang="ja">おはようございます</メッセージ> 
+    <メッセージ xml:lang="en">Good Morning</メッセージ> 
+  </朝の挨拶> 
+  <昼の挨拶> 
+    <メッセージ xml:lang="ja">こんにちは</メッセージ> 
+    <メッセージ xml:lang="en">Good Afternoon</メッセージ> 
+  </昼の挨拶> 
+  <夜の挨拶>
+    <メッセージ xml:lang="ja">こんばんは</メッセージ>
+    <メッセージ xml:lang="en">Good Evening</メッセージ>
+  </夜の挨拶>
+</応答メッセージ>
