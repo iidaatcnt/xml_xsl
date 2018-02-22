@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample00.xsl"?>
+<doc>
+  <p xml:lang="ja">これはペンです.</p>
+  <p xml:lang="en">This is a pen.</p>
+  <p xml:lang="ja">これはパイナップルです.</p>
+  <p xml:lang="en">This is a pineapple.</p>
+  <p xml:lang="ja">PPAPだ.</p>
+  <p xml:lang="en">PPAP!</p>
+  <!-- <p xml:lang="en">I went up a floor.</p> -->
+</doc>
