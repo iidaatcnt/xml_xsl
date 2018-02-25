@@ -2,18 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="report.xsl"?>
 <servers>
 	<server>
-		<hostname>
-				admin
-			</hostname>
-		<disk>
-				45
-			</disk>
-		<OS>
-				Amazon Linux AMI Version 2017.09
-		</OS>
-		<mem>
-				1.0GB
-		</mem>
+		<hostname>admin</hostname>
+		<disk>45</disk>
+		<OS> Amazon Linux AMI Version 2017.09 </OS>
+		<mem t="GB">1.0</mem>
 		<uptime>
 		</uptime>
 		<OOM>
@@ -22,18 +14,10 @@
 		</faillogin>
 	</server>
 	<server>
-		<hostname>
-				lb
-			</hostname>
-		<disk>
-				45
-			</disk>
-		<OS>
-				Amazon Linux AMI Version 2017.09
-			</OS>
-		<mem>
-				1.0GB
-		</mem>
+		<hostname> lb </hostname>
+		<disk> 45 </disk>
+		<OS> Amazon Linux AMI Version 2017.09 </OS>
+		<mem t="GB"> 1.0 </mem>
 		<uptime>
 		</uptime>
 		<OOM>
@@ -42,18 +26,10 @@
 		</faillogin>
 	</server>
 	<server>
-		<hostname>
-				failover
-			</hostname>
-		<disk>
-				45
-			</disk>
-		<OS>
-				Amazon Linux AMI Version 2017.09
-			</OS>
-		<mem>
-				1.0GB
-		</mem>
+		<hostname> failover </hostname>
+		<disk> 45 </disk>
+		<OS> Amazon Linux AMI Version 2017.09 </OS>
+		<mem t="GB"> 1.0</mem>
 		<uptime>
 		</uptime>
 		<OOM>
@@ -62,18 +38,10 @@
 		</faillogin>
 	</server>
 	<server>
-		<hostname>
-				KDDI
-			</hostname>
-		<disk>
-				45
-			</disk>
-		<OS>
-				Amazon Linux AMI Version 2017.09
-			</OS>
-		<mem>
-				1.0GB
-		</mem>
+		<hostname> KDDI </hostname>
+		<disk> 45 </disk>
+		<OS> Amazon Linux AMI Version 2017.09 </OS>
+		<mem t="GB"> 1.0</mem>
 		<uptime>
 		</uptime>
 		<OOM>
