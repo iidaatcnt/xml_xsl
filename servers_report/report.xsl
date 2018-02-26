@@ -3,15 +3,17 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="/">
-    <xsl:apply-templates select="report">
+    <xsl:apply-templates select="report"/>
   </xsl:template>
 
   <xsl:template match="report">
+    <TABLE>
     <xsl:for-each select="server">
-      <xsl:value-of select="OS"/>
-
-      <p><xsl:value-of select="hostname"/></p>
-      <TABLE>
+      <xsl:value-of select="hostname"/>
+        <TR>
+          <TH>HOST名</TH>
+          <TD><xsl:value-of select="hostname"/></TD>
+        </TR>
         <TR>
           <TH>OS</TH>
           <TD><xsl:value-of select="OS"/></TD>
@@ -24,8 +26,8 @@
           <TH>ディスク容量</TH>
           <TD><xsl:value-of select="disk"/></TD>
         </TR>
-      </TABLE>
     </xsl:for-each>
+    </TABLE>
   </xsl:template>
 
 </xsl:stylesheet>
