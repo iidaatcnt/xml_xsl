@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .myStyle {
+      font-weight: bold;
+      border: 1px solid gray;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<p id="msg">hoge</p>
+<script>
+    var e = document.getElementById('msg');
+    e.textContent = 'hello!';
+    e.style.color = 'red';
+    e.className = 'myStyle';
+
+    // 新しくdomを作る
+    var greet = document.createElement('p'),
+        text = document.createTextNode('hello world');
+    document.body.appendChild(greet).appendChild(text);
+
+</script>
+</body>
+
+</html>

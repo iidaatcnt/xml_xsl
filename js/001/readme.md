@@ -1,0 +1,1 @@
+JavascriptでDOMを扱うサンプル

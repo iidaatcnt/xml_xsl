@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    //関数 + ローカル関数
+    function hello(name) {
+      var msg = "Hello, " + name;
+      return msg;
+    }
+    //無名関数
+    var greet = function (name) {
+      var msg = "How are You, " + name;
+      return msg;
+    }
+
+    var msg = hello("Tom");
+    console.log(msg);
+
+    var msg = greet("Bob");
+    console.log(msg);
+
+    //即時関数
+    (function (name) {
+      console.log("Howdy, " + name);
+    })("Arron");
+
+  </script>
+</body>
+
+</html>
