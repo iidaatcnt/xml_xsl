@@ -1,22 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="js">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
 <body>
-
-<p id="demo"></p>
-
+  
 <script>
 var text, parser, xmlDoc;
 
-text = "<bookstore><book>" +
-"<title>Everyday Italian</title>" +
-"<author>Giada De Laurentiis</author>" +
-"<year>2005</year>" +
-"</book></bookstore>";
+text =  "<bookstore>"
++ "  <book category=\"ScienceFiction\">"
++ "    <title lang=\"en\">Neuromancer</title>"
++ "    <author>William Gibson</author>"
++ "    <year>1984</year>"
++ "    <price>12.00</price>"
++ "  </book>"
++ "  <book category=\"ScienceFiction\">"
++ "    <title lang=\"en\">Count Zero</title>"
++ "    <author>William Gibson</author>"
++ "    <year>1986</year>"
++ "    <price>13.99</price>"
++ "  </book>"
++ "</bookstore>";
 
 parser = new DOMParser();
 xmlDoc = parser.parseFromString(text,"text/xml");
 
-document.getElementById("demo").innerHTML =
-xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+// 子ノードのリスト
+x=xmlDoc.childNodes;
+document.write("子ノードのリスト: " + xmlDoc.childNodes.length + "<br/>");
+
+// バージョン表示
+document.write("XML version: " + xmlDoc.xmlVersion + "<br/>");
+
+// ノード名表示
+document.write("ルートノード名: " + xmlDoc.documentElement.nodeName + "<br/>");
+
+// 選択した要素のタグ名
+document.write(xmlDoc.getElementsByTagName("title")[0].tagName + "<br/>");
+document.write(xmlDoc.getElementsByTagName("title")[1].tagName + "<br/>");
+
+// 親ノード
+document.write(xmlDoc.getElementsByTagName("title")[0].parentNode.nodeName + "<br/>");
+document.write(xmlDoc.getElementsByTagName("title")[1].parentNode.nodeName + "<br/>");
+
+// 要素に対する子ノードのNodeList
+document.write(xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue + "<br/>");
+document.write(xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue + "<br/>");
+
 </script>
 
 </body>
