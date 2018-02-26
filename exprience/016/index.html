@@ -29,7 +29,7 @@ xmlDoc = parser.parseFromString(text,"text/xml");
 
 // 子ノードのリスト
 x=xmlDoc.childNodes;
-document.write("子ノードのリスト: " + xmlDoc.childNodes.length + "<br/>");
+document.write("子ノードのリスト: " + x.length + "<br/>");
 
 // バージョン表示
 document.write("XML version: " + xmlDoc.xmlVersion + "<br/>");
@@ -37,17 +37,29 @@ document.write("XML version: " + xmlDoc.xmlVersion + "<br/>");
 // ノード名表示
 document.write("ルートノード名: " + xmlDoc.documentElement.nodeName + "<br/>");
 
-// 選択した要素のタグ名
-document.write(xmlDoc.getElementsByTagName("title")[0].tagName + "<br/>");
-document.write(xmlDoc.getElementsByTagName("title")[1].tagName + "<br/>");
+// 要素のタグ名
+var x = xmlDoc.getElementsByTagName("title");
+for (i = 0; i <x.length; i++) {
+  document.write("タグ名:" + xmlDoc.getElementsByTagName("title")[i].tagName + "<br/>");
+}
+// document.write(xmlDoc.getElementsByTagName("title")[0].tagName + "<br/>");
+// document.write(xmlDoc.getElementsByTagName("title")[1].tagName + "<br/>");
 
 // 親ノード
-document.write(xmlDoc.getElementsByTagName("title")[0].parentNode.nodeName + "<br/>");
-document.write(xmlDoc.getElementsByTagName("title")[1].parentNode.nodeName + "<br/>");
+var x = xmlDoc.getElementsByTagName("title");
+for (i = 0; i <x.length; i++) {
+  document.write("親ノード:" + xmlDoc.getElementsByTagName("title")[i].parentNode.nodeName + "<br/>");
+}
+// document.write("親ノード:" + xmlDoc.getElementsByTagName("title")[0].parentNode.nodeName + "<br/>");
+// document.write("親ノード:" + xmlDoc.getElementsByTagName("title")[1].parentNode.nodeName + "<br/>");
 
 // 要素に対する子ノードのNodeList
-document.write(xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue + "<br/>");
-document.write(xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue + "<br/>");
+var x = xmlDoc.getElementsByTagName("title");
+for (i = 0; i <x.length; i++) {
+  document.write("子ノード:" + xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue + "<br/>");
+}
+// document.write("子ノード:" + xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue + "<br/>");
+// document.write("子ノード:" + xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue + "<br/>");
 
 </script>
 
