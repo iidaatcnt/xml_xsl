@@ -3,7 +3,19 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="/">
-    <xsl:apply-templates select="report"/>
+    <HTML>
+    <HEAD>
+    <style>
+    <!-- <LINK rel="stylesheet" href="./styles.css"> -->
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+    </HEAD>
+    <BODY>
+      <xsl:apply-templates select="report"/>
+    </BODY>
+    </HTML>
   </xsl:template>
 
   <xsl:template match="report">
