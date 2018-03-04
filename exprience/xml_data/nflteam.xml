@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teams>
+  <team league="nfc" division="east">
+    <Club>Buffalo Bills</Club>
+    <City>Orchard Park, New York</City>
+    <Stadium>New Era Field</Stadium>
+    <Capacity>71,608</Capacity>
+    <Coordinates>42.774°N 78.787°W</Coordinates>
+    <First_season>1960(AFL), 1970 (NFL)</First_season>
+    <Head_coach>Sean McDermott</Head_coach>
+  </team>
+  <team league="nfc" division="east">
+    <Club>Miami Dolphins</Club>
+    <City>Miami Gardens</City>
+    <Stadium>Florida	Hard Rock Stadium</Stadium>
+    <Capacity>65,326</Capacity>
+    <Coordinates>25.958°N 80.239°W</Coordinates>
+    <First_season>1966 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Adam Gase</Head_coach>
+  </team>
+  <team league="nfc" division="east">
+    <Club>New England Patriots</Club>
+    <City>Foxborough</City>
+    <Stadium>Massachusetts	Gillette Stadium</Stadium>
+    <Capacity>66,829</Capacity>
+    <Coordinates>42.091°N 71.264°W</Coordinates>
+    <First_season>1960 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Bill Belichick</Head_coach>
+  </team>
+  <team league="nfc" division="east">
+    <Club>New York Jets</Club>
+    <City>East Rutherford, New Jersey</City>
+    <Stadium>MetLife Stadium[D]</Stadium>
+    <Capacity>82,500</Capacity>
+    <Coordinates>40.814°N 74.074°W</Coordinates>
+    <First_season>1960 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Todd Bowles</Head_coach>
+  </team>
+
+  <team league="nfc" division="north">
+    <Club>Baltimore Ravens</Club>
+    <City>Baltimore, Maryland</City>
+    <Stadium>M&T Bank Stadium</Stadium>
+    <Capacity>71,008</Capacity>
+    <Coordinates>39.278°N 76.623°W</Coordinates>
+    <First_season>1996[E]</First_season>
+    <Head_coach>John Harbaugh</Head_coach>
+  </team>
+  <team league="nfc" division="north">
+    <Club>Cincinnati Bengals</Club>
+    <City>Cincinnati, Ohio</City>
+    <Stadium>Paul Brown Stadium</Stadium>
+    <Capacity>65,515</Capacity>
+    <Coordinates>39.095°N 84.516°W</Coordinates>
+    <First_season>1968 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Marvin Lewis</Head_coach>
+  </team>
+  <team league="nfc" division="north">
+    <Club>Cleveland Browns</Club>
+    <City>Cleveland, Ohio</City>
+    <Stadium>FirstEnergy Stadium</Stadium>
+    <Capacity>67,431</Capacity>
+    <Coordinates>41.506°N 81.699°W</Coordinates>
+    <First_season>1946 (AAFC), 1950 (NFL)[E]</First_season>
+    <Head_coach>Hue Jackson</Head_coach>
+  </team>
+  <team league="nfc" division="north">
+    <Club>Pittsburgh Steelers</Club>
+    <City>Pittsburgh, Pennsylvania</City>
+    <Stadium>Heinz Field</Stadium>
+    <Capacity>68,400</Capacity>
+    <Coordinates>40.447°N 80.016°W</Coordinates>
+    <First_season>1933</First_season>
+    <Head_coach>Mike Tomlin</Head_coach>
+  </team>
+  
+  <team league="nfc" division="south">
+    <Club>Houston Texans</Club>
+    <City>Houston, Texas</City>
+    <Stadium>NRG Stadium</Stadium>
+    <Capacity>72,220</Capacity>
+    <Coordinates>29.685°N 95.411°W</Coordinates>
+    <First_season>2002</First_season>
+    <Head_coach>Bill O'Brien</Head_coach>
+  </team>
+  <team league="nfc" division="south">
+    <Club>Indianapolis Colts</Club>
+    <City>Indianapolis, Indiana</City>
+    <Stadium>Lucas Oil Stadium</Stadium>
+    <Capacity>67,000</Capacity>
+    <Coordinates>39.760°N 86.164°W</Coordinates>
+    <First_season>1953</First_season>
+    <Head_coach>Frank Reich</Head_coach>
+  </team>
+  <team league="nfc" division="south">
+    <Club>Jacksonville Jaguars</Club>
+    <City>Jacksonville, Florida</City>
+    <Stadium>TIAA Bank Field[F]</Stadium>
+    <Capacity>67,246</Capacity>
+    <Coordinates>30.324°N 81.638°W</Coordinates>
+    <First_season>1995</First_season>
+    <Head_coach>Doug Marrone</Head_coach>
+  </team>
+  <team league="nfc" division="south">
+    <Club>Tennessee Titans</Club>
+    <City>Nashville, Tennessee</City>
+    <Stadium>Nissan Stadium</Stadium>
+    <Capacity>69,143</Capacity>
+    <Coordinates>36.166°N 86.771°W</Coordinates>
+    <First_season>1960 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Mike Vrabel</Head_coach>
+  </team>
+
+  <team league="nfc" division="west">
+    <Club>Denver Broncos</Club>
+    <City>Denver, Colorado</City>
+    <Stadium>Sports Authority Field at Mile High</Stadium>
+    <Capacity>76,125</Capacity>
+    <Coordinates>39.744°N 105.020°W</Coordinates>
+    <First_season>1960 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Vance Joseph</Head_coach>
+  </team>
+  <team league="nfc" division="west">
+    <Club>Kansas City Chiefs</Club>
+    <City>Kansas City, Missouri</City>
+    <Stadium>Arrowhead Stadium</Stadium>
+    <Capacity>76,416</Capacity>
+    <Coordinates>39.049°N 94.484°W</Coordinates>
+    <First_season>1960 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Andy Reid</Head_coach>
+  </team>
+  <team league="nfc" division="west">
+    <Club>Los Angeles Chargers</Club>
+    <City>Carson, California</City>
+    <Stadium>StubHub Center[G]</Stadium>
+    <Capacity>30,000</Capacity>
+    <Coordinates>33.864°N 118.261°W</Coordinates>
+    <First_season>1960 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Anthony Lynn</Head_coach>
+  </team>
+  <team league="nfc" division="west">
+    <Club>Oakland Raiders</Club>
+    <City>Oakland, California</City>
+    <Stadium>Oakland–Alameda County Coliseum</Stadium>
+    <Capacity>56,063</Capacity>
+    <Coordinates>37.752°N 122.201°W</Coordinates>
+    <First_season>1960 (AFL), 1970 (NFL)</First_season>
+    <Head_coach>Jon Gruden</Head_coach>
+  </team>
+
+  <team league="afc" division="east">
+    <Club>Dallas Cowboys</Club>
+    <City>Arlington, Texas</City>
+    <Stadium>AT&T Stadium</Stadium>
+    <Capacity>80,000</Capacity>
+    <Coordinates>32.748°N 97.093°W</Coordinates>
+    <First_season>1960</First_season>
+    <Head_coach>Jason Garrett</Head_coach>
+  </team>
+  <team league="afc" division="east">
+    <Club>New York Giants</Club>
+    <City>East Rutherford, New Jersey</City>
+    <Stadium>MetLife Stadium[D]</Stadium>
+    <Capacity>82,500</Capacity>
+    <Coordinates>40.814°N 74.074°W</Coordinates>
+    <First_season>1925</First_season>
+    <Head_coach>Pat Shurmur</Head_coach>
+  </team>
+  <team league="afc" division="east">
+    <Club>Philadelphia Eagles</Club>
+    <City>Philadelphia, Pennsylvania</City>
+    <Stadium>Lincoln Financial Field</Stadium>
+    <Capacity>69,596</Capacity>
+    <Coordinates>39.901°N 75.168°W</Coordinates>
+    <First_season>1933</First_season>
+    <Head_coach>Doug Pederson</Head_coach>
+  </team>
+  <team league="afc" division="east">
+    <Club>Washington Redskins</Club>
+    <City>Landover, Maryland</City>
+    <Stadium>FedExField</Stadium>
+    <Capacity>82,000</Capacity>
+    <Coordinates>38.908°N 76.864°W</Coordinates>
+    <First_season>1932</First_season>
+    <Head_coach>Jay Gruden</Head_coach>
+  </team>
+
+  <team league="afc" division="north">
+    <Club>north	Chicago Bears</Club>
+    <City>Chicago, Illinois</City>
+    <Stadium>Soldier Field</Stadium>
+    <Capacity>61,500</Capacity>
+    <Coordinates>41.863°N 87.617°W</Coordinates>
+    <First_season>1920</First_season>
+    <Head_coach>Matt Nagy</Head_coach>
+  </team>
+  <team league="afc" division="north">
+    <Club>Detroit Lions</Club>
+    <City>Detroit, Michigan</City>
+    <Stadium>Ford Field</Stadium>
+    <Capacity>65,000</Capacity>
+    <Coordinates>42.340°N 83.046°W	</Coordinates>
+    <First_season>1930</First_season>
+    <Head_coach>Matt Patricia</Head_coach>
+  </team>
+  <team league="afc" division="north">
+    <Club>Green Bay Packers</Club>
+    <City>Green Bay, Wisconsin</City>
+    <Stadium>Lambeau Field</Stadium>
+    <Capacity>81,435</Capacity>
+    <Coordinates>44.501°N 88.062°W</Coordinates>
+    <First_season>1921</First_season>
+    <Head_coach>Mike McCarthy</Head_coach>
+  </team>
+  <team league="afc" division="north">
+    <Club>Minnesota Vikings</Club>
+    <City>Minneapolis, Minnesota</City>
+    <Stadium>U.S. Bank Stadium</Stadium>
+    <Capacity>66,655</Capacity>
+    <Coordinates>44.974°N 93.258°W</Coordinates>
+    <First_season>1961</First_season>
+    <Head_coach>Mike Zimmer</Head_coach>
+  </team>
+
+  <team league="afc" division="south">
+    <Club>Atlanta Falcons</Club>
+    <City>Atlanta, Georgia</City>
+    <Stadium>Mercedes-Benz Stadium</Stadium>
+    <Capacity>71,000</Capacity>
+    <Coordinates>33.755°N 84.401°W</Coordinates>
+    <First_season>1966</First_season>
+    <Head_coach>Dan Quinn</Head_coach>
+  </team>
+  <team league="afc" division="south">
+    <Club>Carolina Panthers</Club>
+    <City>Charlotte, North Carolina</City>
+    <Stadium>Bank of America Stadium</Stadium>
+    <Capacity>75,419</Capacity>
+    <Coordinates>35.226°N 80.853°W</Coordinates>
+    <First_season>1995</First_season>
+    <Head_coach>Ron Rivera</Head_coach>
+  </team>
+  <team league="afc" division="south">
+    <Club>New Orleans Saints</Club>
+    <City>New Orleans, Louisiana</City>
+    <Stadium>Mercedes-Benz Superdome</Stadium>
+    <Capacity>73,000</Capacity>
+    <Coordinates>29.951°N 90.081°W</Coordinates>
+    <First_season1967></First_season>
+    <Head_coach>Sean Payton</Head_coach>
+  </team>
+  <team league="afc" division="south">
+    <Club>Tampa Bay Buccaneers</Club>
+    <CityTampa, Florida></City>
+    <Stadium>Raymond James Stadium</Stadium>
+    <Capacity>65,890</Capacity>
+    <Coordinates>27.976°N 82.503°W	</Coordinates>
+    <First_season>1976</First_season>
+    <Head_coach>Dirk Koetter </Head_coach>
+  </team>
+  
+  <team league="afc" division="west">
+    <Club>Arizona Cardinals</Club>
+    <City>Glendale, Arizona</City>
+    <Stadium>University of Phoenix Stadium</Stadium>
+    <Capacity>63,400</Capacity>
+    <Coordinates>33.528°N 112.263°W</Coordinates>
+    <First_season>1920</First_season>
+    <Head_coach>Steve Wilks</Head_coach>
+  </team>
+  <team league="afc" division="west">
+    <Club>Los Angeles Rams</Club>
+    <City>Los Angeles, California</City>
+    <Stadium>Los Angeles Memorial Coliseum[G]</Stadium>
+    <Capacity>93,607</Capacity>
+    <Coordinates>34.014°N 118.288°W</Coordinates>
+    <First_season>1936 (Second AFL), 1937 (NFL)</First_season>
+    <Head_coach>Sean McVay</Head_coach>
+  </team>
+  <team league="afc" division="west">
+    <Club>San Francisco 49ers</Club>
+    <City>Santa Clara, California</City>
+    <Stadium>Levi's Stadium</Stadium>
+    <Capacity>68,500</Capacity>
+    <Coordinates>37.403°N 121.970°W</Coordinates>
+    <First_season>1946 (AAFC), 1950 (NFL)</First_season>
+    <Head_coach>	Kyle Shanahan</Head_coach>
+  </team>
+  <team league="afc" division="west">
+    <Club>Seattle Seahawks</Club>
+    <City>Seattle, Washington</City>
+    <Stadium>CenturyLink Field</Stadium>
+    <Capacity>68,000</Capacity>
+    <Coordinates>47.595°N 122.332°W</Coordinates>
+    <First_season>1976</First_season>
+    <Head_coach>Pete Carroll</Head_coach>
+  </team>
+</teams>
