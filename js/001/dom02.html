@@ -12,12 +12,13 @@
 </head>
 <p id="msg">hoge</p>
 <script>
+    // DOM操作
     var e = document.getElementById('msg');
     e.textContent = 'hello!';
     e.style.color = 'red';
     e.className = 'myStyle';
 
-    // 新しくdomを作る
+    // 新しくDOMを作る
     var greet = document.createElement('p'),
         text = document.createTextNode('hello world');
     document.body.appendChild(greet).appendChild(text);

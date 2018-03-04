@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<entries gameID="DWO">
+  <entry>
+    <player>John</player>
+    <guess>3</guess>
+    <guess>9</guess>
+    <guess>222</guess>
+  </entry>
+  <entry>
+    <player>Mary</player>
+    <guess>88</guess>
+    <guess>76</guess>
+    <guess>5</guess>
+  </entry>
+</entries>
