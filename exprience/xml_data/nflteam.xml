@@ -40,7 +40,7 @@
   <team league="nfc" division="north">
     <Club>Baltimore Ravens</Club>
     <City>Baltimore, Maryland</City>
-    <Stadium>M&T Bank Stadium</Stadium>
+    <Stadium>M &amp; T Bank Stadium</Stadium>
     <Capacity>71,008</Capacity>
     <Coordinates>39.278°N 76.623°W</Coordinates>
     <First_season>1996[E]</First_season>
@@ -151,7 +151,7 @@
   <team league="afc" division="east">
     <Club>Dallas Cowboys</Club>
     <City>Arlington, Texas</City>
-    <Stadium>AT&T Stadium</Stadium>
+    <Stadium>AT&amp;T Stadium</Stadium>
     <Capacity>80,000</Capacity>
     <Coordinates>32.748°N 97.093°W</Coordinates>
     <First_season>1960</First_season>
@@ -246,12 +246,12 @@
     <Stadium>Mercedes-Benz Superdome</Stadium>
     <Capacity>73,000</Capacity>
     <Coordinates>29.951°N 90.081°W</Coordinates>
-    <First_season1967></First_season>
+    <First_season>1967</First_season>
     <Head_coach>Sean Payton</Head_coach>
   </team>
   <team league="afc" division="south">
     <Club>Tampa Bay Buccaneers</Club>
-    <CityTampa, Florida></City>
+    <City>Tampa, Florida</City>
     <Stadium>Raymond James Stadium</Stadium>
     <Capacity>65,890</Capacity>
     <Coordinates>27.976°N 82.503°W	</Coordinates>
