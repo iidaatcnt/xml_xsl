@@ -16,7 +16,7 @@
     <xsl:for-each select="bookstore/book">
       <P><xsl:value-of select="position()"/>.<xsl:value-of select="title"/></P>
       <xsl:if test="current()=../book[last()]">
-        最後です
+      リストはこれで終わりです
       </xsl:if>
     </xsl:for-each>
     
