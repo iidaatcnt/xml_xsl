@@ -4,11 +4,11 @@
    version="1.0">
   <xsl:template match="/" >
     <HTML><BODY>
-     <xsl:apply-templates select="/EMPLOYEES/EMPLOYEE[2]"/>
+     <xsl:apply-templates select="/employees/employee[2]"/>
     </BODY></HTML>
   </xsl:template>
 
-  <xsl:template match="EMPLOYEE" >
+  <xsl:template match="employee" >
     <xsl:value-of select="@empid"/><BR/>
     <xsl:value-of select="Name"/><BR/>
     <xsl:value-of select="Dept"/><BR/>
