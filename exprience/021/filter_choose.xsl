@@ -4,6 +4,8 @@
    version="1.0">
   <xsl:template match="/" >
     <HTML><BODY>
+      choose employee[2]
+    <HR/>
      <xsl:apply-templates select="/employees/employee[2]"/>
     </BODY></HTML>
   </xsl:template>
