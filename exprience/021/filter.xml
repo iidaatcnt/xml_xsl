@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="filter.xsl" type="text/xsl" ?>
-<EMPLOYEES>
-  <EMPLOYEE  empid="A001">
+<?xml-stylesheet href="filter_choose.xsl" type="text/xsl" ?>
+<employees>
+  <employee  empid="A001">
     <Name>Kazuhiko Naito</Name>
     <Dept>Education</Dept>
     <Salary>200000</Salary>
-  </EMPLOYEE>
-  <EMPLOYEE  empid="B002">
-    <Name>Masahiko Kondo</Name>
+  </employee>
+  <employee  empid="B002">
+    <Name>Keiko Kondo</Name>
     <Dept>Sales</Dept>
     <Salary>300000</Salary>
-  </EMPLOYEE>
-  <EMPLOYEE  empid="C003">
+  </employee>
+  <employee  empid="C003">
     <Name>Reiko Sato</Name>
     <Dept>Education</Dept>
     <Salary>400000</Salary>
-  </EMPLOYEE>
-  <EMPLOYEE  empid="D004">
+  </employee>
+  <employee  empid="D004">
     <Name>Masao Ito</Name>
     <Dept>Sales</Dept>
     <Salary>500000</Salary>
-  </EMPLOYEE>
+  </employee>
 
-</EMPLOYEES>
+</employees>
