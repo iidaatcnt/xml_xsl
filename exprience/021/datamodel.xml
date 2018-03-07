@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="datamodel.xsl" type="text/xsl" ?>
+<EMPLOYEES>
+  <EMPLOYEE  empid="A001">
+    <Name>Kazuhiko Naito</Name>
+    <Dept>Education</Dept>
+    <Salary>200000</Salary>
+  </EMPLOYEE>
+</EMPLOYEES>
