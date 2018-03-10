@@ -5,48 +5,56 @@
   <bookstore>
     <book category="ScienceFiction">
       <title lang="en">Neuromancer</title>
+      <title lang="ja">ニューロマンサー</title>
       <author>William Gibson</author>
       <year>1984</year>
       <price>12.00</price>
     </book>
     <book category="ScienceFiction">
       <title lang="en">Count Zero</title>
+      <title lang="ja">カウント・ゼロ</title>
       <author>William Gibson</author>
       <year>1986</year>
       <price>13.99</price>
     </book>
     <book category="ScienceFiction">
       <title lang="en">Mona Lisa Overdrive</title>
+      <title lang="ja">モナリザ・オーヴァドライヴ</title>
       <author>William Gibson</author>
       <year>1988</year>
       <price>12.99</price>
     </book>
     <book category="ScienceFiction" cover="paperback">
       <title lang="en">The Difference Engine</title>
+      <title lang="ja">ディファレンス・エンジン</title>
       <author>William Gibson</author>
       <year>1990</year>
       <price>11.95</price>
     </book>
     <book category="ScienceFiction" cover="paperback">
       <title lang="en">Virtual Light</title>
+      <title lang="ja">ヴァーチャル・ライト</title>
       <author>William Gibson</author>
       <year>1993</year>
       <price>11.95</price>
     </book>
     <book category="ScienceFiction" cover="paperback">
       <title lang="en">Idoru</title>
+      <title lang="ja">あいどる</title>
       <author>William Gibson</author>
       <year>1996</year>
       <price>13.95</price>
     </book>
     <book category="ScienceFiction" cover="paperback">
       <title lang="en">Pattern Recognition</title>
+      <title lang="ja">パターン・レコグニション</title>
       <author>William Gibson</author>
       <year>1996</year>
       <price>11.65</price>
     </book>
     <book category="ScienceFiction" cover="paperback">
       <title lang="en">Spook Country</title>
+      <title lang="ja">スプーク・カントリー</title>
       <author>William Gibson</author>
       <year>2007</year>
       <price>10.95</price>
@@ -65,6 +73,7 @@
     </book>
     <book category="ScienceFiction" cover="paperback">
       <title lang="en">Burning Chrome</title>
+      <title lang="ja">クローム襲撃</title>
       <author>William Gibson</author>
       <year>1986</year>
       <price>19.95</price>
