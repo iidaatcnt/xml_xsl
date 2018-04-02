@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    a{
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+    }
+    h2{margin-left: 0.5em}
+    p{margin-left: 2em}
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1><a href="javascript:collapse('chapter1')" id="chapter1">+</a>第1章</h1>
+    <h2>1節</h2>
+      <p>本文本文本文本文本文</p>
+    <h2>2節</h2>
+      <p>本文本文本文本文本文</p>
+    <h1><a href="javascript:collapse('chapter2')" id="chapter2">+</a>第2章</h1>
+    <h2>1節</h2>
+      <p>本文本文本文本文本文</p>
+    <h2>2節</h2>
+      <p>本文本文本文本文本文</p>
+      <h1><a href="javascript:collapse('chapter3')" id="chapter3">+</a>第3章</h1>
+    <h2>1節</h2>
+      <p>本文本文本文本文本文</p>
+    <h2>2節</h2>
+      <p>本文本文本文本文本文</p>
+</body>
+<script>
+  function collapse(id) {
+    var x = document.getElementById(id);
+    // alert(x.innerHTML);
+    if (x.innerHTML == "+") {
+      // document.getElementById(id).innerHTML = "-";
+      x.innerHTML = "-";
+    } else {
+      x.innerHTML = "+";
+    }
+  }
+</script>
+</html>
