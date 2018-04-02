@@ -16,8 +16,8 @@
   <title>Document</title>
 </head>
 <body>
-    <button onclick="allopen()">Click me</button>
-    <button onclick="allclose()">Click me</button>
+    <button onclick="openclose('open')">Click me open</button>
+    <button onclick="openclose('close')">Click me close</button>
 
   <h1><a href="javascript:collapse('c1')" id="c1">+</a>第1章</h1>
   <div id="c1s1" class="section">
@@ -64,6 +64,14 @@
     var i;
     for (i = 0; i < obj.length; i++) {
       obj[i].style.display = "block";
+    }
+  }
+  function openclose(act) {
+    var obj = document.getElementsByClassName("section");
+    var i, toggle;
+    toggle = (act == "open") ? "none" : "block";
+    for (i = 0; i < obj.length; i++) {
+      obj[i].style.display = toggle;
     }
   }
 </script>
