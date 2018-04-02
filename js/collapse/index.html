@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style>
-    a{
+    a {
       text-decoration: none;
       font-size: 20px;
       text-align: center;
     }
-    h2{margin-left: 0.5em}
-    p{margin-left: 2em}
+    .chapter {margin-left: 0.5em}
+    .section {margin-left: 2em}
+    table {
+    border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
   </style>
   <title>Document</title>
 </head>
@@ -20,31 +26,58 @@
     <button onclick="openclose('close')">Click me close</button>
 
   <h1><a href="javascript:collapse('c1')" id="c1">+</a>第1章</h1>
-  <div id="c1s1" class="section">
+  <div id="c1s1" class="chapter">
     <h2>1節</h2>
-    <p>本文本文本文本文本文</p>
-    <p>本文本文本文本文本文</p>
+    <div id="c1s1" class="section">
+      <p>本文本文本文本文本文</p>
+      <img src="sakura.jpg" alt="sakura" width="180">
+      <p>本文本文本文本文本文</p>
+    </div>
     <h2>2節</h2>
-    <p>本文本文本文本文本文</p>
-    <p>本文本文本文本文本文</p>
+    <div id="c1s2" class="section">
+      <p>本文本文本文本文本文</p>
+      <table>
+        <tr>
+          <td>項目１</td>
+          <td>りんご</td>
+        </tr>
+        <tr>
+          <td>項目２</td>
+          <td>バナナ</td>
+        </tr>
+        <tr>
+          <td>項目３</td>
+          <td>パイナップル</td>
+        </tr>
+      </table>
+      <p>本文本文本文本文本文</p>
+    </div>
   </div>
   <h1><a href="javascript:collapse('c2')" id="c2">+</a>第2章</h1>
-  <div id="c2s1" class="section">
+  <div id="c2s1" class="chapter">
     <h2>1節</h2>
-    <p>本文本文本文本文本文</p>
-    <p>本文本文本文本文本文</p>
+    <div id="c2s1" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
     <h2>2節</h2>
-    <p>本文本文本文本文本文</p>
-    <p>本文本文本文本文本文</p>
+    <div id="c2s2" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
   </div>
   <h1><a href="javascript:collapse('c3')" id="c3">+</a>第3章</h1>
-  <div id="c3s1" class="section">
+  <div id="c3s1" class="chapter">
     <h2>1節</h2>
-    <p>本文本文本文本文本文</p>
-    <p>本文本文本文本文本文</p>
+    <div id="c3s1" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
     <h2>2節</h2>
-    <p>本文本文本文本文本文</p>
-    <p>本文本文本文本文本文</p>
+    <div id="c3s2" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
   </div>
 </body>
 <script>
@@ -52,23 +85,9 @@
     var obj = document.getElementById(id);
     obj.innerHTML = (obj.innerHTML == "+") ? "-" : "+";
   }
-  function allopen() {
-    var obj = document.getElementsByClassName("section");
-    var i;
-    for (i = 0; i < obj.length; i++) {
-      obj[i].style.display="none";
-    }
-  }
-  function allclose() {
-    var obj = document.getElementsByClassName("section");
-    var i;
-    for (i = 0; i < obj.length; i++) {
-      obj[i].style.display = "block";
-    }
-  }
   function openclose(act) {
-    var obj = document.getElementsByClassName("section");
     var i, toggle;
+    var obj = document.getElementsByClassName("section");
     toggle = (act == "open") ? "none" : "block";
     for (i = 0; i < obj.length; i++) {
       obj[i].style.display = toggle;
