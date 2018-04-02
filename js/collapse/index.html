@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+    }
+    .chapter {margin-left: 0.5em}
+    .section {margin-left: 2em}
+    table {
+      border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="openclose('open')">open</button>
+    <button onclick="openclose('close')">close</button> -->
+
+  <h1><span onclick="changeMark(this);fold_element('c1');">+</span>第1章</h1>
+  <div id="c1" class="chapter">
+    <h2><span onclick="changeMark(this);fold_element('c1s1');">+</span>1節</h2>
+    <div id="c1s1" class="section">
+      <p>本文本文本文本文本文</p>
+      <img src="sakura.jpg" alt="sakura" width="180">
+      <p>本文本文本文本文本文</p>
+    </div>
+    <h2><span onclick="changeMark(this);fold_element('c1s2');">+</span>2節</h2>
+    <div id="c1s2" class="section">
+      <p>本文本文本文本文本文</p>
+      <table>
+        <tr>
+          <td>商品１</td>
+          <td>りんご</td>
+        </tr>
+        <tr>
+          <td>商品２</td>
+          <td>バナナ</td>
+        </tr>
+        <tr>
+          <td>商品３</td>
+          <td>パイナップル</td>
+        </tr>
+      </table>
+      <p>本文本文本文本文本文</p>
+    </div>
+  </div>
+  <h1><span onclick="changeMark(this);fold_element('c2');">+</span>第2章</h1>
+  <div id="c2" class="chapter">
+    <h2><span onclick="changeMark(this);fold_element('c2s1');">+</span>1節</h2>
+    <div id="c2s1" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
+    <h2><span onclick="changeMark(this);fold_element('c2s2');">+</span>2節</h2>
+    <div id="c2s2" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
+  </div>
+  <h1><span onclick="changeMark(this);fold_element('c3');">+</span>第3章</h1>
+  <div id="c3" class="chapter">
+    <h2><span onclick="changeMark(this);fold_element('c3s1');">+</span>1節</h2>
+    <div id="c3s1" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
+    <h2><span onclick="changeMark(this);fold_element('c3s2');">+</span>2節</h2>
+    <div id="c3s2" class="section">
+      <p>本文本文本文本文本文</p>
+      <p>本文本文本文本文本文</p>
+    </div>
+  </div>
+</body>
+<script>
+  function fold_element(id) {
+    var obj = document.getElementById(id);
+    obj.style.display = (obj.style.display === "none") ? "block" : "none";
+  }
+  function openclose(act) {
+    var i, toggle;
+    var obj = document.getElementsByClassName("section");
+    toggle = (act == "open") ? "block" : "none";
+    for (i = 0; i < obj.length; i++) {
+      obj[i].style.display = toggle;
+    }
+  }
+  function changeMark(id) {
+    id.innerHTML = (id.innerHTML == "+") ? "-" : "+";
+  }
+</script>
+</html>
