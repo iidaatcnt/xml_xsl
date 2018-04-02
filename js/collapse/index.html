@@ -22,18 +22,18 @@
   <title>Document</title>
 </head>
 <body>
-    <button onclick="openclose('open')">Click me open</button>
-    <button onclick="openclose('close')">Click me close</button>
+    <button onclick="openclose('open')">open</button>
+    <button onclick="openclose('close')">close</button>
 
-  <h1><a href="javascript:collapse('c1')" id="c1">+</a>第1章</h1>
+  <h1><a href="javascript:collapse('c1');myfunc('c1s1')" id="c1">+</a>第1章</h1>
   <div id="c1s1" class="chapter">
-    <h2>1節</h2>
+    <h2><a href="">+</a>1節</h2>
     <div id="c1s1" class="section">
       <p>本文本文本文本文本文</p>
       <img src="sakura.jpg" alt="sakura" width="180">
       <p>本文本文本文本文本文</p>
     </div>
-    <h2>2節</h2>
+    <h2><a href="">+</a>2節</h2>
     <div id="c1s2" class="section">
       <p>本文本文本文本文本文</p>
       <table>
@@ -53,27 +53,27 @@
       <p>本文本文本文本文本文</p>
     </div>
   </div>
-  <h1><a href="javascript:collapse('c2')" id="c2">+</a>第2章</h1>
+  <h1><a href="javascript:collapse('c2');myfunc('c2s1')" id="c2">+</a>第2章</h1>
   <div id="c2s1" class="chapter">
-    <h2>1節</h2>
+    <h2><a href="">+</a>1節</h2>
     <div id="c2s1" class="section">
       <p>本文本文本文本文本文</p>
       <p>本文本文本文本文本文</p>
     </div>
-    <h2>2節</h2>
+    <h2><a href="">+</a>2節</h2>
     <div id="c2s2" class="section">
       <p>本文本文本文本文本文</p>
       <p>本文本文本文本文本文</p>
     </div>
   </div>
-  <h1><a href="javascript:collapse('c3')" id="c3">+</a>第3章</h1>
+  <h1><a href="javascript:collapse('c3');myfunc('c3s1')" id="c3">+</a>第3章</h1>
   <div id="c3s1" class="chapter">
-    <h2>1節</h2>
+    <h2><a href="">+</a>1節</h2>
     <div id="c3s1" class="section">
       <p>本文本文本文本文本文</p>
       <p>本文本文本文本文本文</p>
     </div>
-    <h2>2節</h2>
+    <h2><a href="">+</a>2節</h2>
     <div id="c3s2" class="section">
       <p>本文本文本文本文本文</p>
       <p>本文本文本文本文本文</p>
@@ -85,10 +85,14 @@
     var obj = document.getElementById(id);
     obj.innerHTML = (obj.innerHTML == "+") ? "-" : "+";
   }
+  function myfunc(id) {
+    var obj = document.getElementById(id);
+    obj.style.display = (obj.style.display === "none") ? "block" : "none";
+  }
   function openclose(act) {
     var i, toggle;
     var obj = document.getElementsByClassName("section");
-    toggle = (act == "open") ? "none" : "block";
+    toggle = (act == "open") ? "block" : "none";
     for (i = 0; i < obj.length; i++) {
       obj[i].style.display = toggle;
     }
