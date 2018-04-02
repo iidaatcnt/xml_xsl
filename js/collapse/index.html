@@ -16,31 +16,54 @@
   <title>Document</title>
 </head>
 <body>
-  <h1><a href="javascript:collapse('chapter1')" id="chapter1">+</a>第1章</h1>
+    <button onclick="allopen()">Click me</button>
+    <button onclick="allclose()">Click me</button>
+
+  <h1><a href="javascript:collapse('c1')" id="c1">+</a>第1章</h1>
+  <div id="c1s1" class="section">
     <h2>1節</h2>
-      <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
     <h2>2節</h2>
-      <p>本文本文本文本文本文</p>
-    <h1><a href="javascript:collapse('chapter2')" id="chapter2">+</a>第2章</h1>
+    <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
+  </div>
+  <h1><a href="javascript:collapse('c2')" id="c2">+</a>第2章</h1>
+  <div id="c2s1" class="section">
     <h2>1節</h2>
-      <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
     <h2>2節</h2>
-      <p>本文本文本文本文本文</p>
-      <h1><a href="javascript:collapse('chapter3')" id="chapter3">+</a>第3章</h1>
+    <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
+  </div>
+  <h1><a href="javascript:collapse('c3')" id="c3">+</a>第3章</h1>
+  <div id="c3s1" class="section">
     <h2>1節</h2>
-      <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
     <h2>2節</h2>
-      <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
+    <p>本文本文本文本文本文</p>
+  </div>
 </body>
 <script>
   function collapse(id) {
-    var x = document.getElementById(id);
-    // alert(x.innerHTML);
-    if (x.innerHTML == "+") {
-      // document.getElementById(id).innerHTML = "-";
-      x.innerHTML = "-";
-    } else {
-      x.innerHTML = "+";
+    var obj = document.getElementById(id);
+    obj.innerHTML = (obj.innerHTML == "+") ? "-" : "+";
+  }
+  function allopen() {
+    var obj = document.getElementsByClassName("section");
+    var i;
+    for (i = 0; i < obj.length; i++) {
+      obj[i].style.display="none";
+    }
+  }
+  function allclose() {
+    var obj = document.getElementsByClassName("section");
+    var i;
+    for (i = 0; i < obj.length; i++) {
+      obj[i].style.display = "block";
     }
   }
 </script>
